@@ -1,0 +1,2991 @@
+@prefix : <http://research.ibm.com/ontologies/hspo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://research.ibm.com/ontologies/hspo/> .
+
+<http://research.ibm.com/ontologies/hspo/> rdf:type owl:Ontology ;
+                                            <http://purl.org/dc/elements/1.1/abstract> """The Health and Social Person-centric Ontology (HSPO) describes a schema for specifying evidences about a person in a consistent way.
+          The model allows but not limited to specify evidence, interventions and outcomes in health and social care domains."""@en ;
+                                            <http://purl.org/dc/elements/1.1/creator> "IBM Research Europe" ;
+                                            <http://purl.org/dc/elements/1.1/publisher> "IBM" ;
+                                            <http://purl.org/dc/terms/created> "2022-06-02"^^xsd:date ;
+                                            <http://purl.org/dc/terms/modified> "2022-10-07"^^xsd:date ;
+                                            <http://purl.org/dc/terms/title> "Health and Social Person-centric Ontology (HSPO)"@en ;
+                                            owl:versionInfo "0.0.17" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/modified
+<http://purl.org/dc/elements/1.1/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://research.ibm.com/ontologies/hspo/icd10Code
+:icd10Code rdf:type owl:AnnotationProperty ;
+           rdfs:comment "The ICD-10 code" ;
+           rdfs:range xsd:string .
+
+
+###  http://research.ibm.com/ontologies/hspo/icd9Code
+:icd9Code rdf:type owl:AnnotationProperty ;
+          rdfs:comment "The ICD-9 code" ;
+          rdfs:range xsd:string .
+
+
+###  http://research.ibm.com/ontologies/hspo/umlsCui
+:umlsCui rdf:type owl:AnnotationProperty ;
+         rdfs:comment "The UMLS entity identifier (CUI)" ;
+         rdfs:range xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "hasMapping" .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#resource
+rdf:resource rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#displayName
+rdfs:displayName rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+<http://www.w3.org/2004/02/skos/core#narrower> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://research.ibm.com/ontologies/hspo/belongsToAgeGroup
+:belongsToAgeGroup rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Age ;
+                   rdfs:range :AgeGroup ;
+                   rdfs:comment "The age group the person belongs to"@en ;
+                   rdfs:label "belongsToAgeGroup"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/followsReligion
+:followsReligion rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Person ;
+                 rdfs:range :Religion ;
+                 rdfs:comment "The religon a person follows"@en ;
+                 rdfs:label "followsReligion"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasAge
+:hasAge rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Person ;
+        rdfs:range :Age ;
+        rdfs:comment "The age of a person"@en ;
+        rdfs:label "hasAge"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasAlignmentScore
+:hasAlignmentScore rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ConfidenceScore ;
+                   rdfs:range :AlignmentScore ;
+                   rdfs:comment "The alignment proximity score"@en ;
+                   rdfs:label "hasAlignmentScore"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasBehaviour
+:hasBehaviour rdf:type owl:ObjectProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Behaviour ;
+              rdfs:comment "A behaviour for a Person. E.g. diet, smoking, exercise, etc."@en ;
+              rdfs:label "hasBehaviour"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasConfidenceScore
+:hasConfidenceScore rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Evidence ;
+                    rdfs:range :ConfidenceScore ;
+                    rdfs:comment "Relates the evidence to a confidence score"@en ;
+                    rdfs:label "hasConfidenceScore"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasDisease
+:hasDisease rdf:type owl:ObjectProperty ;
+            rdfs:domain :Person ;
+            rdfs:range :Disease ;
+            rdfs:comment "The disease associated with a Person"@en ;
+            rdfs:label "hasDisease"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasDuration
+:hasDuration rdf:type owl:ObjectProperty ;
+             rdfs:domain :Intervention ;
+             rdfs:range :Duration ;
+             rdfs:comment "The duration of an intervention"@en ;
+             rdfs:label "hasDuration"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasEvidence
+:hasEvidence rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Behaviour
+                                         :Disease
+                                         :Intervention
+                                         :SocialContext
+                                       )
+                         ] ;
+             rdfs:range :Evidence ;
+             rdfs:comment "Relates a social problem, disease or intervention to an evidence, including provenance, confidence score and original knowledge"@en ;
+             rdfs:label "hasEvidence"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasEvidenceGraph
+:hasEvidenceGraph rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                  rdfs:domain :Evidence ;
+                  rdfs:range :EvidenceGraph ;
+                  rdfs:comment "Relates the evidence to its Evidence Graph"@en ;
+                  rdfs:label "hasEvidenceGraph"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasEvidenceSource
+:hasEvidenceSource rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                   rdfs:domain :Evidence ;
+                   rdfs:range :EvidenceSource ;
+                   rdfs:comment "The source of the evidence"@en ;
+                   rdfs:label "hasEvidenceSource"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasGender
+:hasGender rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Person ;
+           rdfs:range :Gender ;
+           rdfs:comment "The gender of a person"@en ;
+           rdfs:label "hasGender"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasIntervention
+:hasIntervention rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Person ;
+                 rdfs:range :Intervention ;
+                 rdfs:comment "An intervention for a Person"@en ;
+                 rdfs:label "hasIntervention"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionOutcome
+:hasInterventionOutcome rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Intervention ;
+                        rdfs:range :InterventionOutcome ;
+                        rdfs:comment "Relates an outcome to an intervention"@en ;
+                        rdfs:label "hasInterventionOutcome"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionOutcomeMetric
+:hasInterventionOutcomeMetric rdf:type owl:ObjectProperty ;
+                              rdfs:domain :InterventionOutcome ;
+                              rdfs:range :InterventionOutcomeMetric ;
+                              rdfs:comment "The metric to measure an outcome."@en ;
+                              rdfs:label "hasInterventionOutcomeMetric"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionOutcomeResult
+:hasInterventionOutcomeResult rdf:type owl:ObjectProperty ;
+                              rdfs:domain :InterventionOutcome ;
+                              rdfs:range :InterventionOutcomeResult ;
+                              rdfs:comment "The outcome result scale."@en ;
+                              rdfs:label "hasInterventionOutcomeResult"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionOutcomeType
+:hasInterventionOutcomeType rdf:type owl:ObjectProperty ;
+                            rdfs:domain :InterventionOutcome ;
+                            rdfs:range :InterventionOutcomeType ;
+                            rdfs:comment "The type of Intervention outcome."@en ;
+                            rdfs:label "hasInterventionOutcomeType"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionProvider
+:hasInterventionProvider rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Intervention ;
+                         rdfs:range :InterventionProvider ;
+                         rdfs:comment "Intervention provider of an intervention"@en ;
+                         rdfs:label "hasInterventionProvider"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionStatus
+:hasInterventionStatus rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Intervention ;
+                       rdfs:range :InterventionStatus ;
+                       rdfs:label "hasInterventionStatus"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasInterventionType
+:hasInterventionType rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Intervention ;
+                     rdfs:range :InterventionType ;
+                     rdfs:label "hasInterventionType"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasMaritalStatus
+:hasMaritalStatus rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Person ;
+                  rdfs:range :MaritalStatus ;
+                  rdfs:comment "The marital status of a person"@en ;
+                  rdfs:label "hasMaritalStatus"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasProbabilityScore
+:hasProbabilityScore rdf:type owl:ObjectProperty ;
+                     rdfs:domain :ConfidenceScore ;
+                     rdfs:range :OriginalProbabilityScore ;
+                     rdfs:comment "The original probability score of the evidence"@en ;
+                     rdfs:label "hasProbabilityScore"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasRaceOrEthnicity
+:hasRaceOrEthnicity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Person ;
+                    rdfs:range :RaceAndEthnicity ;
+                    rdfs:comment "The race and/or ethnicity of a person"@en ;
+                    rdfs:label "hasRaceOrEthnicity"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasSocialContext
+:hasSocialContext rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Person ;
+                  rdfs:range :SocialContext ;
+                  rdfs:comment "The social context of a person"@en ;
+                  rdfs:label "hasSocialContext"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasStageOfLife
+:hasStageOfLife rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Age ;
+                rdfs:range :StageOfLife ;
+                rdfs:comment "The stage of life of a person"@en ;
+                rdfs:label "hasStageOfLife"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/hasTrustScore
+:hasTrustScore rdf:type owl:ObjectProperty ;
+               rdfs:domain :ConfidenceScore ;
+               rdfs:range :DatasourceTrustScore ;
+               rdfs:comment "The datasource trust score"@en ;
+               rdfs:label "hasTrustScore"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/isPartOfEvidenceGraph
+:isPartOfEvidenceGraph rdf:type owl:ObjectProperty ;
+                       rdfs:domain :EvidenceGraph ;
+                       rdfs:range [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Age
+                                                  :Behaviour
+                                                  :Disease
+                                                  :Gender
+                                                  :Intervention
+                                                  :Location
+                                                  :MaritalStatus
+                                                  :RaceAndEthnicity
+                                                  :Religion
+                                                  :SocialContext
+                                                )
+                                  ] ;
+                       rdfs:comment "Part of relation used as an evidence to establish Person relation"@en ;
+                       rdfs:label "isPartOfEvidenceGraph"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives
+:lives rdf:type owl:ObjectProperty ;
+       rdfs:domain :Person ;
+       rdfs:range :Location ;
+       rdfs:comment "The location where the person lives, e.g. address, state, area, country, etc. "@en ;
+       rdfs:label "lives"@en .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://research.ibm.com/ontologies/hspo/age_in_years
+:age_in_years rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Age ;
+              rdfs:range xsd:int ;
+              rdfs:comment "Current age of a person in years"@en ;
+              rdfs:label "Age in years"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/alignment_score_value
+:alignment_score_value rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain :AlignmentScore ;
+                       rdfs:range xsd:double ;
+                       rdfs:comment "Alignment score between the Evidence and the Person Graphs"@en ;
+                       rdfs:label "Alignment score value"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/intervention_code
+:intervention_code rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Intervention ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The code of the intervention"@en ;
+                   rdfs:label "Intervention code"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/intervention_code_system
+:intervention_code_system rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :Intervention ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "The intervention coding system. E.g. CPT, RxNorm, ICD, etc."@en ;
+                          rdfs:label "Intervention code system"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/intervention_name
+:intervention_name rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Intervention ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The name of the intervention, which may include a short textual description "@en ;
+                   rdfs:label "Intervention name"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/number_in_household
+:number_in_household rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Household ;
+                     rdfs:range xsd:int ;
+                     rdfs:comment "Number in household"@en ;
+                     rdfs:label "Number in household"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/person_id
+:person_id rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The ID of the person"@en ;
+           rdfs:label "Person ID"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/positivity_indicator
+:positivity_indicator rdf:type owl:DatatypeProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :SocialContext ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "contradicting" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "negative" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "neutral" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "positive" ;
+                                                                                rdf:rest rdf:nil
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:comment "Positivity of the social factor."@en ;
+                      rdfs:label "Positivity indicator"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/probability_score_metric
+:probability_score_metric rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain :OriginalProbabilityScore ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Probability score metric of the Evidence Graph for a Person"@en ;
+                          rdfs:label "Probability score metric"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/probability_score_value
+:probability_score_value rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :OriginalProbabilityScore ;
+                         rdfs:range xsd:double ;
+                         rdfs:comment "Probability score value of the Evidence Graph for a Person"@en ;
+                         rdfs:label "Probability score value"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/source_ID
+:source_ID rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :EvidenceSource ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The ID (e.g. URI) of the Evidence Graph source"@en ;
+           rdfs:label "Datasource ID"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/trust_score
+:trust_score rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :DatasourceTrustScore ;
+             rdfs:range xsd:double ;
+             rdfs:comment "Datasource Trust Score for the Evidence Graph"@en ;
+             rdfs:label "Trust score"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://research.ibm.com/ontologies/hspo/Age
+:Age rdf:type owl:Class ;
+     :umlsCui "C0001779" ;
+     rdfs:comment "The age of a person"@en ;
+     rdfs:label "Age"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/AgeGroup
+:AgeGroup rdf:type owl:Class ;
+          :umlsCui "C0027362" ;
+          rdfs:comment "The age group the person belongs to"@en ;
+          rdfs:label "Age group"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/AlignmentScore
+:AlignmentScore rdf:type owl:Class ;
+                rdfs:comment "Alignment proximity score between the nodes of Evidence and Person Graphs"@en ;
+                rdfs:label "Alignment Score"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Behaviour
+:Behaviour rdf:type owl:Class ;
+           :umlsCui "" ;
+           rdfs:comment "Human behaviour, e.g. diet, smoking, exercising, sleep, etc." ;
+           rdfs:label "Behaviour"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/BuiltEnvironment
+:BuiltEnvironment rdf:type owl:Class ;
+                  rdfs:subClassOf :SocialContext ;
+                  :umlsCui "" ;
+                  rdfs:comment "The location surrounding an individual including neighborhood." ;
+                  rdfs:label "Built Environment" .
+
+
+###  http://research.ibm.com/ontologies/hspo/ConfidenceScore
+:ConfidenceScore rdf:type owl:Class ;
+                 rdfs:comment "Confidence score includes alignment accuracy, probablity of an event and datasource trust score" ;
+                 rdfs:label "Confidence Score"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/DatasourceTrustScore
+:DatasourceTrustScore rdf:type owl:Class ;
+                      rdfs:comment "Datasource trust score" ;
+                      rdfs:label "Datasource Trust Score"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Disease
+:Disease rdf:type owl:Class ;
+         owl:equivalentClass <http://www.ebi.ac.uk/efo/EFO_0000408> ;
+         :umlsCui "C0012634" ,
+                  "C0221423" ,
+                  "C0338067" ,
+                  "C1511989" ;
+         rdfs:label "Disease"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Duration
+:Duration rdf:type owl:Class ;
+          :umlsCui "" ;
+          rdfs:comment "Duration of some action"@en ;
+          rdfs:label "Duration"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Educational
+:Educational rdf:type owl:Class ;
+             rdfs:subClassOf :SocialContext ;
+             :umlsCui "" ;
+             rdfs:comment "The educational attainment and literacy of an individual." ;
+             rdfs:label "Educational"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Employment
+:Employment rdf:type owl:Class ;
+            rdfs:subClassOf :SocialContext ;
+            :umlsCui "" ;
+            rdfs:comment "The labor context of an individual including unemployment." ;
+            rdfs:label "Employment"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Evidence
+:Evidence rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+          rdfs:comment "Knowledge evidence" ;
+          rdfs:label "Evidence"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/EvidenceGraph
+:EvidenceGraph rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+               rdfs:comment "The subgraph extracted from the source of evidences, for example using SPARQL CONSTRUCT query." ;
+               rdfs:label "Evidence Graph"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/EvidenceSource
+:EvidenceSource rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                rdfs:comment "The source of the evidence" ;
+                rdfs:label "Evidence Source"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Financial
+:Financial rdf:type owl:Class ;
+           rdfs:subClassOf :SocialContext ;
+           :umlsCui "" ;
+           rdfs:comment "The financial context of an individual including economic stability, material hardship and medical cost burden." ;
+           rdfs:label "Financial" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Food
+:Food rdf:type owl:Class ;
+      rdfs:subClassOf :SocialContext ;
+      :umlsCui "" ;
+      rdfs:comment "The context in which an individual consumes or has access to food including nutritious or fresh foods and food poverty. " ;
+      rdfs:label "Food Security" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Gender
+:Gender rdf:type owl:Class ;
+        :umlsCui "C0079399" ;
+        rdfs:comment "The gender of a person"@en ;
+        rdfs:label "Gender"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/HealthAndWelfare
+:HealthAndWelfare rdf:type owl:Class ;
+                  rdfs:subClassOf :SocialContext ;
+                  :umlsCui "" ;
+                  rdfs:comment "The context and environment in which healthcare or social welfare are provided including access to services." ;
+                  rdfs:label "Health and Welfare System" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Homelessness
+:Homelessness rdf:type owl:Class ;
+              rdfs:subClassOf :Housing ;
+              :umlsCui "C0217846" ,
+                       "C0237154" ,
+                       "C0337660" ,
+                       "C0425211" ,
+                       "C0425241" ,
+                       "C0425242" ,
+                       "C0481512" ,
+                       "C0557220" ,
+                       "C0557222" ,
+                       "C0557223" ,
+                       "C0557224" ,
+                       "C0557225" ,
+                       "C0587731" ,
+                       "C0687129" ,
+                       "C0870659" ,
+                       "C1287167" ,
+                       "C1394678" ,
+                       "C1399807" ,
+                       "C2184138" ,
+                       "C2728483" ,
+                       "C2911663" ,
+                       "C5142738" ;
+              rdfs:comment "Housing Subategory: Homelessness" ;
+              rdfs:label "Homelessness" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Household
+:Household rdf:type owl:Class ;
+           rdfs:subClassOf :InterpersonalSocialAndCommunityEnvironment ;
+           :umlsCui "C0595998" ,
+                    "C1287140" ;
+           rdfs:comment "The household composition"@en ;
+           rdfs:label "Household Composition"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/HouseholdCrowding
+:HouseholdCrowding rdf:type owl:Class ;
+                   rdfs:subClassOf :Housing ;
+                   :umlsCui "C0425229" ,
+                            "C1827536" ;
+                   rdfs:comment "Housing Subategory: Household space and crowding" ;
+                   rdfs:label "Household Crowding" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Housing
+:Housing rdf:type owl:Class ;
+         rdfs:subClassOf :SocialContext ;
+         :icd10Code "Z59" ;
+         :icd9Code "V60" ;
+         :umlsCui "C0020056" ,
+                  "C0260791" ,
+                  "C0337630" ,
+                  "C0578833" ,
+                  "C1287158" ,
+                  "C4331099" ,
+                  "C4331144" ;
+         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ICD10:Z59" ,
+                                                                  "ICD9:V60" ,
+                                                                  "UMLS:C0020056" ,
+                                                                  "UMLS:C0260791" ,
+                                                                  "UMLS:C0337630" ,
+                                                                  "UMLS:C0578833" ,
+                                                                  "UMLS:C1287158" ,
+                                                                  "UMLS:C4331099" ,
+                                                                  "UMLS:C4331144" ;
+         rdfs:comment "The physical environment context in which an individual finds shelter and/or resides, including access to computer." ;
+         rdfs:label "Housing" .
+
+
+###  http://research.ibm.com/ontologies/hspo/HousingProblemUnspecified
+:HousingProblemUnspecified rdf:type owl:Class ;
+                           rdfs:subClassOf :Housing ;
+                           :umlsCui "C0260791" ,
+                                    "C0260798" ,
+                                    "C0260799" ,
+                                    "C0281978" ,
+                                    "C0422758" ,
+                                    "C0424981" ,
+                                    "C0424996" ,
+                                    "C0425223" ,
+                                    "C0476607" ,
+                                    "C0478598" ,
+                                    "C0496684" ,
+                                    "C0557202" ,
+                                    "C0587170" ,
+                                    "C0851513" ,
+                                    "C0851829" ,
+                                    "C1268616" ,
+                                    "C1704678" ,
+                                    "C1820503" ,
+                                    "C2231020" ,
+                                    "C2711485" ,
+                                    "C2712997" ,
+                                    "C3475493" ,
+                                    "C3540478" ,
+                                    "C3830423" ,
+                                    "C4237468" ,
+                                    "C5419047" ;
+                           rdfs:comment "Housing Subategory: HousingProblem details not specified" ;
+                           rdfs:label "Unspecified Housing Problem" .
+
+
+###  http://research.ibm.com/ontologies/hspo/HousingStability
+:HousingStability rdf:type owl:Class ;
+                  rdfs:subClassOf :Housing ;
+                  :umlsCui "C0034028" ,
+                           "C0038077" ,
+                           "C0085378" ,
+                           "C0337661" ,
+                           "C0422751" ,
+                           "C0422753" ,
+                           "C0422754" ,
+                           "C0425074" ,
+                           "C0425201" ,
+                           "C0425219" ,
+                           "C0425221" ,
+                           "C0425222" ,
+                           "C0511882" ,
+                           "C0511885" ,
+                           "C0554949" ,
+                           "C0557203" ,
+                           "C0557212" ,
+                           "C0557219" ,
+                           "C0557231" ,
+                           "C0578826" ,
+                           "C0584539" ,
+                           "C0680179" ,
+                           "C0682285" ,
+                           "C1145176" ,
+                           "C1145177" ,
+                           "C1286383" ,
+                           "C1287166" ,
+                           "C1550450" ,
+                           "C1550451" ,
+                           "C2230059" ,
+                           "C2712467" ,
+                           "C3826408" ,
+                           "C3842612" ,
+                           "C4272445" ,
+                           "C4699947" ,
+                           "C4700144" ,
+                           "C4735628" ,
+                           "C4737775" ,
+                           "C5142699" ,
+                           "C5142737" ,
+                           "C5144894" ,
+                           "C5200794" ,
+                           "C5204673" ,
+                           "C5395270" ,
+                           "C5539303" ,
+                           "C5539304" ,
+                           "C5539305" ,
+                           "C5539306" ,
+                           "C5539380" ,
+                           "C5541424" ,
+                           "C5545285" ,
+                           "C5546471" ,
+                           "C5547915" ,
+                           "C5547916" ,
+                           "C5547917" ,
+                           "C5547935" ,
+                           "C5548225" ,
+                           "C5549783" ,
+                           "C5549786" ,
+                           "C5549810" ,
+                           "C5549811" ,
+                           "C5549814" ,
+                           "C5549815" ,
+                           "C5549831" ,
+                           "C5549897" ,
+                           "C5549903" ,
+                           "C5549905" ,
+                           "C5549909" ,
+                           "C5549932" ,
+                           "C5552610" ,
+                           "C5552611" ,
+                           "C5568867" ,
+                           "C5571860" ;
+                  rdfs:comment "Housing Subategory: Housing stability or instability" ;
+                  rdfs:label "Housing Stability" .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterpersonalSocialAndCommunityEnvironment
+:InterpersonalSocialAndCommunityEnvironment rdf:type owl:Class ;
+                                            rdfs:subClassOf :SocialContext ;
+                                            :umlsCui "C0037414" ;
+                                            rdfs:comment "The social environment context of an individual including interpersonal relationships, community and culture." ;
+                                            rdfs:label "Interpersonal, Social and Community Environment" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Intervention
+:Intervention rdf:type owl:Class ;
+              :umlsCui "" ;
+              rdfs:comment "An intervention for the person."@en ;
+              rdfs:label "Intervention"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByAssessment
+:InterventionByAssessment rdf:type owl:Class ;
+                          rdfs:subClassOf :InterventionType ;
+                          :umlsCui "" ;
+                          rdfs:comment "" ;
+                          rdfs:label "Intervention by Assessment" ;
+                          rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByAssistance
+:InterventionByAssistance rdf:type owl:Class ;
+                          rdfs:subClassOf :InterventionType ;
+                          :umlsCui "" ;
+                          rdfs:comment "" ;
+                          rdfs:label "Intervention by Assistance" ;
+                          rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByCoordination
+:InterventionByCoordination rdf:type owl:Class ;
+                            rdfs:subClassOf :InterventionType ;
+                            :umlsCui "" ;
+                            rdfs:comment "" ;
+                            rdfs:label "Intervention by Coordination" ;
+                            rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByCounseling
+:InterventionByCounseling rdf:type owl:Class ;
+                          rdfs:subClassOf :InterventionType ;
+                          :umlsCui "" ;
+                          rdfs:comment "" ;
+                          rdfs:label "Intervention by Counseling" ;
+                          rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByEducation
+:InterventionByEducation rdf:type owl:Class ;
+                         rdfs:subClassOf :InterventionType ;
+                         :umlsCui "" ;
+                         rdfs:comment "" ;
+                         rdfs:label "Intervention by Education" ;
+                         rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByEvaluationOfEligibility
+:InterventionByEvaluationOfEligibility rdf:type owl:Class ;
+                                       rdfs:subClassOf :InterventionType ;
+                                       :umlsCui "" ;
+                                       rdfs:comment "" ;
+                                       rdfs:label "Intervention by Evaluation of Eligibility" ;
+                                       rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByProvisioning
+:InterventionByProvisioning rdf:type owl:Class ;
+                            rdfs:subClassOf :InterventionType ;
+                            :umlsCui "" ;
+                            rdfs:comment "" ;
+                            rdfs:label "Intervention by Provisioning" ;
+                            rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionByReffering
+:InterventionByReffering rdf:type owl:Class ;
+                         rdfs:subClassOf :InterventionType ;
+                         :umlsCui "" ;
+                         rdfs:comment "" ;
+                         rdfs:label "Intervention by Referral" ;
+                         rdfs:seeAlso <https://confluence.hl7.org/display/GRAV/Stress> .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionOutcome
+:InterventionOutcome rdf:type owl:Class ;
+                     :umlsCui "" ;
+                     rdfs:comment "The outcome of an intervention." ;
+                     rdfs:label "Intervention Outcome"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionOutcomeMetric
+:InterventionOutcomeMetric rdf:type owl:Class ;
+                           :umlsCui "" ;
+                           rdfs:comment "Specific metric of an intervention outcome" ;
+                           rdfs:label "Intervention Outcome Metric"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionOutcomeResult
+:InterventionOutcomeResult rdf:type owl:Class ;
+                           :umlsCui "" ;
+                           rdfs:label "Intervention Outcome Result"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionOutcomeType
+:InterventionOutcomeType rdf:type owl:Class ;
+                         :umlsCui "" ;
+                         rdfs:comment "The type of intervention outcome" ;
+                         rdfs:label "Intervention Outcome Type"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionProvider
+:InterventionProvider rdf:type owl:Class ;
+                      :umlsCui "" ;
+                      rdfs:comment "The provider of an intervention"@en ;
+                      rdfs:label "Intervention Provider"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionStatus
+:InterventionStatus rdf:type owl:Class ;
+                    :umlsCui "" ;
+                    rdfs:comment "The status of an intervention, for example, applied, recommended, planned, ongoing, available, etc."@en ;
+                    rdfs:label "Intervention Status"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/InterventionType
+:InterventionType rdf:type owl:Class ;
+                  :umlsCui "" ;
+                  rdfs:comment "A type of intervention. E.g. education, assessment, assistance, coordination, counseling, provision, referral"@en ;
+                  rdfs:label "Intervention Type"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Judicial
+:Judicial rdf:type owl:Class ;
+          rdfs:subClassOf :SocialContext ;
+          :umlsCui "" ;
+          rdfs:comment "The judicial context of an individual including imprisionment, involvement in legal actions or jury duty." ;
+          rdfs:label "Judicial" .
+
+
+###  http://research.ibm.com/ontologies/hspo/LivingConditions
+:LivingConditions rdf:type owl:Class ;
+                  rdfs:subClassOf :Housing ;
+                  :umlsCui "C0206073" ,
+                           "C0237134" ,
+                           "C0260793" ,
+                           "C0337645" ,
+                           "C0337656" ,
+                           "C0413318" ,
+                           "C0422755" ,
+                           "C0425197" ,
+                           "C0425224" ,
+                           "C0425225" ,
+                           "C0425228" ,
+                           "C0425236" ,
+                           "C0425237" ,
+                           "C0497503" ,
+                           "C0508794" ,
+                           "C0518662" ,
+                           "C0524384" ,
+                           "C0524387" ,
+                           "C0546945" ,
+                           "C0555042" ,
+                           "C0555043" ,
+                           "C0557241" ,
+                           "C0557246" ,
+                           "C0557250" ,
+                           "C0557251" ,
+                           "C0557254" ,
+                           "C0557255" ,
+                           "C0578892" ,
+                           "C0586387" ,
+                           "C0680178" ,
+                           "C0686993" ,
+                           "C0686994" ,
+                           "C0729248" ,
+                           "C1277273" ,
+                           "C1287171" ,
+                           "C1389428" ,
+                           "C1389594" ,
+                           "C1399796" ,
+                           "C1399808" ,
+                           "C1406415" ,
+                           "C1408528" ,
+                           "C1446374" ,
+                           "C1708388" ,
+                           "C1827082" ,
+                           "C1827307" ,
+                           "C1827332" ,
+                           "C1827351" ,
+                           "C1827438" ,
+                           "C1827674" ,
+                           "C1827802" ,
+                           "C1828237" ,
+                           "C2028122" ,
+                           "C2046928" ,
+                           "C2046929" ,
+                           "C2047139" ,
+                           "C2047140" ,
+                           "C2047141" ,
+                           "C2047142" ,
+                           "C2047143" ,
+                           "C2047144" ,
+                           "C2047145" ,
+                           "C2047146" ,
+                           "C2047147" ,
+                           "C2047148" ,
+                           "C2047149" ,
+                           "C2047151" ,
+                           "C2047152" ,
+                           "C2047153" ,
+                           "C2047154" ,
+                           "C2047156" ,
+                           "C2047157" ,
+                           "C2047158" ,
+                           "C2047159" ,
+                           "C2047160" ,
+                           "C2047161" ,
+                           "C2047162" ,
+                           "C2047163" ,
+                           "C2047165" ,
+                           "C2047166" ,
+                           "C2047167" ,
+                           "C2047168" ,
+                           "C2047169" ,
+                           "C2047170" ,
+                           "C2047171" ,
+                           "C2047172" ,
+                           "C2047173" ,
+                           "C2047174" ,
+                           "C2047175" ,
+                           "C2047176" ,
+                           "C2047177" ,
+                           "C2047178" ,
+                           "C2047179" ,
+                           "C2047180" ,
+                           "C2047181" ,
+                           "C2047182" ,
+                           "C2047183" ,
+                           "C2047184" ,
+                           "C2047185" ,
+                           "C2047186" ,
+                           "C2047187" ,
+                           "C2047188" ,
+                           "C2047189" ,
+                           "C2047190" ,
+                           "C2047191" ,
+                           "C2047192" ,
+                           "C2047193" ,
+                           "C2047194" ,
+                           "C2047195" ,
+                           "C2047196" ,
+                           "C2047197" ,
+                           "C2047198" ,
+                           "C2047199" ,
+                           "C2047200" ,
+                           "C2047201" ,
+                           "C2047202" ,
+                           "C2047203" ,
+                           "C2047204" ,
+                           "C2047205" ,
+                           "C2047206" ,
+                           "C2133575" ,
+                           "C2133576" ,
+                           "C2133580" ,
+                           "C2135578" ,
+                           "C2135579" ,
+                           "C2135580" ,
+                           "C2135581" ,
+                           "C2135582" ,
+                           "C2135584" ,
+                           "C2135585" ,
+                           "C2135587" ,
+                           "C2135588" ,
+                           "C2135589" ,
+                           "C2135590" ,
+                           "C2135591" ,
+                           "C2135593" ,
+                           "C2135594" ,
+                           "C2135596" ,
+                           "C2135598" ,
+                           "C2135599" ,
+                           "C2135600" ,
+                           "C2135601" ,
+                           "C2135602" ,
+                           "C2135603" ,
+                           "C2242883" ,
+                           "C2316952" ,
+                           "C2319250" ,
+                           "C2319251" ,
+                           "C2319252" ,
+                           "C2319253" ,
+                           "C2319254" ,
+                           "C2921855" ,
+                           "C2939123" ,
+                           "C3468761" ,
+                           "C3468762" ,
+                           "C3468763" ,
+                           "C3468764" ,
+                           "C3468765" ,
+                           "C3468766" ,
+                           "C3468767" ,
+                           "C4081856" ,
+                           "C4303974" ,
+                           "C4303978" ,
+                           "C4540865" ,
+                           "C4699946" ,
+                           "C4735629" ,
+                           "C4735630" ,
+                           "C4737692" ,
+                           "C5420314" ,
+                           "C5541425" ,
+                           "C5541426" ,
+                           "C5541427" ,
+                           "C5544474" ,
+                           "C5546726" ,
+                           "C5548379" ,
+                           "C5549892" ;
+                  rdfs:comment "Housing Subategory: Quality of living conditions" ;
+                  rdfs:label "Living Conditions" .
+
+
+###  http://research.ibm.com/ontologies/hspo/Location
+:Location rdf:type owl:Class ;
+          :umlsCui "" ;
+          rdfs:comment "The location oe setting where a person lives"@en ;
+          rdfs:label "Location"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/MaritalStatus
+:MaritalStatus rdf:type owl:Class ;
+               :umlsCui "C0024819" ,
+                        "C0557081" ,
+                        "C1276230" ;
+               rdfs:comment "The marital status of a person"@en ;
+               rdfs:label "Marital Status"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/OriginalProbabilityScore
+:OriginalProbabilityScore rdf:type owl:Class ;
+                          rdfs:comment "Probability score of the evidence" ;
+                          rdfs:label "Original Probability Score"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Person
+:Person rdf:type owl:Class ;
+        :umlsCui "" ;
+        rdfs:comment "A person."@en ;
+        rdfs:label "Person"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Political
+:Political rdf:type owl:Class ;
+           rdfs:subClassOf :SocialContext ;
+           :umlsCui "" ;
+           rdfs:comment "The political and government context of an individual including political affiliations and distrust in government institutions." ;
+           rdfs:label "Political" .
+
+
+###  http://research.ibm.com/ontologies/hspo/RaceAndEthnicity
+:RaceAndEthnicity rdf:type owl:Class ;
+                  :umlsCui "C0015031" ,
+                           "C0034510" ,
+                           "C0682074" ,
+                           "C3853635" ,
+                           "C5441552" ;
+                  rdfs:comment "The race and/or ethnicity of a person"@en ;
+                  rdfs:label "Race and Ethnicity"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Religion
+:Religion rdf:type owl:Class ;
+          :umlsCui "C0035039" ,
+                   "C1287232" ;
+          rdfs:comment "The religion of a person"@en ;
+          rdfs:label "Religion"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/SocialContext
+:SocialContext rdf:type owl:Class ;
+               :umlsCui "C0037464" ,
+                        "C0337454" ,
+                        "C0851364" ,
+                        "C1266850" ,
+                        "C3658315" ,
+                        "C5389601" ;
+               rdfs:comment "Social context of a person, e.g. problem, state, strength, barriers, etc." ;
+               rdfs:label "Social Context"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/StageOfLife
+:StageOfLife rdf:type owl:Class ;
+             :umlsCui "" ;
+             rdfs:comment "The stage of life of a person"@en ;
+             rdfs:label "Stage of life"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/Transportation
+:Transportation rdf:type owl:Class ;
+                rdfs:subClassOf :SocialContext ;
+                :umlsCui "" ;
+                rdfs:comment "The context in which an individual requires to travel between locations including commuting." ;
+                rdfs:label "Transportation" .
+
+
+###  http://www.ebi.ac.uk/efo/EFO_0000408
+<http://www.ebi.ac.uk/efo/EFO_0000408> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://research.ibm.com/ontologies/hspo/adult
+:adult rdf:type owl:NamedIndividual ,
+                :StageOfLife ;
+       :umlsCui "C0001675" ,
+                "C0238598" ,
+                "C0597696" ,
+                "C0680085" ,
+                "C1706450" ,
+                "C4323874" ;
+       rdfs:comment "20-39 years old" ;
+       rdfs:label "Adult" .
+
+
+###  http://research.ibm.com/ontologies/hspo/african_methodist_episcopal
+:african_methodist_episcopal rdf:type owl:NamedIndividual ,
+                                      :Religion ;
+                             :umlsCui "C1549409" ,
+                                      "C2135811" ,
+                                      "C5574304" ;
+                             rdfs:label "Christian: African Methodist Episcopal" ;
+                             <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/african_methodist_episcopal_zion
+:african_methodist_episcopal_zion rdf:type owl:NamedIndividual ,
+                                           :Religion ;
+                                  :umlsCui "C1549408" ;
+                                  rdfs:label "Christian: African Methodist Episcopal Zion" ;
+                                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/african_race
+:african_race rdf:type owl:NamedIndividual ,
+                       :RaceAndEthnicity ;
+              :umlsCui "C0027567" ;
+              rdfs:comment "African race (racial group)" ;
+              rdfs:label "African race" .
+
+
+###  http://research.ibm.com/ontologies/hspo/agnosticism
+:agnosticism rdf:type owl:NamedIndividual ,
+                      :Religion ;
+             :umlsCui "C0337688" ,
+                      "C0337718" ,
+                      "C0344347" ,
+                      "C2136169" ;
+             rdfs:label "Agnosticism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/american_baptist_church
+:american_baptist_church rdf:type owl:NamedIndividual ,
+                                  :Religion ;
+                         :umlsCui "C1549407" ;
+                         rdfs:label "Christian: American Baptist Church" ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/american_indian_or_alaska_native
+:american_indian_or_alaska_native rdf:type owl:NamedIndividual ,
+                                           :RaceAndEthnicity ;
+                                  :umlsCui "C1515945" ;
+                                  rdfs:comment "American Indian or Alaska native (racial group)" ;
+                                  rdfs:label "American Indian or Alaska native" .
+
+
+###  http://research.ibm.com/ontologies/hspo/anglican
+:anglican rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C0555046" ,
+                   "C1533684" ,
+                   "C1549410" ,
+                   "C2136181" ;
+          rdfs:label "Christian: Anglican" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/applied_intervention
+:applied_intervention rdf:type owl:NamedIndividual ,
+                               :InterventionStatus ;
+                      :umlsCui "" ;
+                      rdfs:label "Applied intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/aptist_church
+:aptist_church rdf:type owl:NamedIndividual ,
+                        :Religion ;
+               :umlsCui "C0337728" ,
+                        "C0425343" ,
+                        "C1549413" ;
+               rdfs:label "Christian: Baptist Church" ;
+               <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/asian_or_pacific_islander
+:asian_or_pacific_islander rdf:type owl:NamedIndividual ,
+                                    :RaceAndEthnicity ;
+                           :umlsCui "C1531604" ;
+                           rdfs:comment "Asian or Pacific islander (racial group)" ;
+                           rdfs:label "Asian or Pacific islander" .
+
+
+###  http://research.ibm.com/ontologies/hspo/assembly_of_god
+:assembly_of_god rdf:type owl:NamedIndividual ,
+                          :Religion ;
+                 :umlsCui "C0814983" ,
+                          "C1549411" ;
+                 rdfs:label "Christian: Assembly of God" ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/atheism
+:atheism rdf:type owl:NamedIndividual ,
+                  :Religion ;
+         :umlsCui "C0337687" ,
+                  "C0344345" ;
+         rdfs:label "Atheism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/australian_aborigine
+:australian_aborigine rdf:type owl:NamedIndividual ,
+                               :RaceAndEthnicity ;
+                      :umlsCui "C0004345" ,
+                               "C0337948" ;
+                      rdfs:comment "Australian aborigine (racial group)" ;
+                      rdfs:label "Australian aborigine" .
+
+
+###  http://research.ibm.com/ontologies/hspo/available_intervention
+:available_intervention rdf:type owl:NamedIndividual ,
+                                 :InterventionStatus ;
+                        :umlsCui "" ;
+                        rdfs:label "Available intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/bachelor
+:bachelor rdf:type owl:NamedIndividual ,
+                   :MaritalStatus ;
+          :umlsCui "C0337600" ;
+          rdfs:label "Bachelor" .
+
+
+###  http://research.ibm.com/ontologies/hspo/bahai
+:bahai rdf:type owl:NamedIndividual ,
+                :Religion ;
+       :umlsCui "C1549412" ,
+                "C1552040" ,
+                "C1998162" ,
+                "C2136171" ;
+       rdfs:label "Baha'i Faith" .
+
+
+###  http://research.ibm.com/ontologies/hspo/broken_engagement
+:broken_engagement rdf:type owl:NamedIndividual ,
+                            :MaritalStatus ;
+                   :umlsCui "C0425153" ;
+                   rdfs:label "Broken engagement" .
+
+
+###  http://research.ibm.com/ontologies/hspo/broken_with_partner
+:broken_with_partner rdf:type owl:NamedIndividual ,
+                              :MaritalStatus ;
+                     :umlsCui "C0425154" ;
+                     rdfs:label "Broken with partner" .
+
+
+###  http://research.ibm.com/ontologies/hspo/buddhism
+:buddhism rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C0006343" ,
+                   "C0587175" ,
+                   "C2169953" ;
+          rdfs:label "Buddhism" ;
+          <http://www.w3.org/2004/02/skos/core#narrower> :buddhism_other ,
+                                                         :mahayana ,
+                                                         :theravada .
+
+
+###  http://research.ibm.com/ontologies/hspo/buddhism_other
+:buddhism_other rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C1549415" ;
+                rdfs:label "Buddhism: Other" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :buddhism .
+
+
+###  http://research.ibm.com/ontologies/hspo/caucasian
+:caucasian rdf:type owl:NamedIndividual ,
+                    :RaceAndEthnicity ;
+           :umlsCui "C0007457" ;
+           rdfs:comment "Caucasian (racial group)" ;
+           rdfs:label "Caucasian" .
+
+
+###  http://research.ibm.com/ontologies/hspo/child
+:child rdf:type owl:NamedIndividual ,
+                :StageOfLife ;
+       :umlsCui "C0008059" ,
+                "C0260267" ,
+                "C0596947" ,
+                "C2827631" ;
+       rdfs:comment "5-12 years old" ;
+       rdfs:label "Child" .
+
+
+###  http://research.ibm.com/ontologies/hspo/child_lives_with_unrelated_adult
+:child_lives_with_unrelated_adult rdf:type owl:NamedIndividual ,
+                                           :Household ;
+                                  :umlsCui "C2584949" ;
+                                  rdfs:label "Child lives with unrelated adult" .
+
+
+###  http://research.ibm.com/ontologies/hspo/chinese_folk_religion
+:chinese_folk_religion rdf:type owl:NamedIndividual ,
+                                :Religion ;
+                       :umlsCui "C1549419" ;
+                       rdfs:label "Chinese Folk Religion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/christian
+:christian rdf:type owl:NamedIndividual ,
+                    :Religion ;
+           :umlsCui "C0008532" ,
+                    "C0344346" ;
+           rdfs:label "Christian" ;
+           <http://www.w3.org/2004/02/skos/core#narrower> :african_methodist_episcopal ,
+                                                          :african_methodist_episcopal_zion ,
+                                                          :american_baptist_church ,
+                                                          :anglican ,
+                                                          :assembly_of_god ,
+                                                          :baptist_church ,
+                                                          :christian_missionary_alliance ,
+                                                          :christian_other ,
+                                                          :christian_reformed ,
+                                                          :christian_science ,
+                                                          :church_of_christ ,
+                                                          :church_of_god ,
+                                                          :church_of_god_in_christ ,
+                                                          :church_of_the_nazarene ,
+                                                          :community_church ,
+                                                          :congregational_church ,
+                                                          :eastern_orthodox ,
+                                                          :episcopalian ,
+                                                          :evangelical_church ,
+                                                          :free_will_baptist ,
+                                                          :friends_church ,
+                                                          :greek_orthodox ,
+                                                          :jehovahs_witness ,
+                                                          :latter_day_saints_church ,
+                                                          :lutheran ,
+                                                          :lutheran_missouri_synod ,
+                                                          :mennonite ,
+                                                          :methodist ,
+                                                          :orthodox ,
+                                                          :other_pentecostal ,
+                                                          :other_protestant ,
+                                                          :pentecostal ,
+                                                          :presbyterian ,
+                                                          :protestant ,
+                                                          :reformed_church ,
+                                                          :rlds ,
+                                                          :roman_catholic ,
+                                                          :salvation_army ,
+                                                          :seventh_day_adventist ,
+                                                          :southern_baptist ,
+                                                          :unitarian ,
+                                                          :unitarian_universalism ,
+                                                          :united_church_of_christ ,
+                                                          :united_methodist ,
+                                                          :wesleyan ,
+                                                          :wesleyan_methodist .
+
+
+###  http://research.ibm.com/ontologies/hspo/christian_missionary_alliance
+:christian_missionary_alliance rdf:type owl:NamedIndividual ,
+                                        :Religion ;
+                               :umlsCui "C1549421" ,
+                                        "C5574311" ;
+                               rdfs:label "Christian: Christian Missionary Alliance" ;
+                               <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/christian_other
+:christian_other rdf:type owl:NamedIndividual ,
+                          :Religion ;
+                 :umlsCui "C1549429" ;
+                 rdfs:label "Christian: Other" ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/christian_reformed
+:christian_reformed rdf:type owl:NamedIndividual ,
+                             :Religion ;
+                    :umlsCui "C0814984" ,
+                             "C1546385" ,
+                             "C1549430" ;
+                    rdfs:label "Christian: Christian Reformed" ;
+                    <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/christian_science
+:christian_science rdf:type owl:NamedIndividual ,
+                            :Religion ;
+                   :umlsCui "C0008531" ,
+                            "C0242219" ,
+                            "C1549420" ;
+                   rdfs:label "Christian: Christian Science Church" ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/church_of_christ
+:church_of_christ rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C1549423" ,
+                           "C1697861" ;
+                  rdfs:label "Christian: Church of Christ" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/church_of_god
+:church_of_god rdf:type owl:NamedIndividual ,
+                        :Religion ;
+               :umlsCui "C0682436" ,
+                        "C1549424" ;
+               rdfs:label "Christian: Church of God" ;
+               <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/church_of_god_in_christ
+:church_of_god_in_christ rdf:type owl:NamedIndividual ,
+                                  :Religion ;
+                         :umlsCui "C1549425" ;
+                         rdfs:label "Christian: Church of God in Christ" ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/church_of_the_nazarene
+:church_of_the_nazarene rdf:type owl:NamedIndividual ,
+                                 :Religion ;
+                        :umlsCui "C0337753" ,
+                                 "C1697897" ;
+                        rdfs:label "Christian: Church of the Nazarene" ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/cohabitee_left_home
+:cohabitee_left_home rdf:type owl:NamedIndividual ,
+                              :MaritalStatus ;
+                     :umlsCui "C0555051" ;
+                     rdfs:label "Cohabitee left home" .
+
+
+###  http://research.ibm.com/ontologies/hspo/cohabiting
+:cohabiting rdf:type owl:NamedIndividual ,
+                     :MaritalStatus ;
+            :umlsCui "C0221179" ;
+            rdfs:label "Cohabiting" .
+
+
+###  http://research.ibm.com/ontologies/hspo/common_law_partnership
+:common_law_partnership rdf:type owl:NamedIndividual ,
+                                 :MaritalStatus ;
+                        :umlsCui "C0009448" ;
+                        rdfs:label "Common law partnership" .
+
+
+###  http://research.ibm.com/ontologies/hspo/community_church
+:community_church rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C1549427" ;
+                  rdfs:label "Christian: Community Church" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/confucianism
+:confucianism rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0337700" ,
+                       "C1549422" ;
+              rdfs:label "Confucianism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/congregational_church
+:congregational_church rdf:type owl:NamedIndividual ,
+                                :Religion ;
+                       :umlsCui "C0574801" ,
+                                "C0682432" ,
+                                "C1549426" ,
+                                "C2135812" ;
+                       rdfs:label "Christian: Congregational" ;
+                       <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/conservative_judaism
+:conservative_judaism rdf:type owl:NamedIndividual ,
+                               :Religion ;
+                      :umlsCui "C0574829" ,
+                               "C1546365" ,
+                               "C2136178" ;
+                      rdfs:label "Judaism: Conservative Judaism" ;
+                      <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/divorced
+:divorced rdf:type owl:NamedIndividual ,
+                   :MaritalStatus ;
+          :umlsCui "C0086170" ;
+          rdfs:label "Divorced" .
+
+
+###  http://research.ibm.com/ontologies/hspo/divorced_couple_sharing_house
+:divorced_couple_sharing_house rdf:type owl:NamedIndividual ,
+                                        :Household ;
+                               :umlsCui "C0425238" ;
+                               rdfs:label "Divorced couple sharing house" .
+
+
+###  http://research.ibm.com/ontologies/hspo/domestic_partnership
+:domestic_partnership rdf:type owl:NamedIndividual ,
+                               :MaritalStatus ;
+                      :umlsCui "C0683559" ;
+                      rdfs:label "Domestic partnership" .
+
+
+###  http://research.ibm.com/ontologies/hspo/eastern_orthodox
+:eastern_orthodox rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C0682430" ,
+                           "C0949254" ,
+                           "C1261039" ,
+                           "C1549431" ,
+                           "C2169955" ;
+                  rdfs:label "Christian: Eastern Orthodox" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/eighty_to_eightyfour
+:eighty_to_eightyfour rdf:type owl:NamedIndividual ,
+                               :AgeGroup ;
+                      :umlsCui "" ;
+                      rdfs:label "80 to 84" .
+
+
+###  http://research.ibm.com/ontologies/hspo/eightyfive_and_over
+:eightyfive_and_over rdf:type owl:NamedIndividual ,
+                              :AgeGroup ;
+                     :umlsCui "" ;
+                     rdfs:label "85 and over" .
+
+
+###  http://research.ibm.com/ontologies/hspo/elderly_relative_lives_with_family
+:elderly_relative_lives_with_family rdf:type owl:NamedIndividual ,
+                                             :Household ;
+                                    :umlsCui "C0581132" ;
+                                    rdfs:label "Elderly relative lives with family" .
+
+
+###  http://research.ibm.com/ontologies/hspo/eloped
+:eloped rdf:type owl:NamedIndividual ,
+                 :MaritalStatus ;
+        :umlsCui "C0555024" ;
+        rdfs:label "Eloped" .
+
+
+###  http://research.ibm.com/ontologies/hspo/engaged_to_be_married
+:engaged_to_be_married rdf:type owl:NamedIndividual ,
+                                :MaritalStatus ;
+                       :umlsCui "C0425152" ;
+                       rdfs:label "Engaged to be married" .
+
+
+###  http://research.ibm.com/ontologies/hspo/episcopalian
+:episcopalian rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0337726" ,
+                       "C0682434" ,
+                       "C1549432" ;
+              rdfs:label "Christian: Episcopalian" ;
+              <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/ethnic_religion
+:ethnic_religion rdf:type owl:NamedIndividual ,
+                          :Religion ;
+                 :umlsCui "C1549433" ;
+                 rdfs:label "Ethnic Religion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/evangelical_church
+:evangelical_church rdf:type owl:NamedIndividual ,
+                             :Religion ;
+                    :umlsCui "C0425349" ,
+                             "C0574799" ,
+                             "C1549434" ;
+                    rdfs:label "Christian: Evangelical Church" ;
+                    <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/feminine_gender
+:feminine_gender rdf:type owl:NamedIndividual ,
+                          :Gender ;
+                 :umlsCui "C3839293" ;
+                 rdfs:label "Feminine gender" .
+
+
+###  http://research.ibm.com/ontologies/hspo/fifteen_to_nineteen
+:fifteen_to_nineteen rdf:type owl:NamedIndividual ,
+                              :AgeGroup ;
+                     :umlsCui "" ;
+                     rdfs:label "15 to 19" .
+
+
+###  http://research.ibm.com/ontologies/hspo/fifty_to_fiftyfour
+:fifty_to_fiftyfour rdf:type owl:NamedIndividual ,
+                             :AgeGroup ;
+                    :umlsCui "" ;
+                    rdfs:label "50 to 54" .
+
+
+###  http://research.ibm.com/ontologies/hspo/fiftyfive_to_fiftynine
+:fiftyfive_to_fiftynine rdf:type owl:NamedIndividual ,
+                                 :AgeGroup ;
+                        :umlsCui "" ;
+                        rdfs:label "55 to 59" .
+
+
+###  http://research.ibm.com/ontologies/hspo/five_to_nine
+:five_to_nine rdf:type owl:NamedIndividual ,
+                       :AgeGroup ;
+              :umlsCui "" ;
+              rdfs:label "5 to 9" .
+
+
+###  http://research.ibm.com/ontologies/hspo/forty_to_fortyfour
+:forty_to_fortyfour rdf:type owl:NamedIndividual ,
+                             :AgeGroup ;
+                    :umlsCui "" ;
+                    rdfs:label "40 to 44" .
+
+
+###  http://research.ibm.com/ontologies/hspo/fortyfive_to_fortynine
+:fortyfive_to_fortynine rdf:type owl:NamedIndividual ,
+                                 :AgeGroup ;
+                        :umlsCui "" ;
+                        rdfs:label "45 to 49" .
+
+
+###  http://research.ibm.com/ontologies/hspo/free_will_baptist
+:free_will_baptist rdf:type owl:NamedIndividual ,
+                            :Religion ;
+                   :umlsCui "C0337731" ,
+                            "C1546359" ;
+                   rdfs:label "Christian: Free Will Baptist" ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/friends_church
+:friends_church rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C0337764" ,
+                         "C1546384" ,
+                         "C1697767" ;
+                rdfs:label "Christian: Friends Church or Quakers" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/gender_finding
+:gender_finding rdf:type owl:NamedIndividual ,
+                         :Gender ;
+                :umlsCui "C1287419" ;
+                rdfs:label "Gender finding" .
+
+
+###  http://research.ibm.com/ontologies/hspo/gender_unknown
+:gender_unknown rdf:type owl:NamedIndividual ,
+                         :Gender ;
+                :umlsCui "C1271088" ;
+                rdfs:label "Gender unknown" .
+
+
+###  http://research.ibm.com/ontologies/hspo/gender_unspecified
+:gender_unspecified rdf:type owl:NamedIndividual ,
+                             :Gender ;
+                    :umlsCui "C1271089" ;
+                    rdfs:label "Gender unspecified" .
+
+
+###  http://research.ibm.com/ontologies/hspo/greek_orthodox
+:greek_orthodox rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C0337721" ,
+                         "C1546360" ,
+                         "C1998233" ,
+                         "C2136173" ;
+                rdfs:label "Christian: Greek Orthodox" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/hinduism
+:hinduism rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C0019550" ,
+                   "C0425335" ;
+          rdfs:label "Hinduism" ;
+          <http://www.w3.org/2004/02/skos/core#narrower> :hinduism_other ,
+                                                         :shaivism ,
+                                                         :vaishnavism .
+
+
+###  http://research.ibm.com/ontologies/hspo/hinduism_other
+:hinduism_other rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C1546361" ;
+                rdfs:label "Hinduism: Other" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :hinduism .
+
+
+###  http://research.ibm.com/ontologies/hspo/hispanic
+:hispanic rdf:type owl:NamedIndividual ,
+                   :RaceAndEthnicity ;
+          :umlsCui "C0086409" ;
+          rdfs:comment "Hispanic (racial group)" ;
+          rdfs:label "Hispanic" .
+
+
+###  http://research.ibm.com/ontologies/hspo/homosexual_marriage
+:homosexual_marriage rdf:type owl:NamedIndividual ,
+                              :MaritalStatus ;
+                     :umlsCui "C0524334" ;
+                     rdfs:label "Homosexual marriage" .
+
+
+###  http://research.ibm.com/ontologies/hspo/homosexual_marriage_female
+:homosexual_marriage_female rdf:type owl:NamedIndividual ,
+                                     :MaritalStatus ;
+                            :umlsCui "C0524336" ;
+                            rdfs:label "Homosexual marriage, female" .
+
+
+###  http://research.ibm.com/ontologies/hspo/homosexual_marriage_male
+:homosexual_marriage_male rdf:type owl:NamedIndividual ,
+                                   :MaritalStatus ;
+                          :umlsCui "C0524335" ;
+                          rdfs:label "Homosexual marriage, male" .
+
+
+###  http://research.ibm.com/ontologies/hspo/husband_left_home
+:husband_left_home rdf:type owl:NamedIndividual ,
+                            :MaritalStatus ;
+                   :umlsCui "C0555049" ;
+                   rdfs:label "Husband left home" .
+
+
+###  http://research.ibm.com/ontologies/hspo/indian
+:indian rdf:type owl:NamedIndividual ,
+                 :RaceAndEthnicity ;
+        :umlsCui "C1524069" ;
+        rdfs:comment "Indian (racial group)" ;
+        rdfs:label "Indian" .
+
+
+###  http://research.ibm.com/ontologies/hspo/infant
+:infant rdf:type owl:NamedIndividual ,
+                 :StageOfLife ;
+        :umlsCui "C0021270" ,
+                 "C0021289" ,
+                 "C0178715" ,
+                 "C0920381" ;
+        rdfs:comment "0-1 years old" ;
+        rdfs:label "Infant" .
+
+
+###  http://research.ibm.com/ontologies/hspo/jainism
+:jainism rdf:type owl:NamedIndividual ,
+                  :Religion ;
+         :umlsCui "C0337694" ,
+                  "C1998092" ;
+         rdfs:label "Jainism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/jehovahs_witness
+:jehovahs_witness rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C0022372" ,
+                           "C0574791" ,
+                           "C1546371" ,
+                           "C2169960" ;
+                  rdfs:label "Christian: Jehovahs Witness" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/jewish_renewal
+:jewish_renewal rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C1546370" ;
+                rdfs:label "Judaism: Jewish Renewal" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/judaism
+:judaism rdf:type owl:NamedIndividual ,
+                  :Religion ;
+         :umlsCui "C0022422" ,
+                  "C0178443" ,
+                  "C2169961" ;
+         rdfs:label "Judaism" ;
+         <http://www.w3.org/2004/02/skos/core#narrower> :conservative_judaism ,
+                                                        :jewish_renewal ,
+                                                        :judaism_other ,
+                                                        :orthodox_judaism ,
+                                                        :reconstructionist_judaism ,
+                                                        :reform_judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/judaism_other
+:judaism_other rdf:type owl:NamedIndividual ,
+                        :Religion ;
+               :umlsCui "C1546367" ;
+               rdfs:label "Judaism: Other" ;
+               <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/latter_day_saints_church
+:latter_day_saints_church rdf:type owl:NamedIndividual ,
+                                   :Religion ;
+                          :umlsCui "C0337757" ,
+                                   "C0337758" ,
+                                   "C1552050" ,
+                                   "C2169963" ;
+                          rdfs:label "Christian: Latter-day Saints" ;
+                          <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/legally_married
+:legally_married rdf:type owl:NamedIndividual ,
+                          :MaritalStatus ;
+                 :umlsCui "C0337591" ;
+                 rdfs:label "Legally married" .
+
+
+###  http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree
+:legally_separated_with_interlocutory_decree rdf:type owl:NamedIndividual ,
+                                                      :MaritalStatus ;
+                                             :umlsCui "C2316419" ;
+                                             rdfs:label "Legally separated with interlocutory decree" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_alone
+:lives_alone rdf:type owl:NamedIndividual ,
+                      :Household ;
+             :umlsCui "C0439044" ;
+             rdfs:label "Lives alone" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_alone_help_available
+:lives_alone_help_available rdf:type owl:NamedIndividual ,
+                                     :Household ;
+                            :umlsCui "C0425198" ;
+                            rdfs:label "Lives alone, help available" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper
+:lives_alone_needs_housekeeper rdf:type owl:NamedIndividual ,
+                                        :Household ;
+                               :umlsCui "C0425200" ;
+                               rdfs:label "Lives alone needs housekeeper" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available
+:lives_alone_no_help_available rdf:type owl:NamedIndividual ,
+                                        :Household ;
+                               :umlsCui "C0425199" ;
+                               rdfs:label "Lives alone, no help available" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_as_companion
+:lives_as_companion rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C0557140" ;
+                    rdfs:label "Lives as companion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_as_paid_companion
+:lives_as_paid_companion rdf:type owl:NamedIndividual ,
+                                  :Household ;
+                         :umlsCui "C0557141" ;
+                         rdfs:label "Lives as paid companion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion
+:lives_as_unpaid_companion rdf:type owl:NamedIndividual ,
+                                    :Household ;
+                           :umlsCui "C0557142" ;
+                           rdfs:label "Lives as unpaid companion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_in_a_commune
+:lives_in_a_commune rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C0557146" ;
+                    rdfs:label "Lives in a commune" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_in_a_community
+:lives_in_a_community rdf:type owl:NamedIndividual ,
+                               :Household ;
+                      :umlsCui "C0557143" ;
+                      rdfs:label "Lives in a community" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_in_a_school_community
+:lives_in_a_school_community rdf:type owl:NamedIndividual ,
+                                      :Household ;
+                             :umlsCui "C0557144" ;
+                             rdfs:label "Lives in a school community" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_in_boarding_school
+:lives_in_boarding_school rdf:type owl:NamedIndividual ,
+                                   :Household ;
+                          :umlsCui "C0557145" ;
+                          rdfs:label "Lives in boarding school" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_children
+:lives_with_children rdf:type owl:NamedIndividual ,
+                              :Household ;
+                     :umlsCui "C0553288" ;
+                     rdfs:label "Lives with children" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_companion
+:lives_with_companion rdf:type owl:NamedIndividual ,
+                               :Household ;
+                      :umlsCui "C0584974" ;
+                      rdfs:label "Lives with companion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_daughter
+:lives_with_daughter rdf:type owl:NamedIndividual ,
+                              :Household ;
+                     :umlsCui "C0557131" ;
+                     rdfs:label "Lives with daughter" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_family
+:lives_with_family rdf:type owl:NamedIndividual ,
+                            :Household ;
+                   :umlsCui "C0557130" ;
+                   rdfs:label "Lives with family" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_father
+:lives_with_father rdf:type owl:NamedIndividual ,
+                            :Household ;
+                   :umlsCui "C0557135" ;
+                   rdfs:label "Lives with father" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_friends
+:lives_with_friends rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C0557128" ;
+                    rdfs:label "Lives with friends" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_grandfather
+:lives_with_grandfather rdf:type owl:NamedIndividual ,
+                                 :Household ;
+                        :umlsCui "C0557137" ;
+                        rdfs:label "Lives with grandfather" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_grandmother
+:lives_with_grandmother rdf:type owl:NamedIndividual ,
+                                 :Household ;
+                        :umlsCui "C0557138" ;
+                        rdfs:label "Lives with grandmother" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_grandparents
+:lives_with_grandparents rdf:type owl:NamedIndividual ,
+                                  :Household ;
+                         :umlsCui "C0557136" ;
+                         rdfs:label "Lives with grandparents" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_husband
+:lives_with_husband rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C1443354" ;
+                    rdfs:label "Lives with husband" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_lodger
+:lives_with_lodger rdf:type owl:NamedIndividual ,
+                            :Household ;
+                   :umlsCui "C0557139" ;
+                   rdfs:label "Lives with lodger" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_mother
+:lives_with_mother rdf:type owl:NamedIndividual ,
+                            :Household ;
+                   :umlsCui "C0557134" ;
+                   rdfs:label "Lives with mother" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_parents
+:lives_with_parents rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C0557133" ;
+                    rdfs:label "Lives with parents" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_partner
+:lives_with_partner rdf:type owl:NamedIndividual ,
+                             :Household ;
+                    :umlsCui "C1443355" ;
+                    rdfs:label "Lives with partner" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_roommate
+:lives_with_roommate rdf:type owl:NamedIndividual ,
+                              :Household ;
+                     :umlsCui "C2136010" ;
+                     rdfs:label "Lives with roommate" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_son
+:lives_with_son rdf:type owl:NamedIndividual ,
+                         :Household ;
+                :umlsCui "C0557132" ;
+                rdfs:label "Lives with son" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_spouse
+:lives_with_spouse rdf:type owl:NamedIndividual ,
+                            :Household ;
+                   :umlsCui "C2184147" ;
+                   rdfs:label "Lives with spouse" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_spouse_only
+:lives_with_spouse_only rdf:type owl:NamedIndividual ,
+                                 :Household ;
+                        :umlsCui "C5396995" ;
+                        rdfs:label "Lives with spouse only" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lives_with_wife
+:lives_with_wife rdf:type owl:NamedIndividual ,
+                          :Household ;
+                 :umlsCui "C2960190" ;
+                 rdfs:label "Lives with wife" .
+
+
+###  http://research.ibm.com/ontologies/hspo/living_temporarily_with_relatives
+:living_temporarily_with_relatives rdf:type owl:NamedIndividual ,
+                                            :Household ;
+                                   :umlsCui "C1320360" ;
+                                   rdfs:label "Living temporarily with relatives" .
+
+
+###  http://research.ibm.com/ontologies/hspo/lutheran
+:lutheran rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C0337738" ,
+                   "C0682435" ,
+                   "C1546373" ,
+                   "C2135814" ;
+          rdfs:label "Christian: Lutheran" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/lutheran_missouri_synod
+:lutheran_missouri_synod rdf:type owl:NamedIndividual ,
+                                  :Religion ;
+                         :umlsCui "C1546372" ;
+                         rdfs:label "Christian: Lutheran Missouri Synod" ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/mahayana
+:mahayana rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C0574821" ,
+                   "C1549414" ,
+                   "C1552051" ,
+                   "C1997546" ,
+                   "C2135821" ;
+          rdfs:label "Buddhism: Mahayana" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :buddhism .
+
+
+###  http://research.ibm.com/ontologies/hspo/marital_state_unknown
+:marital_state_unknown rdf:type owl:NamedIndividual ,
+                                :MaritalStatus ;
+                       :umlsCui "C0425385" ;
+                       rdfs:label "Marital state unknown" .
+
+
+###  http://research.ibm.com/ontologies/hspo/marriage_annulment
+:marriage_annulment rdf:type owl:NamedIndividual ,
+                             :MaritalStatus ;
+                    :umlsCui "C0337597" ;
+                    rdfs:label "Marriage annulment" .
+
+
+###  http://research.ibm.com/ontologies/hspo/married
+:married rdf:type owl:NamedIndividual ,
+                  :MaritalStatus ;
+         :umlsCui "C0555047" ;
+         rdfs:label "Married" .
+
+
+###  http://research.ibm.com/ontologies/hspo/masculine_gender
+:masculine_gender rdf:type owl:NamedIndividual ,
+                           :Gender ;
+                  :umlsCui "C3839079" ;
+                  rdfs:label "Masculine gender" .
+
+
+###  http://research.ibm.com/ontologies/hspo/medication_provisioning
+:medication_provisioning rdf:type owl:NamedIndividual ,
+                                  :InterventionByProvisioning ;
+                         :umlsCui "" ;
+                         rdfs:label "Intervention by provisioning a medication" .
+
+
+###  http://research.ibm.com/ontologies/hspo/mennonite
+:mennonite rdf:type owl:NamedIndividual ,
+                    :Religion ;
+           :umlsCui "C0337766" ,
+                    "C0596903" ,
+                    "C1561502" ,
+                    "C2169962" ;
+           rdfs:label "Christian: Mennonite" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/methodist
+:methodist rdf:type owl:NamedIndividual ,
+                    :Religion ;
+           :umlsCui "C0337739" ,
+                    "C0425344" ,
+                    "C2135815" ;
+           rdfs:label "Christian: Methodist" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/middle_age_adult
+:middle_age_adult rdf:type owl:NamedIndividual ,
+                           :StageOfLife ;
+                  :umlsCui "C0026062" ,
+                           "C0205847" ,
+                           "C0596727" ,
+                           "C0682054" ,
+                           "C0683973" ,
+                           "C3825301" ;
+                  rdfs:comment "40-59 years old" ;
+                  rdfs:label "Middle age adult" .
+
+
+###  http://research.ibm.com/ontologies/hspo/monogamous
+:monogamous rdf:type owl:NamedIndividual ,
+                     :MaritalStatus ;
+            :umlsCui "C0558125" ;
+            rdfs:label "Monogamous" .
+
+
+###  http://research.ibm.com/ontologies/hspo/muslim
+:muslim rdf:type owl:NamedIndividual ,
+                 :Religion ;
+        :umlsCui "C0022126" ,
+                 "C0026870" ,
+                 "C0682443" ,
+                 "C2169957" ;
+        rdfs:label "Muslim" ;
+        <http://www.w3.org/2004/02/skos/core#narrower> :muslim_other ,
+                                                       :shia_islam ,
+                                                       :sunni_islam .
+
+
+###  http://research.ibm.com/ontologies/hspo/muslim_other
+:muslim_other rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C1266866" ;
+              rdfs:label "Muslim: Other" ;
+              <http://www.w3.org/2004/02/skos/core#broader> :muslim .
+
+
+###  http://research.ibm.com/ontologies/hspo/native_american
+:native_american rdf:type owl:NamedIndividual ,
+                          :Religion ;
+                 :umlsCui "C1546376" ,
+                          "C2136180" ;
+                 rdfs:label "Native American" .
+
+
+###  http://research.ibm.com/ontologies/hspo/new_religion
+:new_religion rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0574812" ,
+                       "C1546378" ;
+              rdfs:label "New Religion Movement" .
+
+
+###  http://research.ibm.com/ontologies/hspo/newly_wed
+:newly_wed rdf:type owl:NamedIndividual ,
+                    :MaritalStatus ;
+           :umlsCui "C0425381" ;
+           rdfs:label "Newly wed" .
+
+
+###  http://research.ibm.com/ontologies/hspo/non_binary_gender
+:non_binary_gender rdf:type owl:NamedIndividual ,
+                            :Gender ;
+                   :umlsCui "C3887376" ;
+                   rdfs:label "Non-binary gender" .
+
+
+###  http://research.ibm.com/ontologies/hspo/nonreligious
+:nonreligious rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0237491" ,
+                       "C1546377" ;
+              rdfs:label "Non religious" .
+
+
+###  http://research.ibm.com/ontologies/hspo/ongoing_intervention
+:ongoing_intervention rdf:type owl:NamedIndividual ,
+                               :InterventionStatus ;
+                      :umlsCui "" ;
+                      rdfs:label "Ongoing intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/orthodox
+:orthodox rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C1546379" ,
+                   "C1552057" ,
+                   "C1997527" ;
+          rdfs:label "Christian: Orthodox" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/orthodox_judaism
+:orthodox_judaism rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C0574827" ,
+                           "C1546366" ,
+                           "C1998030" ,
+                           "C2169964" ;
+                  rdfs:label "Judaism: Orthodox Judaism" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/other_pentecostal
+:other_pentecostal rdf:type owl:NamedIndividual ,
+                            :Religion ;
+                   :umlsCui "C1549428" ;
+                   rdfs:label "Christian: Other Pentecostal" ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/other_protestant
+:other_protestant rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C1546382" ;
+                  rdfs:label "Christian: Other Protestant" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/other_religion
+:other_religion rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C1556043" ;
+                rdfs:label "Other religion" .
+
+
+###  http://research.ibm.com/ontologies/hspo/pentecostal
+:pentecostal rdf:type owl:NamedIndividual ,
+                      :Religion ;
+             :umlsCui "C0574793" ,
+                      "C1546381" ,
+                      "C1552058" ,
+                      "C2242970" ;
+             rdfs:label "Christian: Pentecostal" ;
+             <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/planned_intervention
+:planned_intervention rdf:type owl:NamedIndividual ,
+                               :InterventionStatus ;
+                      :umlsCui "" ;
+                      rdfs:label "Planned intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/polygamous
+:polygamous rdf:type owl:NamedIndividual ,
+                     :MaritalStatus ;
+            :umlsCui "C0032492" ;
+            rdfs:label "Polygamous" .
+
+
+###  http://research.ibm.com/ontologies/hspo/presbyterian
+:presbyterian rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0337749" ,
+                       "C0425346" ,
+                       "C2135817" ;
+              rdfs:label "Christian: Presbyterian" ;
+              <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/procedure_provisioning
+:procedure_provisioning rdf:type owl:NamedIndividual ,
+                                 :InterventionByProvisioning ;
+                        :umlsCui "" ;
+                        rdfs:label "Intervention by provisioning a procedure" .
+
+
+###  http://research.ibm.com/ontologies/hspo/protestant
+:protestant rdf:type owl:NamedIndividual ,
+                     :Religion ;
+            :umlsCui "C0033696" ,
+                     "C0242220" ,
+                     "C1698516" ,
+                     "C2169965" ;
+            rdfs:label "Christian: Protestant" ;
+            <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/purposely_unmarried_and_sexually_abstinent
+:purposely_unmarried_and_sexually_abstinent rdf:type owl:NamedIndividual ,
+                                                     :MaritalStatus ;
+                                            :umlsCui "C3496283" ;
+                                            rdfs:label "Purposely unmarried and sexually abstinent" .
+
+
+###  http://research.ibm.com/ontologies/hspo/race_not_stated
+:race_not_stated rdf:type owl:NamedIndividual ,
+                          :RaceAndEthnicity ;
+                 :umlsCui "C0425378" ;
+                 rdfs:comment "Race not stated (racial group)" ;
+                 rdfs:label "Race not stated" .
+
+
+###  http://research.ibm.com/ontologies/hspo/race_unknown
+:race_unknown rdf:type owl:NamedIndividual ,
+                       :RaceAndEthnicity ;
+              :umlsCui "C1532697" ;
+              rdfs:comment "Unknown racial group (racial group)" ;
+              rdfs:label "Unknown racial group" .
+
+
+###  http://research.ibm.com/ontologies/hspo/recommended_intervention
+:recommended_intervention rdf:type owl:NamedIndividual ,
+                                   :InterventionStatus ;
+                          :umlsCui "" ;
+                          rdfs:label "Recommended intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/reconstructionist_judaism
+:reconstructionist_judaism rdf:type owl:NamedIndividual ,
+                                    :Religion ;
+                           :umlsCui "C0574830" ,
+                                    "C1546368" ,
+                                    "C2136179" ;
+                           rdfs:label "Judaism: Reconstructionist Judaism" ;
+                           <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/reform_judaism
+:reform_judaism rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C0574826" ,
+                         "C0682429" ,
+                         "C1546369" ,
+                         "C2169966" ;
+                rdfs:label "Judaism: Reform Judaism" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :judaism .
+
+
+###  http://research.ibm.com/ontologies/hspo/reformed_church
+:reformed_church rdf:type owl:NamedIndividual ,
+                          :Religion ;
+                 :umlsCui "C0337745" ,
+                          "C0814984" ,
+                          "C1546385" ,
+                          "C1549430" ,
+                          "C1699293" ,
+                          "C2136187" ;
+                 rdfs:label "Christian: Reformed Church" ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/rejected_intervention
+:rejected_intervention rdf:type owl:NamedIndividual ,
+                                :InterventionStatus ;
+                       :umlsCui "" ;
+                       rdfs:label "Rejected intervention" .
+
+
+###  http://research.ibm.com/ontologies/hspo/religion_unknown
+:religion_unknown rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C1556120" ;
+                  rdfs:label "Religion is unknown" .
+
+
+###  http://research.ibm.com/ontologies/hspo/remarried
+:remarried rdf:type owl:NamedIndividual ,
+                    :MaritalStatus ;
+           :umlsCui "C0425380" ;
+           rdfs:label "Remarried" .
+
+
+###  http://research.ibm.com/ontologies/hspo/rlds
+:rlds rdf:type owl:NamedIndividual ,
+               :Religion ;
+      :umlsCui "C1546386" ;
+      rdfs:comment "Christian: Reorganized Church of Jesus Christ of Latter Day Saints (RLDS)"@en ;
+      rdfs:label "Christian: Reorganized Church of Jesus Christ of LDS" ;
+      <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/roman_catholic
+:roman_catholic rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C0007444" ,
+                         "C0242211" ,
+                         "C1549418" ,
+                         "C1552060" ,
+                         "C2169967" ;
+                rdfs:label "Christian: Roman Catholic" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/salvation_army
+:salvation_army rdf:type owl:NamedIndividual ,
+                         :Religion ;
+                :umlsCui "C0585071" ,
+                         "C1546387" ,
+                         "C1699569" ,
+                         "C2136188" ;
+                rdfs:label "Christian: Salvation Army" ;
+                <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/senior_adult
+:senior_adult rdf:type owl:NamedIndividual ,
+                       :StageOfLife ;
+              :umlsCui "C0001792" ,
+                       "C0001795" ,
+                       "C0007667" ,
+                       "C0028296" ,
+                       "C0028829" ,
+                       "C0079377" ,
+                       "C0079379" ,
+                       "C0178694" ,
+                       "C0231337" ,
+                       "C0231338" ,
+                       "C0596728" ,
+                       "C1999167" ;
+              rdfs:comment "60+ years old adult" ;
+              rdfs:label "Senior Adult" .
+
+
+###  http://research.ibm.com/ontologies/hspo/separated
+:separated rdf:type owl:NamedIndividual ,
+                    :MaritalStatus ;
+           :umlsCui "C4721417" ;
+           rdfs:label "Separated" .
+
+
+###  http://research.ibm.com/ontologies/hspo/separated_from_cohabitee
+:separated_from_cohabitee rdf:type owl:NamedIndividual ,
+                                   :MaritalStatus ;
+                          :umlsCui "C0086972" ;
+                          rdfs:label "Separated from cohabitee" .
+
+
+###  http://research.ibm.com/ontologies/hspo/seventh_day_adventist
+:seventh_day_adventist rdf:type owl:NamedIndividual ,
+                                :Religion ;
+                       :umlsCui "C0205716" ,
+                                "C0574803" ,
+                                "C1546388" ;
+                       rdfs:label "Christian: Seventh Day Adventist" ;
+                       <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/seventy_to_seventyfour
+:seventy_to_seventyfour rdf:type owl:NamedIndividual ,
+                                 :AgeGroup ;
+                        :umlsCui "" ;
+                        rdfs:label "70 to 74" .
+
+
+###  http://research.ibm.com/ontologies/hspo/seventyfive_to_seventynine
+:seventyfive_to_seventynine rdf:type owl:NamedIndividual ,
+                                     :AgeGroup ;
+                            :umlsCui "" ;
+                            rdfs:label "75 to 79" .
+
+
+###  http://research.ibm.com/ontologies/hspo/shaivism
+:shaivism rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C1546362" ,
+                   "C1997105" ;
+          rdfs:label "Hinduism: Shaivism" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :hinduism .
+
+
+###  http://research.ibm.com/ontologies/hspo/shia_islam
+:shia_islam rdf:type owl:NamedIndividual ,
+                     :Religion ;
+            :umlsCui "C0337711" ,
+                     "C1546374" ,
+                     "C1552062" ,
+                     "C2169958" ;
+            rdfs:label "Muslim: Shia Islam" ;
+            <http://www.w3.org/2004/02/skos/core#broader> :muslim .
+
+
+###  http://research.ibm.com/ontologies/hspo/shinto
+:shinto rdf:type owl:NamedIndividual ,
+                 :Religion ;
+        :umlsCui "C0337698" ,
+                 "C1552063" ,
+                 "C2169968" ;
+        rdfs:label "Shinto or Shintoism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/sikhism
+:sikhism rdf:type owl:NamedIndividual ,
+                  :Religion ;
+         :umlsCui "C0337696" ,
+                  "C1277063" ,
+                  "C2135825" ;
+         rdfs:label "Sikhism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/single_never_married
+:single_never_married rdf:type owl:NamedIndividual ,
+                               :MaritalStatus ;
+                      :umlsCui "C0027952" ;
+                      rdfs:label "Single, never married" .
+
+
+###  http://research.ibm.com/ontologies/hspo/single_person
+:single_person rdf:type owl:NamedIndividual ,
+                        :MaritalStatus ;
+               :umlsCui "C0037179" ;
+               rdfs:label "Single person" .
+
+
+###  http://research.ibm.com/ontologies/hspo/sixty_to_sixtyfour
+:sixty_to_sixtyfour rdf:type owl:NamedIndividual ,
+                             :AgeGroup ;
+                    :umlsCui "" ;
+                    rdfs:label "60 to 64" .
+
+
+###  http://research.ibm.com/ontologies/hspo/sixtyfive_to_sixtynine
+:sixtyfive_to_sixtynine rdf:type owl:NamedIndividual ,
+                                 :AgeGroup ;
+                        :umlsCui "" ;
+                        rdfs:label "65 to 69" .
+
+
+###  http://research.ibm.com/ontologies/hspo/social_action_provisioning
+:social_action_provisioning rdf:type owl:NamedIndividual ,
+                                     :InterventionByProvisioning ;
+                            :umlsCui "" ;
+                            rdfs:label "Intervention by provisioning a social action" .
+
+
+###  http://research.ibm.com/ontologies/hspo/southern_baptist
+:southern_baptist rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C1546389" ;
+                  rdfs:label "Christian: Southern Baptist Convention" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/spinster
+:spinster rdf:type owl:NamedIndividual ,
+                   :MaritalStatus ;
+          :umlsCui "C0337598" ;
+          rdfs:label "Spinster" .
+
+
+###  http://research.ibm.com/ontologies/hspo/spiritualism
+:spiritualism rdf:type owl:NamedIndividual ,
+                       :Religion ;
+              :umlsCui "C0037967" ,
+                       "C1546390" ;
+              rdfs:label "Spiritualism" .
+
+
+###  http://research.ibm.com/ontologies/hspo/spouse_left_home
+:spouse_left_home rdf:type owl:NamedIndividual ,
+                           :MaritalStatus ;
+                  :umlsCui "C0555028" ;
+                  rdfs:label "Spouse left home" .
+
+
+###  http://research.ibm.com/ontologies/hspo/sunni_islam
+:sunni_islam rdf:type owl:NamedIndividual ,
+                      :Religion ;
+             :umlsCui "C0574810" ,
+                      "C0581887" ,
+                      "C1552065" ,
+                      "C2169959" ;
+             rdfs:label "Muslim: Sunni Islam" ;
+             <http://www.w3.org/2004/02/skos/core#broader> :muslim .
+
+
+###  http://research.ibm.com/ontologies/hspo/tantrayana
+:tantrayana rdf:type owl:NamedIndividual ,
+                     :Religion ;
+            :umlsCui "C1549416" ;
+            rdfs:label "Buddhism: Tantrayana" ;
+            <http://www.w3.org/2004/02/skos/core#broader> :buddhism .
+
+
+###  http://research.ibm.com/ontologies/hspo/teen
+:teen rdf:type owl:NamedIndividual ,
+               :StageOfLife ;
+      :umlsCui "C0001578" ,
+               "C0087178" ,
+               "C0205653" ,
+               "C0682176" ,
+               "C2982733" ,
+               "C2982738" ,
+               "C4323873" ;
+      rdfs:comment "13-19 years old" ;
+      rdfs:label "Teenager" .
+
+
+###  http://research.ibm.com/ontologies/hspo/ten_to_fourteen
+:ten_to_fourteen rdf:type owl:NamedIndividual ,
+                          :AgeGroup ;
+                 :umlsCui "" ;
+                 rdfs:label "10 to 14" .
+
+
+###  http://research.ibm.com/ontologies/hspo/theravada
+:theravada rdf:type owl:NamedIndividual ,
+                    :Religion ;
+           :umlsCui "C0574818" ,
+                    "C1549417" ,
+                    "C1552066" ,
+                    "C1997058" ,
+                    "C2135823" ;
+           rdfs:label "Buddhism: Theravada" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :buddhism .
+
+
+###  http://research.ibm.com/ontologies/hspo/thirty_to_thirtyfour
+:thirty_to_thirtyfour rdf:type owl:NamedIndividual ,
+                               :AgeGroup ;
+                      :umlsCui "" ;
+                      rdfs:label "30 to 34" .
+
+
+###  http://research.ibm.com/ontologies/hspo/thirtyfive_to_thirtynine
+:thirtyfive_to_thirtynine rdf:type owl:NamedIndividual ,
+                                   :AgeGroup ;
+                          :umlsCui "" ;
+                          rdfs:label "35 to 39" .
+
+
+###  http://research.ibm.com/ontologies/hspo/toddler
+:toddler rdf:type owl:NamedIndividual ,
+                  :StageOfLife ;
+         :umlsCui "C0008100" ,
+                  "C0337547" ,
+                  "C0599196" ,
+                  "C0682053" ,
+                  "C0728836" ,
+                  "C0814589" ,
+                  "C0814590" ,
+                  "C0870984" ;
+         rdfs:comment "2-4 years old" ;
+         rdfs:label "Toddler" .
+
+
+###  http://research.ibm.com/ontologies/hspo/transgender
+:transgender rdf:type owl:NamedIndividual ,
+                      :Gender ;
+             :umlsCui "C1319926" ;
+             rdfs:label "Surgically transgendered transsexual" .
+
+
+###  http://research.ibm.com/ontologies/hspo/transgender_female_to_male
+:transgender_female_to_male rdf:type owl:NamedIndividual ,
+                                     :Gender ;
+                            :umlsCui "C1319930" ;
+                            rdfs:label "Surgically transgendered transsexual, female-to-male" .
+
+
+###  http://research.ibm.com/ontologies/hspo/transgender_identity
+:transgender_identity rdf:type owl:NamedIndividual ,
+                               :Gender ;
+                      :umlsCui "C0558141" ;
+                      rdfs:label "Transgender identity" .
+
+
+###  http://research.ibm.com/ontologies/hspo/transgender_male_to_female
+:transgender_male_to_female rdf:type owl:NamedIndividual ,
+                                     :Gender ;
+                            :umlsCui "C1319929" ;
+                            rdfs:label "Surgically transgendered transsexual, male-to-female" .
+
+
+###  http://research.ibm.com/ontologies/hspo/trial_separation
+:trial_separation rdf:type owl:NamedIndividual ,
+                           :MaritalStatus ;
+                  :umlsCui "C0234004" ;
+                  rdfs:label "Trial separation" .
+
+
+###  http://research.ibm.com/ontologies/hspo/twenty_to_twentyfour
+:twenty_to_twentyfour rdf:type owl:NamedIndividual ,
+                               :AgeGroup ;
+                      :umlsCui "" ;
+                      rdfs:label "20 to 24" .
+
+
+###  http://research.ibm.com/ontologies/hspo/twentyfive_to_twentynine
+:twentyfive_to_twentynine rdf:type owl:NamedIndividual ,
+                                   :AgeGroup ;
+                          :umlsCui "" ;
+                          rdfs:label "25 to 29" .
+
+
+###  http://research.ibm.com/ontologies/hspo/under_five
+:under_five rdf:type owl:NamedIndividual ,
+                     :AgeGroup ;
+            :umlsCui "" ;
+            rdfs:label "Under 5" .
+
+
+###  http://research.ibm.com/ontologies/hspo/unitarian
+:unitarian rdf:type owl:NamedIndividual ,
+                    :Religion ;
+           :umlsCui "C1546393" ,
+                    "C1997130" ;
+           rdfs:label "Christian: Unitarian" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/unitarian_universalism
+:unitarian_universalism rdf:type owl:NamedIndividual ,
+                                 :Religion ;
+                        :umlsCui "C0682438" ,
+                                 "C1546394" ,
+                                 "C1699055" ,
+                                 "C2135818" ;
+                        rdfs:label "Christian: Unitarian Universalism" ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/united_church_of_christ
+:united_church_of_christ rdf:type owl:NamedIndividual ,
+                                  :Religion ;
+                         :umlsCui "C0337750" ,
+                                  "C1546391" ,
+                                  "C2136189" ;
+                         rdfs:label "Christian: United Church of Christ" ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/united_methodist
+:united_methodist rdf:type owl:NamedIndividual ,
+                           :Religion ;
+                  :umlsCui "C0337744" ,
+                           "C1546392" ;
+                  rdfs:label "Christian: United Methodist" ;
+                  <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/vaishnavism
+:vaishnavism rdf:type owl:NamedIndividual ,
+                      :Religion ;
+             :umlsCui "C1546363" ,
+                      "C1997907" ,
+                      "C2586025" ;
+             rdfs:label "Hinduism: Vaishnavism" ;
+             <http://www.w3.org/2004/02/skos/core#broader> :hinduism .
+
+
+###  http://research.ibm.com/ontologies/hspo/wesleyan
+:wesleyan rdf:type owl:NamedIndividual ,
+                   :Religion ;
+          :umlsCui "C1546395" ,
+                   "C5552621" ;
+          rdfs:label "Christian: Wesleyan" ;
+          <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/wesleyan_methodist
+:wesleyan_methodist rdf:type owl:NamedIndividual ,
+                             :Religion ;
+                    :umlsCui "C0585096" ,
+                             "C1546396" ;
+                    rdfs:label "Christian: Wesleyan Methodist" ;
+                    <http://www.w3.org/2004/02/skos/core#broader> :christian .
+
+
+###  http://research.ibm.com/ontologies/hspo/widow
+:widow rdf:type owl:NamedIndividual ,
+                :MaritalStatus ;
+       :umlsCui "C0206275" ;
+       rdfs:label "Widow" .
+
+
+###  http://research.ibm.com/ontologies/hspo/widowed
+:widowed rdf:type owl:NamedIndividual ,
+                  :MaritalStatus ;
+         :umlsCui "C0206275" ;
+         rdfs:label "Widowed" .
+
+
+###  http://research.ibm.com/ontologies/hspo/widower
+:widower rdf:type owl:NamedIndividual ,
+                  :MaritalStatus ;
+         :umlsCui "C0043174" ;
+         rdfs:label "Widower" .
+
+
+###  http://research.ibm.com/ontologies/hspo/wife_left_home
+:wife_left_home rdf:type owl:NamedIndividual ,
+                         :MaritalStatus ;
+                :umlsCui "C0555050" ;
+                rdfs:label "Wife left home" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
