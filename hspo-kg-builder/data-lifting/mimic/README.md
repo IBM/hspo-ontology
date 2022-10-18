@@ -1,5 +1,7 @@
 # Person-Centric Knowledge Graph Extraction using MIMIC-III dataset: An ICU-readmission prediction study 
 
+## EHR Data Preprocessing
+
 ## Setup
 ### Requirements
 
