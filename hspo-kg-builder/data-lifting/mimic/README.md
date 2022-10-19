@@ -12,6 +12,8 @@
 - Run the ```2_1_data_wrangling.py``` and ```2_2_data_wrangling_grouped_icd9.py``` scripts to extract a unified json information with the information that is needed for the next steps. In the second version (```2_2_data_wrangling_grouped_icd9.py```), the ICD9 codes of the diseases/diagnoses and procedures are grouped.
 - Run the ```3_1_data_mapping_dictionaries.py``` and ```3_2_data_mapping_dictionaries_grouped_icd9.py``` scripts (order should be respected) to extract map the ICD9 codes, using dictionaries, and extract the corresponding textual description.
 - Run the ```4_data_sampling.py [--threshold]``` script to sample the patient records that are valid for our task. The threshold argument defines the the day span for monitoring if the patient is going to be readmitted to the ICU or no (e.g. python 4_data_sampling.py --threshold 30).
+- Extract the UMLS codes from notes using the following steps:
+    - Run ```notes_cui_extraction/find_remaining_files_create_note_buckets.py [--bucket_size]``` script to find the notes that have not been processed yet and create buckets with them. The <it>bucket_size</it> parameter defines the the size of each bucket of notes. We divide the notes into buckets for smoother processing in the next steps.
 
 
 ### Notes
