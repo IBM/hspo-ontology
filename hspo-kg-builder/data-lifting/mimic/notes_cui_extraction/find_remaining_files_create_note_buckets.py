@@ -19,12 +19,6 @@ def dataframe_to_dictionary_notes(df):
 
 
 def join_notes(dict_):
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--bucket_size", default=1000, type=int, required=True,
-                        help = "The size for each bucket of notes.")
-    
-    args = parser.parse_args()
-
     notes_dict_joined = {}
     for k in dict_.keys():
         joined_text_0 = ' '.join(dict_[k])
@@ -40,6 +34,8 @@ def join_notes(dict_):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument("--umls_codes_path", default=1000, type=str, required=True,
+                        help = "The path where the extracted UMLS codes are stored.")
     parser.add_argument("--bucket_size", default=1000, type=int, required=False,
                         help = "The size of each bucket of notes.")
     
@@ -51,10 +47,9 @@ if __name__ == '__main__':
     notes_dict_joined = join_notes(notes_dict)
     file_names = list(notes_dict.keys())
 
-    umls_codes_path = '../data/processed_data/umls_codes_notes/'
-    if not os.path.exists(umls_codes_path):
-        os.makedirs(umls_codes_path)
-    files_done = find_json_files(umls_codes_path)
+    if not os.path.exists(args.umls_codes_path):
+        os.makedirs(args.umls_codes_path)
+    files_done = find_json_files(args.umls_codes_path)
 
     print("Number of processed notes: {}" .format(len(files_done)))
 
