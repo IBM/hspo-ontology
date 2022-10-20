@@ -26,6 +26,7 @@
 
 ### Notes
 - The implementation can be adapted easily other predictive tasks (e.g. mortality prediction) with an appropriate implementation/modification of the ```4_data_sampling.py``` script.
+- If the ```notes_cui_extraction/MetaMap/extract_umls_codes.py --bucket_path --bucket_id --metamap_path --output_path [--divide_and_merge]``` script has not been completed for all the buckets that were extracted by the ```notes_cui_extraction/find_remaining_files_create_note_buckets.py [--bucket_size]``` script should be executed again to find the remaining non-processed notes and create the new buckets.
 
 ## References
 ```
