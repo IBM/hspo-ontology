@@ -19,7 +19,7 @@
         - bucket_size (optional):  The size of each bucket of notes.
     - Move the ```notes_cui_extraction/MetaMap/extract_umls_codes.py --bucket_path --bucket_id --metamap_path --output_path [--divide_and_merge]``` script under the base directory of MetaMap lite installment (e.g. (<it> notes_cui_extraction/MetaMap/public_mm_lite_3.6.2rc8 </it>).
     - Run the ```notes_cui_extraction/MetaMap/extract_umls_codes.py --bucket_path --bucket_id --metamap_path --output_path [--divide_and_merge]``` script to extract the UMLS codes of the notes. Arguments:
-        - bucket_path: The relative path of the note buckets that were created by ```notes_cui_extraction/find_remaining_files_create_note_buckets.py [--bucket_size]``` script.
+        - bucket_path: The relative path of the note buckets that were created by ```notes_cui_extraction/find_remaining_files_create_note_buckets.py --umls_codes_path [--bucket_size]``` script.
         - bucket_id: The bucket id/number to indicate the one that is going to be processed.
         - metamap_path: The full path of metamap base directory.
         - output_path: The path where the extracted umls codes are stored (e.g. <it> ../../data/processed_data/umls_codes_notes/ </it>).
@@ -28,7 +28,7 @@
 
 ### Notes
 - The implementation can be adapted easily other predictive tasks (e.g. mortality prediction) with an appropriate implementation/modification of the ```4_data_sampling.py``` script.
-- If the ```notes_cui_extraction/MetaMap/extract_umls_codes.py --bucket_path --bucket_id --metamap_path --output_path [--divide_and_merge]``` script has not been completed for all the buckets that were extracted by the ```notes_cui_extraction/find_remaining_files_create_note_buckets.py [--bucket_size]``` script should be executed again to find the remaining non-processed notes and create the new buckets.
+- If the ```notes_cui_extraction/MetaMap/extract_umls_codes.py --bucket_path --bucket_id --metamap_path --output_path [--divide_and_merge]``` script has not been completed for all the buckets that were extracted, then the ```notes_cui_extraction/find_remaining_files_create_note_buckets.py --umls_codes_path [--bucket_size]``` script should be executed again to find the remaining non-processed notes and create the new buckets.
 
 ## References
 ```
