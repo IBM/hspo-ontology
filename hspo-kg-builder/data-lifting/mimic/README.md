@@ -7,7 +7,7 @@
 
 
 ### Execution Steps
-- Download the <a target="_blank" href="https://physionet.org/content/mimiciii/1.4/">MIMIC-III</a> dataset \[1\] and store the .csv files under the ```data``` folder. Move the dictionary files under the ```data/dictionaries/``` folder.
+- Download the <a target="_blank" href="https://physionet.org/content/mimiciii/1.4/">MIMIC-III</a> dataset \[1\] and store the .csv files under the ```data/initial_data/``` folder. Move the dictionary files under the ```data/dictionaries/``` folder.
 - Run the ```1_data_selection.py``` script to clean and select the data.
 - Run the ```2_1_data_wrangling.py``` and ```2_2_data_wrangling_grouped_icd9.py``` scripts to extract a unified json information with the information that is needed for the next steps. In the second version (```2_2_data_wrangling_grouped_icd9.py```), the ICD9 codes of the diseases/diagnoses and procedures are grouped.
 - Run the ```3_1_data_mapping_dictionaries.py``` and ```3_2_data_mapping_dictionaries_grouped_icd9.py``` scripts (order should be respected) to extract map the ICD9 codes, using dictionaries, and extract the corresponding textual description.
@@ -24,6 +24,10 @@
         - metamap_path: The full path of metamap base directory.
         - output_path: The path where the extracted umls codes are stored (e.g. <it> ../../data/processed_data/umls_codes_notes/ </it>).
         - divide_and_merge (optional): This is a flag to define if the notes are going to be divided into subnotes and then processed by metamap. The final UMLS sublists are merged. (Values: 0 or 1)
+    - When the UMLS code extraction has been completed for all the notes, then run the ```notes_cui_extraction/map_extracted_umls_files.py --umls_codes_path --output_path``` to map the extracted umls files to the task-valid (readmission prediction) files. Arguments:
+        - umls_codes_path: The path where the extracted umls codes are stored (e.g. <it> ../data/processed_data/umls_codes_notes/ </it>).
+        - output_path: The path where the <b>mapped</b> extracted umls codes are going to be stored (e.g. <it> ../data/processed_data/umls_codes_notes_task_valid/ </it>).
+
 
 
 ### Notes
