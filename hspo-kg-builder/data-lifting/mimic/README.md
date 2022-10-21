@@ -4,6 +4,10 @@
 
 ## Setup
 ### Requirements
+- Python 3.5+
+- numpy (tested with version 1.23.1)
+- pandas (tested with version 1.4.2)
+- <a target="_blank" href="https://github.com/AnthonyMRios/pymetamap">pymetamap</a>
 
 
 ### Execution Steps
@@ -33,7 +37,7 @@
     - employment_mapping_path: The path of the employment mapping csv file.
     - household_mapping_path: The path of the household mapping csv file.
     - housing_mapping_path: The path of the housing mapping csv file.
-    
+
 
 ### Notes
 - The implementation can be adapted easily other predictive tasks (e.g. mortality prediction) with an appropriate implementation/modification of the ```4_data_sampling.py``` script.
