@@ -27,8 +27,13 @@
     - When the UMLS code extraction has been completed for all the notes, then run the ```notes_cui_extraction/map_extracted_umls_files.py --umls_codes_path --output_path``` to map the extracted umls files to the task-valid (readmission prediction) files. Arguments:
         - umls_codes_path: The path where the extracted umls codes are stored (e.g. <it> ../data/processed_data/umls_codes_notes/ </it>).
         - output_path: The path where the <b>mapped</b> extracted umls codes are going to be stored (e.g. <it> ../data/processed_data/umls_codes_notes_task_valid/ </it>).
-
-
+- Run the ```5_notes_info_integration.py --grouped_ICD9 --umls_codes_path --employment_mapping_path --household_mapping_path --housing_mapping_path``` script to integrate the social info, related to employment, household and housing conditions, that exists in the extracted umls codes. The three mappings (employment, household and housing) should be provided by the user in csv files with two columns, one with the name <it>CUI</it> that contains the umls codes, and one with the name <it>Description</it> that shows the corresponding textual description of each code. Arguments:
+    - grouped_ICD9: Flag to define the input data (grouped ICD9 version or non-grouped ICD9 version).
+    - umls_codes_path: The path where the <b>mapped</b> extracted umls codes are stored (e.g. <it> ../data/processed_data/umls_codes_notes/ </it>)
+    - employment_mapping_path: The path of the employment mapping csv file.
+    - household_mapping_path: The path of the household mapping csv file.
+    - housing_mapping_path: The path of the housing mapping csv file.
+    
 
 ### Notes
 - The implementation can be adapted easily other predictive tasks (e.g. mortality prediction) with an appropriate implementation/modification of the ```4_data_sampling.py``` script.
