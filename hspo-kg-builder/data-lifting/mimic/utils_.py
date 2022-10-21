@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import os
 
 def read_csv(path):
     return pd.read_csv(path, dtype = str)
@@ -15,3 +16,10 @@ def save_json(file, path):
 def convert_to_str(l):
     l_str = [str(it) for it in l]
     return l_str
+
+def find_json_files(folder_path):
+    files = []
+    for file in os.listdir(folder_path):
+        if file.endswith(".json"):
+            files.append(os.path.join(folder_path, file))
+    return files
