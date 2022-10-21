@@ -34,7 +34,7 @@ def join_notes(dict_):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--umls_codes_path", default=1000, type=str, required=True,
+    parser.add_argument("--umls_codes_path", default=None, type=str, required=True,
                         help = "The path where the extracted UMLS codes are stored.")
     parser.add_argument("--bucket_size", default=1000, type=int, required=False,
                         help = "The size of each bucket of notes.")
