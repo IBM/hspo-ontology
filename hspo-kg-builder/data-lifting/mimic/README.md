@@ -38,30 +38,31 @@
     - household_mapping_path: The path of the household mapping csv file.
     - housing_mapping_path: The path of the housing mapping csv file.
 - Run the ```6_1_data_analysis_overall.py --data_path --output_path --diagnoses_dictionary_path --procedures_dictionary_path --procedures_dictionary_path --procedures_manual_dict_path --ethnicity_mapping_path --marital_status_mapping_path --religion_mapping_path``` script to extract the overall distributions of the data. The ontology-based mappings for the ethnicity, marital status and religion should be provided by the user. Example of mappings can be found under the <it>data</it> folder. Finally, the following distributions are extracted:
-    - age
-    - age group
-    - co-morbidity
-    - CPT events
-    - diagnoses
-    - employment status
-    - gender
-    - household composition
-    - housing conditions
-    - marital status
-    - prescriptions 
-    - procedures
-    - race/ethnicity
-    - readmissions
-  Arguments:
-    - data_path: The path of the final json file with the data (e.g. <it>4_data_after_adding_notes_info_grouped_icd9.json</it>).
-    - output_path: The output path where distributions are going to be stored.
-    - diagnoses_dictionary_path: The path of the dignoses dictionary (<it>D_ICD_DIAGNOSES_updated.csv</it>). 
-    - procedures_dictionary_path: The path of the procedure dictionary (<it>D_ICD_PROCEDURES.csv</it>).
-    - diagnoses_manual_dict_path: The path of the diagnoses manual dictionary (<it>codes_diag_updated.json</it>). 
-    - procedures_manual_dict_path: The path of the procedure manual dictionary (<it>codes_proc_updated.json</it>).
-    - ethnicity_mapping_path: The path of the ethnicity mapping file. 
-    - marital_status_mapping_path: The path of the marital_status mapping file. 
-    - religion_mapping_path: The path of the religion mapping file. 
+    - Distributions:
+        - age
+        - age group
+        - co-morbidity
+        - CPT events
+        - diagnoses
+        - employment status
+        - gender
+        - household composition
+        - housing conditions
+        - marital status
+        - prescriptions 
+        - procedures
+        - race/ethnicity
+        - readmissions
+    - Arguments:
+        - data_path: The path of the final json file with the data (e.g. <it>4_data_after_adding_notes_info_grouped_icd9.json</it>).
+        - output_path: The output path where distributions are going to be stored.
+        - diagnoses_dictionary_path: The path of the dignoses dictionary (<it>D_ICD_DIAGNOSES_updated.csv</it>). 
+        - procedures_dictionary_path: The path of the procedure dictionary (<it>D_ICD_PROCEDURES.csv</it>).
+        - diagnoses_manual_dict_path: The path of the diagnoses manual dictionary (<it>codes_diag_updated.json</it>). 
+        - procedures_manual_dict_path: The path of the procedure manual dictionary (<it>codes_proc_updated.json</it>).
+        - ethnicity_mapping_path: The path of the ethnicity mapping file. 
+        - marital_status_mapping_path: The path of the marital_status mapping file. 
+        - religion_mapping_path: The path of the religion mapping file. 
 
 ### Notes
 - The MIMIC dictionaries for mappings (ICD9 codes --> description) were not complete. So, we manually created complete mappings (files: ```codes_diag_updated.json```, ```codes_proc_updated.json``` under the <it>data/dictionaries/</it> folder).
