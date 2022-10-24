@@ -52,7 +52,7 @@
     - procedures
     - race/ethnicity
     - readmissions
-    Arguments:
+  Arguments:
     - data_path: The path of the final json file with the data (e.g. <it>4_data_after_adding_notes_info_grouped_icd9.json</it>).
     - output_path: The output path where distributions are going to be stored.
     - diagnoses_dictionary_path: The path of the dignoses dictionary (<it>D_ICD_DIAGNOSES_updated.csv</it>). 
