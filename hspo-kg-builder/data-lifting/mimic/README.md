@@ -69,6 +69,7 @@
     - output_path_2: The output path where the distributions per group (readmission & no readmission cases) are going to be stored.
     - query_codes: The list of codes (ICD9) that are used to create the use case.
     - query_code_descriptions: The list of the description (keys) of the codes (ICD9) that are used to create the use case. It is used to properly parse the json file.
+- Run the ```extract_explore_use_cases.py --data_path --query_codes --query_code_descriptions``` script to extract a use case and explore how many positive and negative readmission cases exist. 
 
 ### Notes
 - The MIMIC dictionaries for mappings (ICD9 codes --> description) were not complete. So, we manually created complete mappings (files: ```codes_diag_updated.json```, ```codes_proc_updated.json``` under the <it>data/dictionaries/</it> folder).
