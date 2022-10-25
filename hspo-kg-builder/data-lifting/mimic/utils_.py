@@ -26,9 +26,6 @@ def find_json_files(folder_path):
 
 
 
-
-
-
 class DataAnalysisOntMapping:
     def __init__(self, input_path, output_path, ethnicity_mapping,
                  marital_status_mapping, religion_mapping, file={}):
@@ -165,3 +162,72 @@ class InputFile:
         return sampled_dict        
 
 
+
+class UniqueValues:
+    def __init__(self, input_path, output_path):
+        self.input_path = input_path
+        self.output_path = output_path
+        self.data = self.read_json()
+
+
+    def exec(self):
+        return {'marital_status': self.get_unique_values('marital_status'),
+                'gender': self.get_unique_values('gender'),
+                'religion': self.get_unique_values('religion'),
+                'ethnicity': self.get_unique_values('ethnicity'),
+                'diagnosis_initial': self.get_unique_values('diagnosis'),
+                'cpt_events_codes': self.get_unique_values_second_order('cpt_events', 'cpt_code'),
+                'cpt_events_section_header': self.get_unique_values_second_order('cpt_events', 'section_header'),
+                'cpt_events_subsection_header': self.get_unique_values_second_order('cpt_events', 'subsection_header'),
+                'diagnoses_icd9_codes': self.get_unique_values_second_order('diagnoses', 'icd9_code'),
+                'diagnoses_textual_description': self.get_unique_values_second_order('diagnoses', 'textual_description'),
+                'prescriptions_drug': self.get_unique_values_second_order('prescriptions', 'drug'),
+                'procedures_icd9_codes': self.get_unique_values_second_order('procedures', 'icd9_code'),
+                'procedures_textual_description': self.get_unique_values_second_order('procedures', 'textual_description'),
+                'employment': self.get_unique_values_third_order('social_info', 'employment', 'textual_description'),
+                'household_composition': self.get_unique_values_third_order('social_info', 'household_composition', 'textual_description'),
+                'housing': self.get_unique_values_third_order('social_info', 'housing', 'textual_description')}
+    
+
+    def get_unique_values_third_order(self, key1, key2, key3):
+        all_values = []
+        for k1 in self.data.keys():
+            for k2 in self.data[k1].keys():
+                try:
+                    all_values.extend(self.data[k1][k2][key1][key2][key3])
+                except:
+                    pass
+        return list(set(all_values))
+
+
+    def get_unique_values_second_order(self, key1, key2):
+        all_values = []
+        for k1 in self.data.keys():
+            for k2 in self.data[k1].keys():
+                all_values.extend(self.data[k1][k2][key1][key2])
+        return list(set(all_values))
+    
+
+    def get_unique_values(self, key):
+        all_values = []
+        for k1 in self.data.keys():
+            for k2 in self.data[k1].keys():
+                all_values.append(self.data[k1][k2][key].lower())
+        return list(set(all_values))
+
+    
+    def get_number_of_unique_values(self):
+        unique_values_dict = self.exec()
+        for k in unique_values_dict:
+            print('{}: {}' .format(k, len(unique_values_dict[k])))
+
+
+    def read_json(self):
+        with open(self.input_path) as json_file:
+            return json.load(json_file)
+
+
+    def save_json(self):
+        info_distr = self.exec()
+        with open(self.output_path, 'w') as outfile:
+            json.dump(info_distr, outfile)
