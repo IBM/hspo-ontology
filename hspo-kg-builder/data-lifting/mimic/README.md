@@ -62,7 +62,8 @@
         - procedures_manual_dict_path: The path of the procedure manual dictionary (<it>codes_proc_updated.json</it>).
         - ethnicity_mapping_path: The path of the ethnicity mapping file. 
         - marital_status_mapping_path: The path of the marital_status mapping file. 
-        - religion_mapping_path: The path of the religion mapping file. 
+        - religion_mapping_path: The path of the religion mapping file.
+- Run the ```6_2_data_analysis_per_group.py --data_path --output_path --diagnoses_dictionary_path --procedures_dictionary_path --procedures_dictionary_path --procedures_manual_dict_path --ethnicity_mapping_path --marital_status_mapping_path --religion_mapping_path``` script to extract the distributions of the data per group (readmissions and no readmissions cases).
 
 ### Notes
 - The MIMIC dictionaries for mappings (ICD9 codes --> description) were not complete. So, we manually created complete mappings (files: ```codes_diag_updated.json```, ```codes_proc_updated.json``` under the <it>data/dictionaries/</it> folder).
