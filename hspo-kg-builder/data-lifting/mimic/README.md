@@ -63,7 +63,12 @@
         - ethnicity_mapping_path: The path of the ethnicity mapping file. 
         - marital_status_mapping_path: The path of the marital_status mapping file. 
         - religion_mapping_path: The path of the religion mapping file.
-- Run the ```6_2_data_analysis_per_group.py --data_path --output_path --diagnoses_dictionary_path --procedures_dictionary_path --procedures_dictionary_path --procedures_manual_dict_path --ethnicity_mapping_path --marital_status_mapping_path --religion_mapping_path``` script to extract the distributions of the data per group (readmissions and no readmissions cases).
+- Run the ```6_2_data_analysis_per_group.py --data_path --output_path --diagnoses_dictionary_path --procedures_dictionary_path --procedures_dictionary_path --procedures_manual_dict_path --ethnicity_mapping_path --marital_status_mapping_path --religion_mapping_path``` script to extract the distributions of the data per group (readmission and no readmission cases).
+- Run the ```6_3_data_analysis_specific_use_case.py --data_path --output_path --diagnoses_dictionary_path --procedures_dictionary_path --procedures_dictionary_path --procedures_manual_dict_path --ethnicity_mapping_path --marital_status_mapping_path --religion_mapping_path``` script to extract the distributions of a specific use case. For example, if only the patients that have heart failure (ICD9 code: 428) or cardiac_dysrhythmias (ICD9 code: 427) should be included, then the following command should be executed: ```6_3_data_analysis_specific_use_case.py --query_codes '428' '427' --query_code_descriptions 'diagnoses' 'icd9_code' --query_code_descriptions 'diagnoses' 'icd9_code'``` Additional arguments:
+    - output_path_1: The output path where the overall distributions are going to be stored.
+    - output_path_2: The output path where the distributions per group (readmission & no readmission cases) are going to be stored.
+    - query_codes: The list of codes (ICD9) that are used to create the use case.
+    - query_code_descriptions: The list of the description (keys) of the codes (ICD9) that are used to create the use case. It is used to properly parse the json file.
 
 ### Notes
 - The MIMIC dictionaries for mappings (ICD9 codes --> description) were not complete. So, we manually created complete mappings (files: ```codes_diag_updated.json```, ```codes_proc_updated.json``` under the <it>data/dictionaries/</it> folder).
