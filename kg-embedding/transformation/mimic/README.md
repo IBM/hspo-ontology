@@ -20,7 +20,7 @@ The generated Knowledge Graphs (kg-generation step) are in RDF format. So they h
     - graph_version: The ID to define the graph version that is going to be used. Values: 0, 1, ...
 - Run the ```2_find_graphs_with_missing_info_v1.py --input_path``` script find graphs with missing information. Some of the records in MIMIC-III dataset are not complete. The first version of the undirected graphs is needed. The information of interest that might be missing is related to diseases, medication, and procedures. Arguments:
     - input_path: The input path with the graphs. (e.g. <i>data/triplet_format_graphs/</i>)
-- Run the ```3_vocabulary.py input_path_grouped_data --input_path_graphs --output_path --directed --graph_version --extra_filter``` script to create the vocabulary. Arguments:
+- Run the ```3_vocabulary.py input_path_grouped_data --input_path_graphs --output_path --directed --graph_version --extra_filter``` script to create the vocabulary. The use case with patients that have heart failure (ICD9 code: 428) or cardiac_dysrhythmias (ICD9 code: 427) has been predefined. Arguments:
     - input_path_grouped_data: The input path of the grouped json data after data preprocessing (AKA <i>4_data_after_adding_notes_info_grouped_icd9.json</i>).
     - input_path_graphs: The input path of the transformed graphs.
     - output_path: The output path where the vocabularies are stored.
