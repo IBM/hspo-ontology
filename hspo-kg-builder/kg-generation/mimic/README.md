@@ -4,7 +4,7 @@
 
 ## Setup
 ### Requirements
-- Python 3.5+
+- Python 3.7+
 - rdflib (tested with version 6.1.1)
 - HSPO ontology (tested with version 0.0.17)
 

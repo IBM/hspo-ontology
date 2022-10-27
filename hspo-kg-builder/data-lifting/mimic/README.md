@@ -4,7 +4,7 @@
 
 ## Setup
 ### Requirements
-- Python 3.5+
+- Python 3.7+
 - numpy (tested with version 1.23.1)
 - pandas (tested with version 1.4.2)
 - <a target="_blank" href="https://github.com/AnthonyMRios/pymetamap">pymetamap</a>
