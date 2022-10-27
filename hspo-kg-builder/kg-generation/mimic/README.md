@@ -27,4 +27,4 @@
 - The person-centric Knowledge Graphs are extracted in RDF format. 
 
 ### Notes
-- Different graph version can be extracted. The user can choose which one is more appropriate for the application. 
+- Different graph versions can be extracted. The user can choose which one is more appropriate for the application. 
