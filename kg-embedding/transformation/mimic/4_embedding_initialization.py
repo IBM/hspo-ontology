@@ -174,9 +174,9 @@ if __name__ == '__main__':
     parser.add_argument("--extra_filter", default=None, type=int, required=True,
                         help = "Int value to define if the graphs with missing info (medication or disease or procedure list) are going to be removed (1) or no (0).")
     parser.add_argument("--emb_strategy", default=None, type=str, required=True,
-                        help = "The strategy for embedding initilization. Choices: bow, lm")
+                        help = "The strategy for embedding initialization. Choices: bow, lm")
     parser.add_argument("--aggr_strategy", default=None, type=str, required=False,
-                        help = "The aggregation strategy for embedding initilization. Only applies for lm strategy. Choices: cls, avg, sum")
+                        help = "The aggregation strategy for embedding initialization. Only applies for lm strategy. Choices: cls, avg, sum")
 
     args = parser.parse_args()
 

@@ -10,7 +10,8 @@
 - pytorch (tested with version 1.12.1)                     
 - transformers (tested with version 4.21.2)        
 - tokenizers (tested with version 0.12.1)        
-- numpy (tested with version 1.23.2)           
+- numpy (tested with version 1.23.2)
+- pytorch_geometric (tested with version 2.1.0)           
 
 
 ### Execution - Description
@@ -37,8 +38,17 @@ The generated Knowledge Graphs (kg-generation step) are in RDF format. So they h
     - graph_version: The id to define the graph version that is going to be used.
     - vocab_path: The path to vocabulary. It is needed if BOW strategy is applied.
     - extra_filter: Value to define if the graphs with missing info (medication or disease or procedure list) are going to be removed (1) or no (0).
-    - emb_strategy: The strategy for embedding initilization. Choices: bow, lm. The BOW strategy corresponds to Bag-of-Words model \[1\]. The LM strategy corresponds to pre-trained BioBERT \[2\] usage. 
-    - aggr_strategy: The aggregation strategy for embedding initilization. Only applies for lm strategy. Choices: cls, avg, sum
+    - emb_strategy: The strategy for embedding initialization. Choices: bow, lm. The BOW strategy corresponds to Bag-of-Words model \[1\]. The LM strategy corresponds to pre-trained BioBERT \[2\] usage. 
+    - aggr_strategy: The aggregation strategy for embedding initialization. Only applies for lm strategy. Choices: cls, avg, sum
+- Run the ```5_graph_preprocessing.py --input_path_embeddings --vocab_path --unique_rel_triplets_path --emb_strategy --aggr_strategy --output_path --directed --graph_version``` script to finally transform the graph in .pt format that can be used for GNN training using <a target="_blank" href="https://pytorch-geometric.readthedocs.io/en/latest/">PyTorch Geometric</a> framework. Arguments:
+    - input_path_embeddings: The input path of the precalculated embeddings.
+    - vocab_path: The path of the vocabulary. It is needed if BOW strategy is applied.
+    - unique_rel_triplets_path: The path of the list with the unique relation triplets. This file is created after the third step (vocabulary creation).
+    - emb_strategy: The strategy for embedding initialization. Choices: bow, lm
+    - aggr_strategy: The aggregation strategy for embedding initialization. Only applies for lm strategy. Choices: cls, avg, sum
+    - output_path: The output path where the processed graphs are going to be stored.
+    - directed: Value to define if the graph is going to be directed (1) or no (0).
+    - graph_version: The id to define the graph version that is going to be used.
 
 ### Notes
 - BioBERT is used as the selected Language Model in embedding initialization step because of the medical domain (MIMIC-III) of the application. Different generic or domain-specific Language Models can be easily used for other applications. 
