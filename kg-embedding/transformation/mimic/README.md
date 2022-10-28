@@ -49,10 +49,11 @@ The generated Knowledge Graphs (kg-generation step) are in RDF format. So they h
     - output_path: The output path where the processed graphs are going to be stored.
     - directed: Value to define if the graph is going to be directed (1) or no (0).
     - graph_version: The id to define the graph version that is going to be used.
+
 A bash script (```run_graph_processing.sh [-h] [-g f v e p d o s a]```) to execute the full pipeline end-to-end is also available. The paths (input, output, conda source, conda environments) should be updated accordingly. 
 
 ### Notes
-- BioBERT is used as the selected Language Model in the embedding initialization step because of the medical domain (MIMIC-III) of the application. Different generic or domain-specific Language Models can be easily used for other applications. 
+- BioBERT is used as the selected Language Model in the  embedding initialization step because of the medical domain (MIMIC-III) of the application. Different generic or domain-specific Language Models can be easily used for other applications. 
 
 ## References
 ```
