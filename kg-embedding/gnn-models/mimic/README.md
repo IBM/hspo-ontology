@@ -31,8 +31,6 @@
 
 A bash script (```run_experiments.sh [-h] [-in d s a o l b m u n r w e x]```) to execute the experimental setup is also available. The paths (input, output, conda source, conda environments) should be updated accordingly. 
 
-### Notes 
-
 ## References
 ```
 [1] Schlichtkrull, Michael, et al. "Modeling relational data with graph convolutional networks." European semantic web conference. Springer, Cham, 2018.
