@@ -47,7 +47,7 @@ If you use the HSPO Ontology or code, please consider citing:
 author = {HSPO Team},
 month = {9},
 title = {{Health and Social Person-centric Ontology}},
-url = {https://github.com/},
+url = {https://github.com/IBM/hspo-ontology},
 version = {main},
 year = {2022}
 }
