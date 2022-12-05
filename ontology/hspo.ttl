@@ -603,7 +603,8 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
 
 ###  http://research.ibm.com/ontologies/hspo/Gender
 :Gender rdf:type owl:Class ;
-        :umlsCui "C0079399" ;
+        :umlsCui "C0079399",
+                 "C1287419";
         rdfs:comment "The gender of a person"@en ;
         rdfs:label "Gender"@en .
 
@@ -1463,14 +1464,6 @@ prov:Entity rdf:type owl:Class .
                                  :AgeGroup ;
                         :umlsCui "" ;
                         rdfs:label "45 to 49"^^xsd:string .
-
-
-###  http://research.ibm.com/ontologies/hspo/gender_finding
-:gender_finding rdf:type owl:NamedIndividual ,
-                         :Gender ;
-                :umlsCui "C1287419" ;
-                rdfs:label "Gender finding"^^xsd:string .
-
 
 ###  http://research.ibm.com/ontologies/hspo/gender_unknown
 :gender_unknown rdf:type owl:NamedIndividual ,
