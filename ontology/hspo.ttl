@@ -18,9 +18,9 @@
                                             dc:creator "IBM Research Europe" ;
                                             dc:publisher "IBM" ;
                                             <http://purl.org/dc/terms/created> "2022-06-02"^^xsd:date ;
-                                            <http://purl.org/dc/terms/modified> "2022-10-07"^^xsd:date ;
+                                            <http://purl.org/dc/terms/modified> "2022-12-07"^^xsd:date ;
                                             <http://purl.org/dc/terms/title> "Health and Social Person-centric Ontology (HSPO)"@en ;
-                                            owl:versionInfo "0.0.17" .
+                                            owl:versionInfo "0.0.18" .
 
 #################################################################
 #    Annotation properties
@@ -604,7 +604,7 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
 ###  http://research.ibm.com/ontologies/hspo/Gender
 :Gender rdf:type owl:Class ;
         :umlsCui "C0079399",
-                 "C1287419";
+                 "C1287419" ;
         rdfs:comment "The gender of a person"@en ;
         rdfs:label "Gender"@en .
 
@@ -1465,6 +1465,7 @@ prov:Entity rdf:type owl:Class .
                         :umlsCui "" ;
                         rdfs:label "45 to 49"^^xsd:string .
 
+
 ###  http://research.ibm.com/ontologies/hspo/gender_unknown
 :gender_unknown rdf:type owl:NamedIndividual ,
                          :Gender ;
@@ -2054,8 +2055,9 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/transgender
 :transgender rdf:type owl:NamedIndividual ,
                       :Gender ;
-             :umlsCui "C1319926" ;
-             rdfs:label "Surgically transgendered transsexual"^^xsd:string .
+             :umlsCui "C1319926",
+                      "C0558141" ;
+             rdfs:label "Transgender"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_female_to_male
@@ -2063,13 +2065,6 @@ prov:Entity rdf:type owl:Class .
                                      :Gender ;
                             :umlsCui "C1319930" ;
                             rdfs:label "Surgically transgendered transsexual, female-to-male"^^xsd:string .
-
-
-###  http://research.ibm.com/ontologies/hspo/transgender_identity
-:transgender_identity rdf:type owl:NamedIndividual ,
-                               :Gender ;
-                      :umlsCui "C0558141" ;
-                      rdfs:label "Transgender identity"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_male_to_female
