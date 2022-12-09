@@ -603,8 +603,19 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
 
 ###  http://research.ibm.com/ontologies/hspo/Gender
 :Gender rdf:type owl:Class ;
-        :umlsCui "C0079399",
-                 "C1287419" ;
+        :umlsCui "C0079399" ,
+                 "C1287419" ,
+                 "C0036891" ,
+                 "C3841889" ,
+                 "C0017249" ,
+                 "C0563024" ,
+                 "C5552242" ,
+                 "C5551719" ,
+                 "C5552241" ,
+                 "C4018874" ,
+                 "C1710069" ,
+                 "C1548569" ,
+                 "C0804628" ;
         rdfs:comment "The gender of a person"@en ;
         rdfs:label "Gender"@en .
 
@@ -1122,7 +1133,8 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
 :MaritalStatus rdf:type owl:Class ;
                :umlsCui "C0024819" ,
                         "C0557081" ,
-                        "C1276230" ;
+                        "C1276230" ,
+                        "C0596885" ;
                rdfs:comment "The marital status of a person"@en ;
                rdfs:label "Marital Status"@en .
 
@@ -1420,7 +1432,12 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/feminine_gender
 :feminine_gender rdf:type owl:NamedIndividual ,
                           :Gender ;
-                 :umlsCui "C3839293" ;
+                 :umlsCui "C3839293" ,
+                          "C0086287" ,
+                          "C1705497" ,
+                          "C0043210" ,
+                          "C3887375" ,
+                          "C0233894" ;
                  rdfs:label "Feminine gender"^^xsd:string .
 
 
@@ -1492,6 +1509,8 @@ prov:Entity rdf:type owl:Class .
 :homosexual_marriage rdf:type owl:NamedIndividual ,
                               :MaritalStatus ;
                      :umlsCui "C0524334" ;
+                     skos:narrower :homosexual_marriage_female ;
+                     skos:narrower :homosexual_marriage_male ;
                      rdfs:label "Homosexual marriage"^^xsd:string .
 
 
@@ -1499,6 +1518,7 @@ prov:Entity rdf:type owl:Class .
 :homosexual_marriage_female rdf:type owl:NamedIndividual ,
                                      :MaritalStatus ;
                             :umlsCui "C0524336" ;
+                            skos:broader :homosexual_marriage ;
                             rdfs:label "Homosexual marriage, female"^^xsd:string .
 
 
@@ -1506,6 +1526,7 @@ prov:Entity rdf:type owl:Class .
 :homosexual_marriage_male rdf:type owl:NamedIndividual ,
                                    :MaritalStatus ;
                           :umlsCui "C0524335" ;
+                          skos:broader :homosexual_marriage ;
                           rdfs:label "Homosexual marriage, male"^^xsd:string .
 
 
@@ -1535,13 +1556,6 @@ prov:Entity rdf:type owl:Class .
         rdfs:label "Infant"^^xsd:string .
 
 
-###  http://research.ibm.com/ontologies/hspo/legally_married
-:legally_married rdf:type owl:NamedIndividual ,
-                          :MaritalStatus ;
-                 :umlsCui "C0337591" ;
-                 rdfs:label "Legally married"^^xsd:string .
-
-
 ###  http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree
 :legally_separated_with_interlocutory_decree rdf:type owl:NamedIndividual ,
                                                       :MaritalStatus ;
@@ -1552,7 +1566,23 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/lives_alone
 :lives_alone rdf:type owl:NamedIndividual ,
                       :Household ;
-             :umlsCui "C0439044" ;
+             :umlsCui "C0439044" ,
+                      "C0260794" ,
+                      "C1387120" ,
+                      "C1386493" ,
+                      "C3540481" ,
+                      "C2910992" ,
+                      "C1387121" ,
+                      "C1387122" ,
+                      "C0679994" ,
+                      "C2111017" ,
+                      "C0425198" ,
+                      "C0425199" ,
+                      "C0425200" ,
+                      "C2184146" ;
+             skos:narrower :lives_alone_help_available ;
+             skos:narrower :lives_alone_needs_housekeeper ;
+             skos:narrower :lives_alone_no_help_available ;
              rdfs:label "Lives alone"^^xsd:string .
 
 
@@ -1560,6 +1590,7 @@ prov:Entity rdf:type owl:Class .
 :lives_alone_help_available rdf:type owl:NamedIndividual ,
                                      :Household ;
                             :umlsCui "C0425198" ;
+                            skos:broader :lives_alone ;
                             rdfs:label "Lives alone, help available"^^xsd:string .
 
 
@@ -1567,13 +1598,15 @@ prov:Entity rdf:type owl:Class .
 :lives_alone_needs_housekeeper rdf:type owl:NamedIndividual ,
                                         :Household ;
                                :umlsCui "C0425200" ;
-                               rdfs:label "Lives alone needs housekeeper"^^xsd:string .
+                               skos:broader :lives_alone ;
+                               rdfs:label "Lives alone, needs housekeeper"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available
 :lives_alone_no_help_available rdf:type owl:NamedIndividual ,
                                         :Household ;
                                :umlsCui "C0425199" ;
+                               skos:broader :lives_alone ;
                                rdfs:label "Lives alone, no help available"^^xsd:string .
 
 
@@ -1581,6 +1614,8 @@ prov:Entity rdf:type owl:Class .
 :lives_as_companion rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C0557140" ;
+                    skos:narrower :lives_as_paid_companion ;
+                    skos:narrower :lives_as_unpaid_companion ;
                     rdfs:label "Lives as companion"^^xsd:string .
 
 
@@ -1588,6 +1623,7 @@ prov:Entity rdf:type owl:Class .
 :lives_as_paid_companion rdf:type owl:NamedIndividual ,
                                   :Household ;
                          :umlsCui "C0557141" ;
+                         skos:broader :lives_as_companion ;
                          rdfs:label "Lives as paid companion"^^xsd:string .
 
 
@@ -1595,6 +1631,7 @@ prov:Entity rdf:type owl:Class .
 :lives_as_unpaid_companion rdf:type owl:NamedIndividual ,
                                     :Household ;
                            :umlsCui "C0557142" ;
+                           skos:broader :lives_as_companion ;
                            rdfs:label "Lives as unpaid companion"^^xsd:string .
 
 
@@ -1609,6 +1646,8 @@ prov:Entity rdf:type owl:Class .
 :lives_in_a_community rdf:type owl:NamedIndividual ,
                                :Household ;
                       :umlsCui "C0557143" ;
+                      skos:narrower :lives_in_a_school_community ;
+                      skos:narrower :lives_in_boarding_school ;
                       rdfs:label "Lives in a community"^^xsd:string .
 
 
@@ -1616,6 +1655,7 @@ prov:Entity rdf:type owl:Class .
 :lives_in_a_school_community rdf:type owl:NamedIndividual ,
                                       :Household ;
                              :umlsCui "C0557144" ;
+                             skos:broader :lives_in_a_community ;
                              rdfs:label "Lives in a school community"^^xsd:string .
 
 
@@ -1623,6 +1663,7 @@ prov:Entity rdf:type owl:Class .
 :lives_in_boarding_school rdf:type owl:NamedIndividual ,
                                    :Household ;
                           :umlsCui "C0557145" ;
+                          skos:broader :lives_in_a_community ;
                           rdfs:label "Lives in boarding school"^^xsd:string .
 
 
@@ -1658,6 +1699,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_father rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C0557135" ;
+                   skos:broader :lives_with_parents ;
                    rdfs:label "Lives with father"^^xsd:string .
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_friends
@@ -1671,6 +1713,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_grandfather rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C0557137" ;
+                        skos:broader :lives_with_grandparents ;
                         rdfs:label "Lives with grandfather"^^xsd:string .
 
 
@@ -1678,6 +1721,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_grandmother rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C0557138" ;
+                        skos:broader :lives_with_grandparents ;
                         rdfs:label "Lives with grandmother"^^xsd:string .
 
 
@@ -1685,6 +1729,8 @@ prov:Entity rdf:type owl:Class .
 :lives_with_grandparents rdf:type owl:NamedIndividual ,
                                   :Household ;
                          :umlsCui "C0557136" ;
+                         skos:narrower :lives_with_grandfather ;
+                         skos:narrower :lives_with_grandmother ;
                          rdfs:label "Lives with grandparents"^^xsd:string .
 
 
@@ -1692,6 +1738,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_husband rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C1443354" ;
+                    skos:broader :lives_with_spouse ;
                     rdfs:label "Lives with husband"^^xsd:string .
 
 
@@ -1706,6 +1753,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_mother rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C0557134" ;
+                   skos:broader :lives_with_parents ;
                    rdfs:label "Lives with mother"^^xsd:string .
 
 
@@ -1713,6 +1761,8 @@ prov:Entity rdf:type owl:Class .
 :lives_with_parents rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C0557133" ;
+                    skos:narrower :lives_with_father ;
+                    skos:narrower :lives_with_mother ;
                     rdfs:label "Lives with parents"^^xsd:string .
 
 
@@ -1741,6 +1791,9 @@ prov:Entity rdf:type owl:Class .
 :lives_with_spouse rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C2184147" ;
+                   skos:narrower :lives_with_spouse_only ;
+                   skos:narrower :lives_with_wife ;
+                   skos:narrower :lives_with_husband ;
                    rdfs:label "Lives with spouse"^^xsd:string .
 
 
@@ -1748,6 +1801,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_spouse_only rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C5396995" ;
+                        skos:broader :lives_with_spouse ;
                         rdfs:label "Lives with spouse only"^^xsd:string .
 
 
@@ -1755,6 +1809,7 @@ prov:Entity rdf:type owl:Class .
 :lives_with_wife rdf:type owl:NamedIndividual ,
                           :Household ;
                  :umlsCui "C2960190" ;
+                 skos:broader :lives_with_spouse ;
                  rdfs:label "Lives with wife"^^xsd:string .
 
 
@@ -1782,14 +1837,23 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/married
 :married rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
-         :umlsCui "C0555047" ;
+         :umlsCui "C0555047" ,
+                  "C0337591" ;
+         skos:narrower :newly_wed ;
+         skos:narrower :remarried ;
          rdfs:label "Married"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/masculine_gender
 :masculine_gender rdf:type owl:NamedIndividual ,
                            :Gender ;
-                  :umlsCui "C3839079" ;
+                  :umlsCui "C3839079" ,
+                           "C0086582" ,
+                           "C1706429" ,
+                           "C0025266" ,
+                           "C3887374" ,
+                           "C1706180" ,
+                           "C0042757" ;
                   rdfs:label "Masculine gender"^^xsd:string .
 
 
@@ -1824,13 +1888,15 @@ prov:Entity rdf:type owl:Class .
 :newly_wed rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C0425381" ;
+           skos:broader :married ;
            rdfs:label "Newly wed"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/non_binary_gender
 :non_binary_gender rdf:type owl:NamedIndividual ,
                             :Gender ;
-                   :umlsCui "C3887376" ;
+                   :umlsCui "C3887376" ,
+                            "C5552667" ;
                    rdfs:label "Non-binary gender"^^xsd:string .
 
 
@@ -1903,6 +1969,7 @@ prov:Entity rdf:type owl:Class .
 :remarried rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C0425380" ;
+           skos:broader :married ;
            rdfs:label "Remarried"^^xsd:string .
 
 
@@ -1929,6 +1996,7 @@ prov:Entity rdf:type owl:Class .
 :separated rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C4721417" ;
+           skos:narrower :separated_from_cohabitee ;
            rdfs:label "Separated"^^xsd:string .
 
 
@@ -1936,6 +2004,7 @@ prov:Entity rdf:type owl:Class .
 :separated_from_cohabitee rdf:type owl:NamedIndividual ,
                                    :MaritalStatus ;
                           :umlsCui "C0086972" ;
+                          skos:broader :separated ;
                           rdfs:label "Separated from cohabitee"^^xsd:string .
 
 
@@ -1957,6 +2026,7 @@ prov:Entity rdf:type owl:Class .
 :single_never_married rdf:type owl:NamedIndividual ,
                                :MaritalStatus ;
                       :umlsCui "C0027952" ;
+                      skos:broader :single_person ;
                       rdfs:label "Single, never married"^^xsd:string .
 
 
@@ -1964,6 +2034,7 @@ prov:Entity rdf:type owl:Class .
 :single_person rdf:type owl:NamedIndividual ,
                         :MaritalStatus ;
                :umlsCui "C0037179" ;
+               skos:narrower :single_never_married ;
                rdfs:label "Single person"^^xsd:string .
 
 
@@ -2055,22 +2126,30 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/transgender
 :transgender rdf:type owl:NamedIndividual ,
                       :Gender ;
-             :umlsCui "C1319926",
-                      "C0558141" ;
+             :umlsCui "C1319926" ,
+                      "C0558141" ,
+                      "C3266856" ,
+                      "C3494399" ;
              rdfs:label "Transgender"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_female_to_male
 :transgender_female_to_male rdf:type owl:NamedIndividual ,
                                      :Gender ;
-                            :umlsCui "C1319930" ;
+                            :umlsCui "C1319930" ,
+                                     "C1319928" ,
+                                     "C1705488" ,
+                                     "C4700335" ;
                             rdfs:label "Surgically transgendered transsexual, female-to-male"^^xsd:string .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_male_to_female
 :transgender_male_to_female rdf:type owl:NamedIndividual ,
                                      :Gender ;
-                            :umlsCui "C1319929" ;
+                            :umlsCui "C1319929" , 
+                                     "C1319927" ,
+                                     "C1705489" ,
+                                     "C4700336" ;
                             rdfs:label "Surgically transgendered transsexual, male-to-female"^^xsd:string .
 
 
@@ -2105,7 +2184,8 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/widow
 :widow rdf:type owl:NamedIndividual ,
                 :MaritalStatus ;
-       :umlsCui "C0206275" ;
+       :umlsCui "C1510465" ;
+       skos:broader :widowed ;
        rdfs:label "Widow"^^xsd:string .
 
 
@@ -2113,6 +2193,8 @@ prov:Entity rdf:type owl:Class .
 :widowed rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
          :umlsCui "C0206275" ;
+         skos:narrower :widow ;
+         skos:narrower :widower ;
          rdfs:label "Widowed"^^xsd:string .
 
 
@@ -2120,6 +2202,7 @@ prov:Entity rdf:type owl:Class .
 :widower rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
          :umlsCui "C0043174" ;
+         skos:broader :widowed ;
          rdfs:label "Widower"^^xsd:string .
 
 
