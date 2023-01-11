@@ -1261,7 +1261,8 @@ prov:Entity rdf:type owl:Class .
 ###  http://research.ibm.com/ontologies/hspo/african_race
 :african_race rdf:type owl:NamedIndividual ,
                        :RaceAndEthnicity ;
-              :umlsCui "C0027567" ;
+              :umlsCui "C0027567",
+                       "C0085756" ;
               rdfs:comment "African race (racial group)" ;
               rdfs:label "African race"^^xsd:string .
 
