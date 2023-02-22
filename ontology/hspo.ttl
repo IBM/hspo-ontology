@@ -2419,7 +2419,6 @@ prov:Entity rdf:type owl:Class .
                 skos:narrower :united_church_of_christ ;
                 skos:narrower :united_methodist ;
                 skos:narrower :wesleyan ;
-                skos:narrower :wesleyan_methodist ;
                 rdfs:label "Christian"^^xsd:string .
                 
 ###  http://research.ibm.com/ontologies/hspo/confucianism
@@ -2962,17 +2961,11 @@ prov:Entity rdf:type owl:Class .
 :wesleyan rdf:type owl:NamedIndividual ,
                          :Religion ;
                 :umlsCui "C1546395" ,
-                         "C5552621" ;
-                skos:broader :christian ;
-                rdfs:label "Christian: Wesleyan"^^xsd:string .
-
-###  http://research.ibm.com/ontologies/hspo/wesleyan_methodist
-:wesleyan_methodist rdf:type owl:NamedIndividual ,
-                         :Religion ;
-                :umlsCui "C1546396" ,
+                         "C5552621" ,
+                         "C1546396" ,
                          "C0585096" ;
                 skos:broader :christian ;
-                rdfs:label "Christian: Wesleyan Methodist"^^xsd:string .
+                rdfs:label "Christian: Wesleyan"^^xsd:string .
 
 ###  http://research.ibm.com/ontologies/hspo/hinduism_other
 :hinduism_other rdf:type owl:NamedIndividual ,
