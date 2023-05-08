@@ -300,13 +300,13 @@ class GraphModUndirected:
     def get_transformed_graph_4(self):
         bag_of_triplets = []
         if self.context_flag['demographics']:
-            bag_of_triplets.append((('patient', 'patient', 'group_node'), 'has', ('demographics', 'demographics', 'group_node')))
+            bag_of_triplets.append((('patient', 'patient', 'patient'), 'has', ('demographics', 'demographics', 'group_node')))
         if self.context_flag['diseases']:
-            bag_of_triplets.append((('patient', 'patient', 'group_node'), 'has', ('diseases', 'diseases', 'group_node')))
+            bag_of_triplets.append((('patient', 'patient', 'patient'), 'has', ('diseases', 'diseases', 'group_node')))
         if self.context_flag['interventions']:
-            bag_of_triplets.append((('patient', 'patient', 'group_node'), 'has', ('interventions', 'interventions', 'group_node')))
+            bag_of_triplets.append((('patient', 'patient', 'patient'), 'has', ('interventions', 'interventions', 'group_node')))
         if self.context_flag['social_info']:
-            bag_of_triplets.append((('patient', 'patient', 'group_node'), 'has', ('social context', 'social_context', 'group_node')))
+            bag_of_triplets.append((('patient', 'patient', 'patient'), 'has', ('social context', 'social_context', 'group_node')))
         if self.context_flag['interventions_procedure_CPT']:
             bag_of_triplets.append((('interventions', 'interventions', 'group_node'), 'has', ('procedure provisioning CPT', 'procedure_provisioning_CPT', 'group_node')))
         if self.context_flag['interventions_procedure_ICD9']:
@@ -318,19 +318,22 @@ class GraphModUndirected:
             if self.triplet_dict[k]['type'] == 'patient':
                 if self.context_flag['demographics']:
                     # Add marital status
-                    ms_status = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasMaritalStatus')]
+                    ms_status = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('hasMaritalStatus')]
                     if ms_status != 'marital_state_unknown':
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasMaritalStatus', (ms_status.replace('_', ' '), 'marital_status', 'marital_status')))
                     else:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasMaritalStatus', ('unknown', 'marital_status', 'marital_status')))
                     # Add religion
-                    religion = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('followsReligion')]
+                    religion = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('followsReligion')]
                     if religion not in ['religion_unknown', 'other_religion']:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'followsReligion', (religion.replace('_', ' '), 'religion', 'religion')))
                     else:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'followsReligion', ('unknown', 'religion', 'religion')))
                     # Add race/ethnicity
-                    race = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasRaceorEthnicity')]
+                    race = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('hasRaceorEthnicity')]
                     if race not in ['race_not_stated', 'race_unknown']:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasRaceorEthnicity', (race.replace('_', ' '), 'race', 'race')))
                     else:
@@ -346,9 +349,11 @@ class GraphModUndirected:
                     if int(age_node) >= 300:
                         age_node = '300'
                     bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'has', (age_node, 'age', 'group_node')))
-                    stage_of_life = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasStageOfLife')]
+                    stage_of_life = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('hasStageOfLife')]
                     bag_of_triplets.append(((age_node, 'age', 'group_node'), 'hasStageOfLife', (stage_of_life.replace('_', ' '), 'stage_of_life', 'stage_of_life')))
-                    age_group = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('belongsToAgeGroup')]
+                    age_group = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('belongsToAgeGroup')]
                     bag_of_triplets.append(((age_node, 'age', 'group_node'), 'belongsToAgeGroup', (age_group.replace('_', ' '), 'age_group', 'age_group')))
             if self.triplet_dict[k]['type'] == 'disease':
                 if self.context_flag['diseases']:
@@ -366,7 +371,8 @@ class GraphModUndirected:
                             bag_of_triplets.append((('procedure provisioning ' + o, 'procedure_provisioning_' + o, 'group_node'), 'hasIntervention', (inter_name, 'procedure_' + o, 'procedure_' + o)))
             if self.triplet_dict[k]['type'] == 'intervention_medication_provisioning':
                 if self.context_flag['interventions_medication']:
-                    inter_name = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('intervention_name')]
+                    inter_name = self.triplet_dict[k]['objects'][
+                        self.triplet_dict[k]['relations'].index('intervention_name')]
                     bag_of_triplets.append((('medication provisioning', 'medication_provisioning', 'group_node'), 'hasIntervention', (inter_name, 'procedure_medication', 'procedure_medication')))
             if self.triplet_dict[k]['type'] in ['employment', 'household', 'housing']:
                 if self.context_flag['social_info']:
@@ -676,13 +682,13 @@ class GraphModDirected:
     def get_transformed_graph_4(self):
         bag_of_triplets = []
         if self.context_flag['demographics']:
-            bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'has', ('patient', 'patient', 'group_node')))
+            bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'has', ('patient', 'patient', 'patient')))
         if self.context_flag['diseases']:
-            bag_of_triplets.append((('diseases', 'diseases', 'group_node'), 'has', ('patient', 'patient', 'group_node')))
+            bag_of_triplets.append((('diseases', 'diseases', 'group_node'), 'has', ('patient', 'patient', 'patient')))
         if self.context_flag['interventions']:
-            bag_of_triplets.append((('interventions', 'interventions', 'group_node'), 'has', ('patient', 'patient', 'group_node')))
+            bag_of_triplets.append((('interventions', 'interventions', 'group_node'), 'has', ('patient', 'patient', 'patient')))
         if self.context_flag['social_info']:
-            bag_of_triplets.append((('social context', 'social_context', 'group_node'), 'has', ('patient', 'patient', 'group_node')))
+            bag_of_triplets.append((('social context', 'social_context', 'group_node'), 'has', ('patient', 'patient', 'patient')))
         if self.context_flag['interventions_procedure_CPT']:
             bag_of_triplets.append((('procedure provisioning CPT', 'procedure_provisioning_CPT', 'group_node'), 'has', ('interventions', 'interventions', 'group_node')))
         if self.context_flag['interventions_procedure_ICD9']:
@@ -694,8 +700,7 @@ class GraphModDirected:
             if self.triplet_dict[k]['type'] == 'patient':
                 if self.context_flag['demographics']:
                     # Add marital status
-                    ms_status = self.triplet_dict[k]['objects'][
-                        self.triplet_dict[k]['relations'].index('hasMaritalStatus')]
+                    ms_status = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasMaritalStatus')]
                     if ms_status != 'marital_state_unknown':
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasMaritalStatus', (ms_status.replace('_', ' '), 'marital_status', 'marital_status')))
                         bag_of_triplets.append(((ms_status.replace('_', ' '), 'marital_status', 'marital_status'), 'rev_hasMaritalStatus', ('demographics', 'demographics', 'group_node')))
@@ -703,8 +708,7 @@ class GraphModDirected:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasMaritalStatus', ('unknown', 'marital_status', 'marital_status')))
                         bag_of_triplets.append((('unknown', 'marital_status', 'marital_status'), 'rev_hasMaritalStatus', ('demographics', 'demographics', 'group_node')))
                     # Add religion
-                    religion = self.triplet_dict[k]['objects'][
-                        self.triplet_dict[k]['relations'].index('followsReligion')]
+                    religion = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('followsReligion')]
                     if religion not in ['religion_unknown', 'other_religion']:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'followsReligion', (religion.replace('_', ' '), 'religion', 'religion')))
                         bag_of_triplets.append(((religion.replace('_', ' '), 'religion', 'religion'), 'rev_followsReligion', ('demographics', 'demographics', 'group_node')))
@@ -712,8 +716,7 @@ class GraphModDirected:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'followsReligion', ('unknown', 'religion', 'religion')))
                         bag_of_triplets.append((('unknown', 'religion', 'religion'), 'rev_followsReligion', ('demographics', 'demographics', 'group_node')))
                     # Add race/ethnicity
-                    race = self.triplet_dict[k]['objects'][
-                        self.triplet_dict[k]['relations'].index('hasRaceorEthnicity')]
+                    race = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasRaceorEthnicity')]
                     if race not in ['race_not_stated', 'race_unknown']:
                         bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'hasRaceorEthnicity', (race.replace('_', ' '), 'race', 'race')))
                         bag_of_triplets.append(((race.replace('_', ' '), 'race', 'race'), 'rev_hasRaceorEthnicity', ('demographics', 'demographics', 'group_node')))
@@ -732,7 +735,6 @@ class GraphModDirected:
                     if int(age_node) >= 300:
                         age_node = '300'
                     bag_of_triplets.append((('demographics', 'demographics', 'group_node'), 'has', (age_node, 'age', 'group_node')))
-                    # bag_of_triplets.append(((age_node, 'age', 'age'), 'rev_hasAge', ('demographics', 'demographics', 'demographics')))
                     bag_of_triplets.append(((age_node, 'age', 'group_node'), 'rev_has', ('demographics', 'demographics', 'group_node')))
                     stage_of_life = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('hasStageOfLife')]
                     bag_of_triplets.append(((age_node, 'age', 'group_node'), 'hasStageOfLife', (stage_of_life.replace('_', ' '), 'stage_of_life', 'stage_of_life')))
@@ -754,8 +756,7 @@ class GraphModDirected:
                             bag_of_triplets.append(((inter_name, 'procedure_' + o, 'procedure_' + o), 'rev_hasIntervention', ('procedure provisioning ' + o, 'procedure_provisioning_' + o, 'group_node')))
                     elif o == 'ICD9':
                         if self.context_flag['interventions_procedure_ICD9']:
-                            inter_name = self.triplet_dict[k]['objects'][
-                                self.triplet_dict[k]['relations'].index('intervention_name')]
+                            inter_name = self.triplet_dict[k]['objects'][self.triplet_dict[k]['relations'].index('intervention_name')]
                             bag_of_triplets.append((('procedure provisioning ' + o, 'procedure_provisioning_' + o, 'group_node'), 'hasIntervention', (inter_name, 'procedure_' + o, 'procedure_' + o)))
                             bag_of_triplets.append(((inter_name, 'procedure_' + o, 'procedure_' + o), 'rev_hasIntervention', ('procedure provisioning ' + o, 'procedure_provisioning_' + o, 'group_node')))
             if self.triplet_dict[k]['type'] == 'intervention_medication_provisioning':
@@ -766,11 +767,12 @@ class GraphModDirected:
             if self.triplet_dict[k]['type'] in ['employment', 'household', 'housing']:
                 if self.context_flag['social_info']:
                     social_context = k.split('_')[-1]
-                    bag_of_triplets.append((('social context', 'social_context', 'group_node'), 'hasSocialContext', (social_context.replace('_', ' '), self.triplet_dict[k]['type'], 'social_context')))
+                    bag_of_triplets.append((('social context', 'social_context', 'group_node'), 'hasSocialContext', (
+                        social_context.replace('_', ' '), self.triplet_dict[k]['type'], 'social_context')))
                     bag_of_triplets.append(((social_context.replace('_', ' '), self.triplet_dict[k]['type'], 'social_context'), 'hasSocialContext', ('social context', 'social_context', 'group_node')))
 
         return bag_of_triplets
-    
+
 
 
 
