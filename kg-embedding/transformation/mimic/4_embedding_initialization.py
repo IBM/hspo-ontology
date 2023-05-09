@@ -101,9 +101,9 @@ def extract_emb(input_path_grouped_data, input_path_graphs, output_path, directe
     graphs_0_filtered_ = filter_list(graphs_0, filenames_to_be_sampled)
     graphs_1_filtered_ = filter_list(graphs_1, filenames_to_be_sampled)
     if extra_filter:
-        black_list_0 = read_json('missing_info_bl_graph_0_v1_undirected.json')
+        black_list_0 = read_json('missing_info_bl_graph_0_v4_undirected.json')
         graphs_0_filtered = filter_list_2(graphs_0_filtered_, black_list_0)
-        black_list_1 = read_json('missing_info_bl_graph_1_v1_undirected.json')
+        black_list_1 = read_json('missing_info_bl_graph_1_v4_undirected.json')
         graphs_1_filtered = filter_list_2(graphs_1_filtered_, black_list_1)
     else:
         graphs_0_filtered = graphs_0_filtered_

@@ -70,7 +70,7 @@ then
     if [ $directed -eq 0 ] && [ $graph_version -eq 1 ]
     then
         input_path_missing_info='data/triplet_format_graphs/'
-        python 2_find_graphs_with_missing_info_v1.py --input_path $input_path_missing_info
+        python 2_find_graphs_with_missing_info_v4.py --input_path $input_path_missing_info
     fi
 fi
 

@@ -21,9 +21,9 @@ class Vocabulary:
         self.graphs_0_filtered_ = filter_list(self.graphs_0, self.filenames_to_be_sampled)
         self.graphs_1_filtered_ = filter_list(self.graphs_1, self.filenames_to_be_sampled)
         if extra_filter:
-            self.black_list_0 = read_json('missing_info_bl_graph_0_v1_undirected.json')
+            self.black_list_0 = read_json('missing_info_bl_graph_0_v4_undirected.json')
             self.graphs_0_filtered = filter_list_2(self.graphs_0_filtered_, self.black_list_0)
-            self.black_list_1 = read_json('missing_info_bl_graph_1_v1_undirected.json')
+            self.black_list_1 = read_json('missing_info_bl_graph_1_v4_undirected.json')
             self.graphs_1_filtered = filter_list_2(self.graphs_1_filtered_, self.black_list_1)
         else:
             self.graphs_0_filtered = self.graphs_0_filtered_
