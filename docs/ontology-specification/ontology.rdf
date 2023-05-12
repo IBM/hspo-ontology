@@ -17,9 +17,9 @@
         <dc:creator>IBM Research Europe</dc:creator>
         <dc:publisher>IBM</dc:publisher>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-06-02</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-07</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-15</terms:modified>
         <terms:title xml:lang="en">Health and Social Person-centric Ontology (HSPO)</terms:title>
-        <owl:versionInfo>0.0.17</owl:versionInfo>
+        <owl:versionInfo>0.0.19</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -980,7 +980,117 @@
 
     <owl:Class rdf:about="http://research.ibm.com/ontologies/hspo/Food">
         <rdfs:subClassOf rdf:resource="http://research.ibm.com/ontologies/hspo/SocialContext"/>
-        <umlsCui></umlsCui>
+        <umlsCui>C0015619</umlsCui>
+        <umlsCui>C0022901</umlsCui>
+        <umlsCui>C0038187</umlsCui>
+        <umlsCui>C0476605</umlsCui>
+        <umlsCui>C0476609</umlsCui>
+        <umlsCui>C0480157</umlsCui>
+        <umlsCui>C0480158</umlsCui>
+        <umlsCui>C0480159</umlsCui>
+        <umlsCui>C0480160</umlsCui>
+        <umlsCui>C0480161</umlsCui>
+        <umlsCui>C0480162</umlsCui>
+        <umlsCui>C0480163</umlsCui>
+        <umlsCui>C0480164</umlsCui>
+        <umlsCui>C0480165</umlsCui>
+        <umlsCui>C0497502</umlsCui>
+        <umlsCui>C3178753</umlsCui>
+        <umlsCui>C3494174</umlsCui>
+        <umlsCui>C3538979</umlsCui>
+        <umlsCui>C4076273</umlsCui>
+        <umlsCui>C4533517</umlsCui>
+        <umlsCui>C4533519</umlsCui>
+        <umlsCui>C4533521</umlsCui>
+        <umlsCui>C4533522</umlsCui>
+        <umlsCui>C4533775</umlsCui>
+        <umlsCui>C4535753</umlsCui>
+        <umlsCui>C4696326</umlsCui>
+        <umlsCui>C4696327</umlsCui>
+        <umlsCui>C4738063</umlsCui>
+        <umlsCui>C5381016</umlsCui>
+        <umlsCui>C5381033</umlsCui>
+        <umlsCui>C5381034</umlsCui>
+        <umlsCui>C5381070</umlsCui>
+        <umlsCui>C5381077</umlsCui>
+        <umlsCui>C5381080</umlsCui>
+        <umlsCui>C5381081</umlsCui>
+        <umlsCui>C5382002</umlsCui>
+        <umlsCui>C5382003</umlsCui>
+        <umlsCui>C5382004</umlsCui>
+        <umlsCui>C5382005</umlsCui>
+        <umlsCui>C5382357</umlsCui>
+        <umlsCui>C5382358</umlsCui>
+        <umlsCui>C5382359</umlsCui>
+        <umlsCui>C5382360</umlsCui>
+        <umlsCui>C5382361</umlsCui>
+        <umlsCui>C5382362</umlsCui>
+        <umlsCui>C5382363</umlsCui>
+        <umlsCui>C5382364</umlsCui>
+        <umlsCui>C5382365</umlsCui>
+        <umlsCui>C5382366</umlsCui>
+        <umlsCui>C5382367</umlsCui>
+        <umlsCui>C5382368</umlsCui>
+        <umlsCui>C5382369</umlsCui>
+        <umlsCui>C5382370</umlsCui>
+        <umlsCui>C5382371</umlsCui>
+        <umlsCui>C5382372</umlsCui>
+        <umlsCui>C5382373</umlsCui>
+        <umlsCui>C5382374</umlsCui>
+        <umlsCui>C5382375</umlsCui>
+        <umlsCui>C5382376</umlsCui>
+        <umlsCui>C5382434</umlsCui>
+        <umlsCui>C5382437</umlsCui>
+        <umlsCui>C5382438</umlsCui>
+        <umlsCui>C5382439</umlsCui>
+        <umlsCui>C5382454</umlsCui>
+        <umlsCui>C5382455</umlsCui>
+        <umlsCui>C5392249</umlsCui>
+        <umlsCui>C5425041</umlsCui>
+        <umlsCui>C5425043</umlsCui>
+        <umlsCui>C5426539</umlsCui>
+        <umlsCui>C5426540</umlsCui>
+        <umlsCui>C5426541</umlsCui>
+        <umlsCui>C5426542</umlsCui>
+        <umlsCui>C5426543</umlsCui>
+        <umlsCui>C5426544</umlsCui>
+        <umlsCui>C5426545</umlsCui>
+        <umlsCui>C5426546</umlsCui>
+        <umlsCui>C5426547</umlsCui>
+        <umlsCui>C5426548</umlsCui>
+        <umlsCui>C5426549</umlsCui>
+        <umlsCui>C5439028</umlsCui>
+        <umlsCui>C5439029</umlsCui>
+        <umlsCui>C5439058</umlsCui>
+        <umlsCui>C5439059</umlsCui>
+        <umlsCui>C5439060</umlsCui>
+        <umlsCui>C5441007</umlsCui>
+        <umlsCui>C5441008</umlsCui>
+        <umlsCui>C5441009</umlsCui>
+        <umlsCui>C5441010</umlsCui>
+        <umlsCui>C5441011</umlsCui>
+        <umlsCui>C5441012</umlsCui>
+        <umlsCui>C5441013</umlsCui>
+        <umlsCui>C5441014</umlsCui>
+        <umlsCui>C5441015</umlsCui>
+        <umlsCui>C5441017</umlsCui>
+        <umlsCui>C5441018</umlsCui>
+        <umlsCui>C5441023</umlsCui>
+        <umlsCui>C5441069</umlsCui>
+        <umlsCui>C5441070</umlsCui>
+        <umlsCui>C5441071</umlsCui>
+        <umlsCui>C5441072</umlsCui>
+        <umlsCui>C5539302</umlsCui>
+        <umlsCui>C5544471</umlsCui>
+        <umlsCui>C5545201</umlsCui>
+        <umlsCui>C5549769</umlsCui>
+        <umlsCui>C5549770</umlsCui>
+        <umlsCui>C5549819</umlsCui>
+        <umlsCui>C5549820</umlsCui>
+        <umlsCui>C5549821</umlsCui>
+        <umlsCui>C5549822</umlsCui>
+        <umlsCui>C5549823</umlsCui>
+        <umlsCui>C5699771</umlsCui>
         <rdfs:comment>The context in which an individual consumes or has access to food including nutritious or fresh foods and food poverty. </rdfs:comment>
         <rdfs:label>Food Security</rdfs:label>
     </owl:Class>
@@ -991,7 +1101,19 @@
 
 
     <owl:Class rdf:about="http://research.ibm.com/ontologies/hspo/Gender">
+        <umlsCui>C0017249</umlsCui>
+        <umlsCui>C0036891</umlsCui>
         <umlsCui>C0079399</umlsCui>
+        <umlsCui>C0563024</umlsCui>
+        <umlsCui>C0804628</umlsCui>
+        <umlsCui>C1287419</umlsCui>
+        <umlsCui>C1548569</umlsCui>
+        <umlsCui>C1710069</umlsCui>
+        <umlsCui>C3841889</umlsCui>
+        <umlsCui>C4018874</umlsCui>
+        <umlsCui>C5551719</umlsCui>
+        <umlsCui>C5552241</umlsCui>
+        <umlsCui>C5552242</umlsCui>
         <rdfs:comment xml:lang="en">The gender of a person</rdfs:comment>
         <rdfs:label xml:lang="en">Gender</rdfs:label>
     </owl:Class>
@@ -1637,6 +1759,7 @@
     <owl:Class rdf:about="http://research.ibm.com/ontologies/hspo/MaritalStatus">
         <umlsCui>C0024819</umlsCui>
         <umlsCui>C0557081</umlsCui>
+        <umlsCui>C0596885</umlsCui>
         <umlsCui>C1276230</umlsCui>
         <rdfs:comment xml:lang="en">The marital status of a person</rdfs:comment>
         <rdfs:label xml:lang="en">Marital Status</rdfs:label>
@@ -1825,6 +1948,7 @@
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/african_race">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/RaceAndEthnicity"/>
         <umlsCui>C0027567</umlsCui>
+        <umlsCui>C0085756</umlsCui>
         <rdfs:comment>African race (racial group)</rdfs:comment>
         <rdfs:label>African race</rdfs:label>
     </owl:NamedIndividual>
@@ -2147,7 +2271,6 @@
         <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/united_church_of_christ"/>
         <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/united_methodist"/>
         <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/wesleyan"/>
-        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/wesleyan_methodist"/>
     </owl:NamedIndividual>
     
 
@@ -2490,7 +2613,12 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/feminine_gender">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
+        <umlsCui>C0043210</umlsCui>
+        <umlsCui>C0086287</umlsCui>
+        <umlsCui>C0233894</umlsCui>
+        <umlsCui>C1705497</umlsCui>
         <umlsCui>C3839293</umlsCui>
+        <umlsCui>C3887375</umlsCui>
         <rdfs:label>Feminine gender</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2589,17 +2717,6 @@
     
 
 
-    <!-- http://research.ibm.com/ontologies/hspo/gender_finding -->
-
-
-    <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/gender_finding">
-        <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
-        <umlsCui>C1287419</umlsCui>
-        <rdfs:label>Gender finding</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://research.ibm.com/ontologies/hspo/gender_unknown -->
 
 
@@ -2683,6 +2800,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0524334</umlsCui>
         <rdfs:label>Homosexual marriage</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/homosexual_marriage_female"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/homosexual_marriage_male"/>
     </owl:NamedIndividual>
     
 
@@ -2694,6 +2813,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0524336</umlsCui>
         <rdfs:label>Homosexual marriage, female</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/homosexual_marriage"/>
     </owl:NamedIndividual>
     
 
@@ -2705,6 +2825,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0524335</umlsCui>
         <rdfs:label>Homosexual marriage, male</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/homosexual_marriage"/>
     </owl:NamedIndividual>
     
 
@@ -2832,17 +2953,6 @@
     
 
 
-    <!-- http://research.ibm.com/ontologies/hspo/legally_married -->
-
-
-    <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/legally_married">
-        <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
-        <umlsCui>C0337591</umlsCui>
-        <rdfs:label>Legally married</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree -->
 
 
@@ -2859,8 +2969,24 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/lives_alone">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
+        <umlsCui>C0260794</umlsCui>
+        <umlsCui>C0425198</umlsCui>
+        <umlsCui>C0425199</umlsCui>
+        <umlsCui>C0425200</umlsCui>
         <umlsCui>C0439044</umlsCui>
+        <umlsCui>C0679994</umlsCui>
+        <umlsCui>C1386493</umlsCui>
+        <umlsCui>C1387120</umlsCui>
+        <umlsCui>C1387121</umlsCui>
+        <umlsCui>C1387122</umlsCui>
+        <umlsCui>C2111017</umlsCui>
+        <umlsCui>C2184146</umlsCui>
+        <umlsCui>C2910992</umlsCui>
+        <umlsCui>C3540481</umlsCui>
         <rdfs:label>Lives alone</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone_help_available"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available"/>
     </owl:NamedIndividual>
     
 
@@ -2872,6 +2998,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0425198</umlsCui>
         <rdfs:label>Lives alone, help available</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone"/>
     </owl:NamedIndividual>
     
 
@@ -2882,7 +3009,8 @@
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0425200</umlsCui>
-        <rdfs:label>Lives alone needs housekeeper</rdfs:label>
+        <rdfs:label>Lives alone, needs housekeeper</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone"/>
     </owl:NamedIndividual>
     
 
@@ -2894,6 +3022,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0425199</umlsCui>
         <rdfs:label>Lives alone, no help available</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_alone"/>
     </owl:NamedIndividual>
     
 
@@ -2905,6 +3034,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557140</umlsCui>
         <rdfs:label>Lives as companion</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_as_paid_companion"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion"/>
     </owl:NamedIndividual>
     
 
@@ -2916,6 +3047,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557141</umlsCui>
         <rdfs:label>Lives as paid companion</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_as_companion"/>
     </owl:NamedIndividual>
     
 
@@ -2927,6 +3059,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557142</umlsCui>
         <rdfs:label>Lives as unpaid companion</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_as_companion"/>
     </owl:NamedIndividual>
     
 
@@ -2949,6 +3082,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557143</umlsCui>
         <rdfs:label>Lives in a community</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_in_a_school_community"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_in_boarding_school"/>
     </owl:NamedIndividual>
     
 
@@ -2960,6 +3095,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557144</umlsCui>
         <rdfs:label>Lives in a school community</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_in_a_community"/>
     </owl:NamedIndividual>
     
 
@@ -2971,6 +3107,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557145</umlsCui>
         <rdfs:label>Lives in boarding school</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_in_a_community"/>
     </owl:NamedIndividual>
     
 
@@ -3026,6 +3163,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557135</umlsCui>
         <rdfs:label>Lives with father</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_parents"/>
     </owl:NamedIndividual>
     
 
@@ -3048,6 +3186,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557137</umlsCui>
         <rdfs:label>Lives with grandfather</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_grandparents"/>
     </owl:NamedIndividual>
     
 
@@ -3059,6 +3198,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557138</umlsCui>
         <rdfs:label>Lives with grandmother</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_grandparents"/>
     </owl:NamedIndividual>
     
 
@@ -3070,6 +3210,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557136</umlsCui>
         <rdfs:label>Lives with grandparents</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_grandfather"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_grandmother"/>
     </owl:NamedIndividual>
     
 
@@ -3081,6 +3223,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C1443354</umlsCui>
         <rdfs:label>Lives with husband</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_spouse"/>
     </owl:NamedIndividual>
     
 
@@ -3103,6 +3246,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557134</umlsCui>
         <rdfs:label>Lives with mother</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_parents"/>
     </owl:NamedIndividual>
     
 
@@ -3114,6 +3258,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C0557133</umlsCui>
         <rdfs:label>Lives with parents</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_father"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_mother"/>
     </owl:NamedIndividual>
     
 
@@ -3158,6 +3304,9 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C2184147</umlsCui>
         <rdfs:label>Lives with spouse</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_husband"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_spouse_only"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_wife"/>
     </owl:NamedIndividual>
     
 
@@ -3169,6 +3318,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C5396995</umlsCui>
         <rdfs:label>Lives with spouse only</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_spouse"/>
     </owl:NamedIndividual>
     
 
@@ -3180,6 +3330,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Household"/>
         <umlsCui>C2960190</umlsCui>
         <rdfs:label>Lives with wife</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/lives_with_spouse"/>
     </owl:NamedIndividual>
     
 
@@ -3265,8 +3416,11 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/married">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
+        <umlsCui>C0337591</umlsCui>
         <umlsCui>C0555047</umlsCui>
         <rdfs:label>Married</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/newly_wed"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/remarried"/>
     </owl:NamedIndividual>
     
 
@@ -3276,7 +3430,13 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/masculine_gender">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
+        <umlsCui>C0025266</umlsCui>
+        <umlsCui>C0042757</umlsCui>
+        <umlsCui>C0086582</umlsCui>
+        <umlsCui>C1706180</umlsCui>
+        <umlsCui>C1706429</umlsCui>
         <umlsCui>C3839079</umlsCui>
+        <umlsCui>C3887374</umlsCui>
         <rdfs:label>Masculine gender</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3410,6 +3570,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0425381</umlsCui>
         <rdfs:label>Newly wed</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/married"/>
     </owl:NamedIndividual>
     
 
@@ -3420,6 +3581,7 @@
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/non_binary_gender">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
         <umlsCui>C3887376</umlsCui>
+        <umlsCui>C5552667</umlsCui>
         <rdfs:label>Non-binary gender</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3710,6 +3872,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0425380</umlsCui>
         <rdfs:label>Remarried</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/married"/>
     </owl:NamedIndividual>
     
 
@@ -3788,6 +3951,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C4721417</umlsCui>
         <rdfs:label>Separated</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/separated_from_cohabitee"/>
     </owl:NamedIndividual>
     
 
@@ -3799,6 +3963,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0086972</umlsCui>
         <rdfs:label>Separated from cohabitee</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/separated"/>
     </owl:NamedIndividual>
     
 
@@ -3900,6 +4065,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0027952</umlsCui>
         <rdfs:label>Single, never married</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/single_person"/>
     </owl:NamedIndividual>
     
 
@@ -3911,6 +4077,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0037179</umlsCui>
         <rdfs:label>Single person</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/single_never_married"/>
     </owl:NamedIndividual>
     
 
@@ -4112,8 +4279,11 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/transgender">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
+        <umlsCui>C0558141</umlsCui>
         <umlsCui>C1319926</umlsCui>
-        <rdfs:label>Surgically transgendered transsexual</rdfs:label>
+        <umlsCui>C3266856</umlsCui>
+        <umlsCui>C3494399</umlsCui>
+        <rdfs:label>Transgender</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4123,19 +4293,11 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/transgender_female_to_male">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
+        <umlsCui>C1319928</umlsCui>
         <umlsCui>C1319930</umlsCui>
+        <umlsCui>C1705488</umlsCui>
+        <umlsCui>C4700335</umlsCui>
         <rdfs:label>Surgically transgendered transsexual, female-to-male</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://research.ibm.com/ontologies/hspo/transgender_identity -->
-
-
-    <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/transgender_identity">
-        <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
-        <umlsCui>C0558141</umlsCui>
-        <rdfs:label>Transgender identity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4145,7 +4307,10 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/transgender_male_to_female">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Gender"/>
+        <umlsCui>C1319927</umlsCui>
         <umlsCui>C1319929</umlsCui>
+        <umlsCui>C1705489</umlsCui>
+        <umlsCui>C4700336</umlsCui>
         <rdfs:label>Surgically transgendered transsexual, male-to-female</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4269,22 +4434,11 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/wesleyan">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Religion"/>
+        <umlsCui>C0585096</umlsCui>
         <umlsCui>C1546395</umlsCui>
+        <umlsCui>C1546396</umlsCui>
         <umlsCui>C5552621</umlsCui>
         <rdfs:label>Christian: Wesleyan</rdfs:label>
-        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/christian"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://research.ibm.com/ontologies/hspo/wesleyan_methodist -->
-
-
-    <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/wesleyan_methodist">
-        <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/Religion"/>
-        <umlsCui>C0585096</umlsCui>
-        <umlsCui>C1546396</umlsCui>
-        <rdfs:label>Christian: Wesleyan Methodist</rdfs:label>
         <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/christian"/>
     </owl:NamedIndividual>
     
@@ -4295,8 +4449,9 @@
 
     <owl:NamedIndividual rdf:about="http://research.ibm.com/ontologies/hspo/widow">
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
-        <umlsCui>C0206275</umlsCui>
+        <umlsCui>C1510465</umlsCui>
         <rdfs:label>Widow</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/widowed"/>
     </owl:NamedIndividual>
     
 
@@ -4308,6 +4463,8 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0206275</umlsCui>
         <rdfs:label>Widowed</rdfs:label>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/widow"/>
+        <skos:narrower rdf:resource="http://research.ibm.com/ontologies/hspo/widower"/>
     </owl:NamedIndividual>
     
 
@@ -4319,6 +4476,7 @@
         <rdf:type rdf:resource="http://research.ibm.com/ontologies/hspo/MaritalStatus"/>
         <umlsCui>C0043174</umlsCui>
         <rdfs:label>Widower</rdfs:label>
+        <skos:broader rdf:resource="http://research.ibm.com/ontologies/hspo/widowed"/>
     </owl:NamedIndividual>
     
 

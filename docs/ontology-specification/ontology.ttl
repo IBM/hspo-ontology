@@ -12,9 +12,9 @@
                                             <http://purl.org/dc/elements/1.1/creator> "IBM Research Europe" ;
                                             <http://purl.org/dc/elements/1.1/publisher> "IBM" ;
                                             <http://purl.org/dc/terms/created> "2022-06-02"^^xsd:date ;
-                                            <http://purl.org/dc/terms/modified> "2022-10-07"^^xsd:date ;
+                                            <http://purl.org/dc/terms/modified> "2023-02-15"^^xsd:date ;
                                             <http://purl.org/dc/terms/title> "Health and Social Person-centric Ontology (HSPO)"@en ;
-                                            owl:versionInfo "0.0.17" .
+                                            owl:versionInfo "0.0.19" .
 
 #################################################################
 #    Annotation properties
@@ -617,14 +617,136 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/Food
 :Food rdf:type owl:Class ;
       rdfs:subClassOf :SocialContext ;
-      :umlsCui "" ;
+      :umlsCui "C0015619" ,
+               "C0022901" ,
+               "C0038187" ,
+               "C0476605" ,
+               "C0476609" ,
+               "C0480157" ,
+               "C0480158" ,
+               "C0480159" ,
+               "C0480160" ,
+               "C0480161" ,
+               "C0480162" ,
+               "C0480163" ,
+               "C0480164" ,
+               "C0480165" ,
+               "C0497502" ,
+               "C3178753" ,
+               "C3494174" ,
+               "C3538979" ,
+               "C4076273" ,
+               "C4533517" ,
+               "C4533519" ,
+               "C4533521" ,
+               "C4533522" ,
+               "C4533775" ,
+               "C4535753" ,
+               "C4696326" ,
+               "C4696327" ,
+               "C4738063" ,
+               "C5381016" ,
+               "C5381033" ,
+               "C5381034" ,
+               "C5381070" ,
+               "C5381077" ,
+               "C5381080" ,
+               "C5381081" ,
+               "C5382002" ,
+               "C5382003" ,
+               "C5382004" ,
+               "C5382005" ,
+               "C5382357" ,
+               "C5382358" ,
+               "C5382359" ,
+               "C5382360" ,
+               "C5382361" ,
+               "C5382362" ,
+               "C5382363" ,
+               "C5382364" ,
+               "C5382365" ,
+               "C5382366" ,
+               "C5382367" ,
+               "C5382368" ,
+               "C5382369" ,
+               "C5382370" ,
+               "C5382371" ,
+               "C5382372" ,
+               "C5382373" ,
+               "C5382374" ,
+               "C5382375" ,
+               "C5382376" ,
+               "C5382434" ,
+               "C5382437" ,
+               "C5382438" ,
+               "C5382439" ,
+               "C5382454" ,
+               "C5382455" ,
+               "C5392249" ,
+               "C5425041" ,
+               "C5425043" ,
+               "C5426539" ,
+               "C5426540" ,
+               "C5426541" ,
+               "C5426542" ,
+               "C5426543" ,
+               "C5426544" ,
+               "C5426545" ,
+               "C5426546" ,
+               "C5426547" ,
+               "C5426548" ,
+               "C5426549" ,
+               "C5439028" ,
+               "C5439029" ,
+               "C5439058" ,
+               "C5439059" ,
+               "C5439060" ,
+               "C5441007" ,
+               "C5441008" ,
+               "C5441009" ,
+               "C5441010" ,
+               "C5441011" ,
+               "C5441012" ,
+               "C5441013" ,
+               "C5441014" ,
+               "C5441015" ,
+               "C5441017" ,
+               "C5441018" ,
+               "C5441023" ,
+               "C5441069" ,
+               "C5441070" ,
+               "C5441071" ,
+               "C5441072" ,
+               "C5539302" ,
+               "C5544471" ,
+               "C5545201" ,
+               "C5549769" ,
+               "C5549770" ,
+               "C5549819" ,
+               "C5549820" ,
+               "C5549821" ,
+               "C5549822" ,
+               "C5549823" ,
+               "C5699771" ;
       rdfs:comment "The context in which an individual consumes or has access to food including nutritious or fresh foods and food poverty. " ;
       rdfs:label "Food Security" .
 
 
 ###  http://research.ibm.com/ontologies/hspo/Gender
 :Gender rdf:type owl:Class ;
-        :umlsCui "C0079399" ;
+        :umlsCui "C0017249" ,
+                 "C0036891" ,
+                 "C0079399" ,
+                 "C0563024" ,
+                 "C0804628" ,
+                 "C1287419" ,
+                 "C1548569" ,
+                 "C1710069" ,
+                 "C3841889" ,
+                 "C4018874" ,
+                 "C5551719" ,
+                 "C5552241" ,
+                 "C5552242" ;
         rdfs:comment "The gender of a person"@en ;
         rdfs:label "Gender"@en .
 
@@ -1158,6 +1280,7 @@ xsd:date rdf:type rdfs:Datatype .
 :MaritalStatus rdf:type owl:Class ;
                :umlsCui "C0024819" ,
                         "C0557081" ,
+                        "C0596885" ,
                         "C1276230" ;
                rdfs:comment "The marital status of a person"@en ;
                rdfs:label "Marital Status"@en .
@@ -1280,7 +1403,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/african_race
 :african_race rdf:type owl:NamedIndividual ,
                        :RaceAndEthnicity ;
-              :umlsCui "C0027567" ;
+              :umlsCui "C0027567" ,
+                       "C0085756" ;
               rdfs:comment "African race (racial group)" ;
               rdfs:label "African race" .
 
@@ -1514,8 +1638,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                           :unitarian_universalism ,
                                                           :united_church_of_christ ,
                                                           :united_methodist ,
-                                                          :wesleyan ,
-                                                          :wesleyan_methodist .
+                                                          :wesleyan .
 
 
 ###  http://research.ibm.com/ontologies/hspo/christian_missionary_alliance
@@ -1746,7 +1869,12 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/feminine_gender
 :feminine_gender rdf:type owl:NamedIndividual ,
                           :Gender ;
-                 :umlsCui "C3839293" ;
+                 :umlsCui "C0043210" ,
+                          "C0086287" ,
+                          "C0233894" ,
+                          "C1705497" ,
+                          "C3839293" ,
+                          "C3887375" ;
                  rdfs:label "Feminine gender" .
 
 
@@ -1811,13 +1939,6 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#broader> :christian .
 
 
-###  http://research.ibm.com/ontologies/hspo/gender_finding
-:gender_finding rdf:type owl:NamedIndividual ,
-                         :Gender ;
-                :umlsCui "C1287419" ;
-                rdfs:label "Gender finding" .
-
-
 ###  http://research.ibm.com/ontologies/hspo/gender_unknown
 :gender_unknown rdf:type owl:NamedIndividual ,
                          :Gender ;
@@ -1874,21 +1995,25 @@ xsd:date rdf:type rdfs:Datatype .
 :homosexual_marriage rdf:type owl:NamedIndividual ,
                               :MaritalStatus ;
                      :umlsCui "C0524334" ;
-                     rdfs:label "Homosexual marriage" .
+                     rdfs:label "Homosexual marriage" ;
+                     <http://www.w3.org/2004/02/skos/core#narrower> :homosexual_marriage_female ,
+                                                                    :homosexual_marriage_male .
 
 
 ###  http://research.ibm.com/ontologies/hspo/homosexual_marriage_female
 :homosexual_marriage_female rdf:type owl:NamedIndividual ,
                                      :MaritalStatus ;
                             :umlsCui "C0524336" ;
-                            rdfs:label "Homosexual marriage, female" .
+                            rdfs:label "Homosexual marriage, female" ;
+                            <http://www.w3.org/2004/02/skos/core#broader> :homosexual_marriage .
 
 
 ###  http://research.ibm.com/ontologies/hspo/homosexual_marriage_male
 :homosexual_marriage_male rdf:type owl:NamedIndividual ,
                                    :MaritalStatus ;
                           :umlsCui "C0524335" ;
-                          rdfs:label "Homosexual marriage, male" .
+                          rdfs:label "Homosexual marriage, male" ;
+                          <http://www.w3.org/2004/02/skos/core#broader> :homosexual_marriage .
 
 
 ###  http://research.ibm.com/ontologies/hspo/husband_left_home
@@ -1978,13 +2103,6 @@ xsd:date rdf:type rdfs:Datatype .
                           <http://www.w3.org/2004/02/skos/core#broader> :christian .
 
 
-###  http://research.ibm.com/ontologies/hspo/legally_married
-:legally_married rdf:type owl:NamedIndividual ,
-                          :MaritalStatus ;
-                 :umlsCui "C0337591" ;
-                 rdfs:label "Legally married" .
-
-
 ###  http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree
 :legally_separated_with_interlocutory_decree rdf:type owl:NamedIndividual ,
                                                       :MaritalStatus ;
@@ -1995,50 +2113,73 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/lives_alone
 :lives_alone rdf:type owl:NamedIndividual ,
                       :Household ;
-             :umlsCui "C0439044" ;
-             rdfs:label "Lives alone" .
+             :umlsCui "C0260794" ,
+                      "C0425198" ,
+                      "C0425199" ,
+                      "C0425200" ,
+                      "C0439044" ,
+                      "C0679994" ,
+                      "C1386493" ,
+                      "C1387120" ,
+                      "C1387121" ,
+                      "C1387122" ,
+                      "C2111017" ,
+                      "C2184146" ,
+                      "C2910992" ,
+                      "C3540481" ;
+             rdfs:label "Lives alone" ;
+             <http://www.w3.org/2004/02/skos/core#narrower> :lives_alone_help_available ,
+                                                            :lives_alone_needs_housekeeper ,
+                                                            :lives_alone_no_help_available .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_alone_help_available
 :lives_alone_help_available rdf:type owl:NamedIndividual ,
                                      :Household ;
                             :umlsCui "C0425198" ;
-                            rdfs:label "Lives alone, help available" .
+                            rdfs:label "Lives alone, help available" ;
+                            <http://www.w3.org/2004/02/skos/core#broader> :lives_alone .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper
 :lives_alone_needs_housekeeper rdf:type owl:NamedIndividual ,
                                         :Household ;
                                :umlsCui "C0425200" ;
-                               rdfs:label "Lives alone needs housekeeper" .
+                               rdfs:label "Lives alone, needs housekeeper" ;
+                               <http://www.w3.org/2004/02/skos/core#broader> :lives_alone .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available
 :lives_alone_no_help_available rdf:type owl:NamedIndividual ,
                                         :Household ;
                                :umlsCui "C0425199" ;
-                               rdfs:label "Lives alone, no help available" .
+                               rdfs:label "Lives alone, no help available" ;
+                               <http://www.w3.org/2004/02/skos/core#broader> :lives_alone .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_as_companion
 :lives_as_companion rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C0557140" ;
-                    rdfs:label "Lives as companion" .
+                    rdfs:label "Lives as companion" ;
+                    <http://www.w3.org/2004/02/skos/core#narrower> :lives_as_paid_companion ,
+                                                                   :lives_as_unpaid_companion .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_as_paid_companion
 :lives_as_paid_companion rdf:type owl:NamedIndividual ,
                                   :Household ;
                          :umlsCui "C0557141" ;
-                         rdfs:label "Lives as paid companion" .
+                         rdfs:label "Lives as paid companion" ;
+                         <http://www.w3.org/2004/02/skos/core#broader> :lives_as_companion .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion
 :lives_as_unpaid_companion rdf:type owl:NamedIndividual ,
                                     :Household ;
                            :umlsCui "C0557142" ;
-                           rdfs:label "Lives as unpaid companion" .
+                           rdfs:label "Lives as unpaid companion" ;
+                           <http://www.w3.org/2004/02/skos/core#broader> :lives_as_companion .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_in_a_commune
@@ -2052,21 +2193,25 @@ xsd:date rdf:type rdfs:Datatype .
 :lives_in_a_community rdf:type owl:NamedIndividual ,
                                :Household ;
                       :umlsCui "C0557143" ;
-                      rdfs:label "Lives in a community" .
+                      rdfs:label "Lives in a community" ;
+                      <http://www.w3.org/2004/02/skos/core#narrower> :lives_in_a_school_community ,
+                                                                     :lives_in_boarding_school .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_in_a_school_community
 :lives_in_a_school_community rdf:type owl:NamedIndividual ,
                                       :Household ;
                              :umlsCui "C0557144" ;
-                             rdfs:label "Lives in a school community" .
+                             rdfs:label "Lives in a school community" ;
+                             <http://www.w3.org/2004/02/skos/core#broader> :lives_in_a_community .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_in_boarding_school
 :lives_in_boarding_school rdf:type owl:NamedIndividual ,
                                    :Household ;
                           :umlsCui "C0557145" ;
-                          rdfs:label "Lives in boarding school" .
+                          rdfs:label "Lives in boarding school" ;
+                          <http://www.w3.org/2004/02/skos/core#broader> :lives_in_a_community .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_children
@@ -2101,7 +2246,8 @@ xsd:date rdf:type rdfs:Datatype .
 :lives_with_father rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C0557135" ;
-                   rdfs:label "Lives with father" .
+                   rdfs:label "Lives with father" ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :lives_with_parents .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_friends
@@ -2115,28 +2261,33 @@ xsd:date rdf:type rdfs:Datatype .
 :lives_with_grandfather rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C0557137" ;
-                        rdfs:label "Lives with grandfather" .
+                        rdfs:label "Lives with grandfather" ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :lives_with_grandparents .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_grandmother
 :lives_with_grandmother rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C0557138" ;
-                        rdfs:label "Lives with grandmother" .
+                        rdfs:label "Lives with grandmother" ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :lives_with_grandparents .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_grandparents
 :lives_with_grandparents rdf:type owl:NamedIndividual ,
                                   :Household ;
                          :umlsCui "C0557136" ;
-                         rdfs:label "Lives with grandparents" .
+                         rdfs:label "Lives with grandparents" ;
+                         <http://www.w3.org/2004/02/skos/core#narrower> :lives_with_grandfather ,
+                                                                        :lives_with_grandmother .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_husband
 :lives_with_husband rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C1443354" ;
-                    rdfs:label "Lives with husband" .
+                    rdfs:label "Lives with husband" ;
+                    <http://www.w3.org/2004/02/skos/core#broader> :lives_with_spouse .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_lodger
@@ -2150,14 +2301,17 @@ xsd:date rdf:type rdfs:Datatype .
 :lives_with_mother rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C0557134" ;
-                   rdfs:label "Lives with mother" .
+                   rdfs:label "Lives with mother" ;
+                   <http://www.w3.org/2004/02/skos/core#broader> :lives_with_parents .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_parents
 :lives_with_parents rdf:type owl:NamedIndividual ,
                              :Household ;
                     :umlsCui "C0557133" ;
-                    rdfs:label "Lives with parents" .
+                    rdfs:label "Lives with parents" ;
+                    <http://www.w3.org/2004/02/skos/core#narrower> :lives_with_father ,
+                                                                   :lives_with_mother .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_partner
@@ -2185,21 +2339,26 @@ xsd:date rdf:type rdfs:Datatype .
 :lives_with_spouse rdf:type owl:NamedIndividual ,
                             :Household ;
                    :umlsCui "C2184147" ;
-                   rdfs:label "Lives with spouse" .
+                   rdfs:label "Lives with spouse" ;
+                   <http://www.w3.org/2004/02/skos/core#narrower> :lives_with_husband ,
+                                                                  :lives_with_spouse_only ,
+                                                                  :lives_with_wife .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_spouse_only
 :lives_with_spouse_only rdf:type owl:NamedIndividual ,
                                  :Household ;
                         :umlsCui "C5396995" ;
-                        rdfs:label "Lives with spouse only" .
+                        rdfs:label "Lives with spouse only" ;
+                        <http://www.w3.org/2004/02/skos/core#broader> :lives_with_spouse .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives_with_wife
 :lives_with_wife rdf:type owl:NamedIndividual ,
                           :Household ;
                  :umlsCui "C2960190" ;
-                 rdfs:label "Lives with wife" .
+                 rdfs:label "Lives with wife" ;
+                 <http://www.w3.org/2004/02/skos/core#broader> :lives_with_spouse .
 
 
 ###  http://research.ibm.com/ontologies/hspo/living_temporarily_with_relatives
@@ -2257,14 +2416,23 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/married
 :married rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
-         :umlsCui "C0555047" ;
-         rdfs:label "Married" .
+         :umlsCui "C0337591" ,
+                  "C0555047" ;
+         rdfs:label "Married" ;
+         <http://www.w3.org/2004/02/skos/core#narrower> :newly_wed ,
+                                                        :remarried .
 
 
 ###  http://research.ibm.com/ontologies/hspo/masculine_gender
 :masculine_gender rdf:type owl:NamedIndividual ,
                            :Gender ;
-                  :umlsCui "C3839079" ;
+                  :umlsCui "C0025266" ,
+                           "C0042757" ,
+                           "C0086582" ,
+                           "C1706180" ,
+                           "C1706429" ,
+                           "C3839079" ,
+                           "C3887374" ;
                   rdfs:label "Masculine gender" .
 
 
@@ -2357,13 +2525,15 @@ xsd:date rdf:type rdfs:Datatype .
 :newly_wed rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C0425381" ;
-           rdfs:label "Newly wed" .
+           rdfs:label "Newly wed" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :married .
 
 
 ###  http://research.ibm.com/ontologies/hspo/non_binary_gender
 :non_binary_gender rdf:type owl:NamedIndividual ,
                             :Gender ;
-                   :umlsCui "C3887376" ;
+                   :umlsCui "C3887376" ,
+                            "C5552667" ;
                    rdfs:label "Non-binary gender" .
 
 
@@ -2561,7 +2731,8 @@ xsd:date rdf:type rdfs:Datatype .
 :remarried rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C0425380" ;
-           rdfs:label "Remarried" .
+           rdfs:label "Remarried" ;
+           <http://www.w3.org/2004/02/skos/core#broader> :married .
 
 
 ###  http://research.ibm.com/ontologies/hspo/rlds
@@ -2619,14 +2790,16 @@ xsd:date rdf:type rdfs:Datatype .
 :separated rdf:type owl:NamedIndividual ,
                     :MaritalStatus ;
            :umlsCui "C4721417" ;
-           rdfs:label "Separated" .
+           rdfs:label "Separated" ;
+           <http://www.w3.org/2004/02/skos/core#narrower> :separated_from_cohabitee .
 
 
 ###  http://research.ibm.com/ontologies/hspo/separated_from_cohabitee
 :separated_from_cohabitee rdf:type owl:NamedIndividual ,
                                    :MaritalStatus ;
                           :umlsCui "C0086972" ;
-                          rdfs:label "Separated from cohabitee" .
+                          rdfs:label "Separated from cohabitee" ;
+                          <http://www.w3.org/2004/02/skos/core#broader> :separated .
 
 
 ###  http://research.ibm.com/ontologies/hspo/seventh_day_adventist
@@ -2695,14 +2868,16 @@ xsd:date rdf:type rdfs:Datatype .
 :single_never_married rdf:type owl:NamedIndividual ,
                                :MaritalStatus ;
                       :umlsCui "C0027952" ;
-                      rdfs:label "Single, never married" .
+                      rdfs:label "Single, never married" ;
+                      <http://www.w3.org/2004/02/skos/core#broader> :single_person .
 
 
 ###  http://research.ibm.com/ontologies/hspo/single_person
 :single_person rdf:type owl:NamedIndividual ,
                         :MaritalStatus ;
                :umlsCui "C0037179" ;
-               rdfs:label "Single person" .
+               rdfs:label "Single person" ;
+               <http://www.w3.org/2004/02/skos/core#narrower> :single_never_married .
 
 
 ###  http://research.ibm.com/ontologies/hspo/sixty_to_sixtyfour
@@ -2840,28 +3015,30 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/transgender
 :transgender rdf:type owl:NamedIndividual ,
                       :Gender ;
-             :umlsCui "C1319926" ;
-             rdfs:label "Surgically transgendered transsexual" .
+             :umlsCui "C0558141" ,
+                      "C1319926" ,
+                      "C3266856" ,
+                      "C3494399" ;
+             rdfs:label "Transgender" .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_female_to_male
 :transgender_female_to_male rdf:type owl:NamedIndividual ,
                                      :Gender ;
-                            :umlsCui "C1319930" ;
+                            :umlsCui "C1319928" ,
+                                     "C1319930" ,
+                                     "C1705488" ,
+                                     "C4700335" ;
                             rdfs:label "Surgically transgendered transsexual, female-to-male" .
-
-
-###  http://research.ibm.com/ontologies/hspo/transgender_identity
-:transgender_identity rdf:type owl:NamedIndividual ,
-                               :Gender ;
-                      :umlsCui "C0558141" ;
-                      rdfs:label "Transgender identity" .
 
 
 ###  http://research.ibm.com/ontologies/hspo/transgender_male_to_female
 :transgender_male_to_female rdf:type owl:NamedIndividual ,
                                      :Gender ;
-                            :umlsCui "C1319929" ;
+                            :umlsCui "C1319927" ,
+                                     "C1319929" ,
+                                     "C1705489" ,
+                                     "C4700336" ;
                             rdfs:label "Surgically transgendered transsexual, male-to-female" .
 
 
@@ -2945,40 +3122,37 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://research.ibm.com/ontologies/hspo/wesleyan
 :wesleyan rdf:type owl:NamedIndividual ,
                    :Religion ;
-          :umlsCui "C1546395" ,
+          :umlsCui "C0585096" ,
+                   "C1546395" ,
+                   "C1546396" ,
                    "C5552621" ;
           rdfs:label "Christian: Wesleyan" ;
           <http://www.w3.org/2004/02/skos/core#broader> :christian .
 
 
-###  http://research.ibm.com/ontologies/hspo/wesleyan_methodist
-:wesleyan_methodist rdf:type owl:NamedIndividual ,
-                             :Religion ;
-                    :umlsCui "C0585096" ,
-                             "C1546396" ;
-                    rdfs:label "Christian: Wesleyan Methodist" ;
-                    <http://www.w3.org/2004/02/skos/core#broader> :christian .
-
-
 ###  http://research.ibm.com/ontologies/hspo/widow
 :widow rdf:type owl:NamedIndividual ,
                 :MaritalStatus ;
-       :umlsCui "C0206275" ;
-       rdfs:label "Widow" .
+       :umlsCui "C1510465" ;
+       rdfs:label "Widow" ;
+       <http://www.w3.org/2004/02/skos/core#broader> :widowed .
 
 
 ###  http://research.ibm.com/ontologies/hspo/widowed
 :widowed rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
          :umlsCui "C0206275" ;
-         rdfs:label "Widowed" .
+         rdfs:label "Widowed" ;
+         <http://www.w3.org/2004/02/skos/core#narrower> :widow ,
+                                                        :widower .
 
 
 ###  http://research.ibm.com/ontologies/hspo/widower
 :widower rdf:type owl:NamedIndividual ,
                   :MaritalStatus ;
          :umlsCui "C0043174" ;
-         rdfs:label "Widower" .
+         rdfs:label "Widower" ;
+         <http://www.w3.org/2004/02/skos/core#broader> :widowed .
 
 
 ###  http://research.ibm.com/ontologies/hspo/wife_left_home
