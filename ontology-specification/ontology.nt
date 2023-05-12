@@ -3,9 +3,9 @@
 <http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/elements/1.1/creator> "IBM Research Europe" .
 <http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/elements/1.1/publisher> "IBM" .
 <http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/terms/created> "2022-06-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/terms/modified> "2022-10-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/terms/modified> "2023-02-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://research.ibm.com/ontologies/hspo/> <http://purl.org/dc/terms/title> "Health and Social Person-centric Ontology (HSPO)"@en .
-<http://research.ibm.com/ontologies/hspo/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.17" .
+<http://research.ibm.com/ontologies/hspo/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.19" .
 # 
 # 
 # #################################################################
@@ -582,13 +582,135 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/Food
 <http://research.ibm.com/ontologies/hspo/Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://research.ibm.com/ontologies/hspo/Food> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://research.ibm.com/ontologies/hspo/SocialContext> .
-<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0015619" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0022901" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0038187" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0476605" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0476609" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480157" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480158" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480159" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480160" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480161" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480162" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480163" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480164" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0480165" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0497502" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3178753" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3494174" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3538979" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4076273" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4533517" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4533519" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4533521" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4533522" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4533775" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4535753" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4696326" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4696327" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4738063" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381016" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381033" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381034" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381070" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381077" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381080" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5381081" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382002" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382003" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382004" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382005" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382357" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382358" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382359" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382360" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382361" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382362" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382363" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382364" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382365" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382366" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382367" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382368" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382369" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382370" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382371" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382372" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382373" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382374" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382375" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382376" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382434" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382437" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382438" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382439" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382454" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5382455" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5392249" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5425041" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5425043" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426539" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426540" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426541" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426542" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426543" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426544" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426545" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426546" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426547" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426548" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5426549" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5439028" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5439029" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5439058" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5439059" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5439060" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441007" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441008" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441009" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441010" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441011" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441012" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441013" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441014" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441015" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441017" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441018" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441023" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441069" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441070" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441071" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5441072" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5539302" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5544471" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5545201" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549769" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549770" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549819" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549820" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549821" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549822" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5549823" .
+<http://research.ibm.com/ontologies/hspo/Food> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5699771" .
 <http://research.ibm.com/ontologies/hspo/Food> <http://www.w3.org/2000/01/rdf-schema#comment> "The context in which an individual consumes or has access to food including nutritious or fresh foods and food poverty. " .
 <http://research.ibm.com/ontologies/hspo/Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food Security" .
 # 
 # http://research.ibm.com/ontologies/hspo/Gender
 <http://research.ibm.com/ontologies/hspo/Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0017249" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0036891" .
 <http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0079399" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0563024" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0804628" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1287419" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1548569" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1710069" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3841889" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4018874" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5551719" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5552241" .
+<http://research.ibm.com/ontologies/hspo/Gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5552242" .
 <http://research.ibm.com/ontologies/hspo/Gender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of a person"@en .
 <http://research.ibm.com/ontologies/hspo/Gender> <http://www.w3.org/2000/01/rdf-schema#label> "Gender"@en .
 # 
@@ -1094,6 +1216,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0024819" .
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557081" .
+<http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0596885" .
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1276230" .
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The marital status of a person"@en .
 <http://research.ibm.com/ontologies/hspo/MaritalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Marital Status"@en .
@@ -1207,6 +1330,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/african_race> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/african_race> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/RaceAndEthnicity> .
 <http://research.ibm.com/ontologies/hspo/african_race> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0027567" .
+<http://research.ibm.com/ontologies/hspo/african_race> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0085756" .
 <http://research.ibm.com/ontologies/hspo/african_race> <http://www.w3.org/2000/01/rdf-schema#comment> "African race (racial group)" .
 <http://research.ibm.com/ontologies/hspo/african_race> <http://www.w3.org/2000/01/rdf-schema#label> "African race" .
 # 
@@ -1419,7 +1543,6 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/christian> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/united_church_of_christ> .
 <http://research.ibm.com/ontologies/hspo/christian> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/united_methodist> .
 <http://research.ibm.com/ontologies/hspo/christian> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/wesleyan> .
-<http://research.ibm.com/ontologies/hspo/christian> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/wesleyan_methodist> .
 # 
 # http://research.ibm.com/ontologies/hspo/christian_missionary_alliance
 <http://research.ibm.com/ontologies/hspo/christian_missionary_alliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1622,7 +1745,12 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/feminine_gender
 <http://research.ibm.com/ontologies/hspo/feminine_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/feminine_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
+<http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0043210" .
+<http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0086287" .
+<http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0233894" .
+<http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1705497" .
 <http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3839293" .
+<http://research.ibm.com/ontologies/hspo/feminine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3887375" .
 <http://research.ibm.com/ontologies/hspo/feminine_gender> <http://www.w3.org/2000/01/rdf-schema#label> "Feminine gender" .
 # 
 # http://research.ibm.com/ontologies/hspo/fifteen_to_nineteen
@@ -1678,12 +1806,6 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/friends_church> <http://www.w3.org/2000/01/rdf-schema#label> "Christian: Friends Church or Quakers" .
 <http://research.ibm.com/ontologies/hspo/friends_church> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/christian> .
 # 
-# http://research.ibm.com/ontologies/hspo/gender_finding
-<http://research.ibm.com/ontologies/hspo/gender_finding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://research.ibm.com/ontologies/hspo/gender_finding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
-<http://research.ibm.com/ontologies/hspo/gender_finding> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1287419" .
-<http://research.ibm.com/ontologies/hspo/gender_finding> <http://www.w3.org/2000/01/rdf-schema#label> "Gender finding" .
-# 
 # http://research.ibm.com/ontologies/hspo/gender_unknown
 <http://research.ibm.com/ontologies/hspo/gender_unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/gender_unknown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
@@ -1735,18 +1857,22 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0524334" .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage> <http://www.w3.org/2000/01/rdf-schema#label> "Homosexual marriage" .
+<http://research.ibm.com/ontologies/hspo/homosexual_marriage> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> .
+<http://research.ibm.com/ontologies/hspo/homosexual_marriage> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> .
 # 
 # http://research.ibm.com/ontologies/hspo/homosexual_marriage_female
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0524336" .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> <http://www.w3.org/2000/01/rdf-schema#label> "Homosexual marriage, female" .
+<http://research.ibm.com/ontologies/hspo/homosexual_marriage_female> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/homosexual_marriage> .
 # 
 # http://research.ibm.com/ontologies/hspo/homosexual_marriage_male
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0524335" .
 <http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> <http://www.w3.org/2000/01/rdf-schema#label> "Homosexual marriage, male" .
+<http://research.ibm.com/ontologies/hspo/homosexual_marriage_male> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/homosexual_marriage> .
 # 
 # http://research.ibm.com/ontologies/hspo/husband_left_home
 <http://research.ibm.com/ontologies/hspo/husband_left_home> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1826,12 +1952,6 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/latter_day_saints_church> <http://www.w3.org/2000/01/rdf-schema#label> "Christian: Latter-day Saints" .
 <http://research.ibm.com/ontologies/hspo/latter_day_saints_church> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/christian> .
 # 
-# http://research.ibm.com/ontologies/hspo/legally_married
-<http://research.ibm.com/ontologies/hspo/legally_married> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://research.ibm.com/ontologies/hspo/legally_married> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
-<http://research.ibm.com/ontologies/hspo/legally_married> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0337591" .
-<http://research.ibm.com/ontologies/hspo/legally_married> <http://www.w3.org/2000/01/rdf-schema#label> "Legally married" .
-# 
 # http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree
 <http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
@@ -1841,44 +1961,67 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/lives_alone
 <http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0260794" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425198" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425199" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425200" .
 <http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0439044" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0679994" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1386493" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1387120" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1387121" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1387122" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C2111017" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C2184146" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C2910992" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3540481" .
 <http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/2000/01/rdf-schema#label> "Lives alone" .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_alone_help_available> .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> .
+<http://research.ibm.com/ontologies/hspo/lives_alone> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_alone_help_available
 <http://research.ibm.com/ontologies/hspo/lives_alone_help_available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_help_available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_help_available> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425198" .
 <http://research.ibm.com/ontologies/hspo/lives_alone_help_available> <http://www.w3.org/2000/01/rdf-schema#label> "Lives alone, help available" .
+<http://research.ibm.com/ontologies/hspo/lives_alone_help_available> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_alone> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper
 <http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425200" .
-<http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://www.w3.org/2000/01/rdf-schema#label> "Lives alone needs housekeeper" .
+<http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://www.w3.org/2000/01/rdf-schema#label> "Lives alone, needs housekeeper" .
+<http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_alone> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available
 <http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425199" .
 <http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> <http://www.w3.org/2000/01/rdf-schema#label> "Lives alone, no help available" .
+<http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_alone> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_as_companion
 <http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557140" .
 <http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://www.w3.org/2000/01/rdf-schema#label> "Lives as companion" .
+<http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> .
+<http://research.ibm.com/ontologies/hspo/lives_as_companion> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_as_paid_companion
 <http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557141" .
 <http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> <http://www.w3.org/2000/01/rdf-schema#label> "Lives as paid companion" .
+<http://research.ibm.com/ontologies/hspo/lives_as_paid_companion> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_as_companion> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion
 <http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557142" .
 <http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> <http://www.w3.org/2000/01/rdf-schema#label> "Lives as unpaid companion" .
+<http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_as_companion> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_in_a_commune
 <http://research.ibm.com/ontologies/hspo/lives_in_a_commune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1891,18 +2034,22 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/lives_in_a_community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_in_a_community> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557143" .
 <http://research.ibm.com/ontologies/hspo/lives_in_a_community> <http://www.w3.org/2000/01/rdf-schema#label> "Lives in a community" .
+<http://research.ibm.com/ontologies/hspo/lives_in_a_community> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> .
+<http://research.ibm.com/ontologies/hspo/lives_in_a_community> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_in_a_school_community
 <http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557144" .
 <http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> <http://www.w3.org/2000/01/rdf-schema#label> "Lives in a school community" .
+<http://research.ibm.com/ontologies/hspo/lives_in_a_school_community> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_in_a_community> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_in_boarding_school
 <http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557145" .
 <http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> <http://www.w3.org/2000/01/rdf-schema#label> "Lives in boarding school" .
+<http://research.ibm.com/ontologies/hspo/lives_in_boarding_school> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_in_a_community> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_children
 <http://research.ibm.com/ontologies/hspo/lives_with_children> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1933,6 +2080,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/lives_with_father> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_father> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557135" .
 <http://research.ibm.com/ontologies/hspo/lives_with_father> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with father" .
+<http://research.ibm.com/ontologies/hspo/lives_with_father> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_parents> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_friends
 <http://research.ibm.com/ontologies/hspo/lives_with_friends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1945,24 +2093,29 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/lives_with_grandfather> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandfather> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557137" .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandfather> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with grandfather" .
+<http://research.ibm.com/ontologies/hspo/lives_with_grandfather> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_grandmother
 <http://research.ibm.com/ontologies/hspo/lives_with_grandmother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandmother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandmother> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557138" .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandmother> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with grandmother" .
+<http://research.ibm.com/ontologies/hspo/lives_with_grandmother> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_grandparents
 <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557136" .
 <http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with grandparents" .
+<http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_grandfather> .
+<http://research.ibm.com/ontologies/hspo/lives_with_grandparents> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_grandmother> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_husband
 <http://research.ibm.com/ontologies/hspo/lives_with_husband> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_husband> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_husband> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1443354" .
 <http://research.ibm.com/ontologies/hspo/lives_with_husband> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with husband" .
+<http://research.ibm.com/ontologies/hspo/lives_with_husband> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_spouse> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_lodger
 <http://research.ibm.com/ontologies/hspo/lives_with_lodger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1975,12 +2128,15 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/lives_with_mother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_mother> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557134" .
 <http://research.ibm.com/ontologies/hspo/lives_with_mother> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with mother" .
+<http://research.ibm.com/ontologies/hspo/lives_with_mother> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_parents> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_parents
 <http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0557133" .
 <http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with parents" .
+<http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_father> .
+<http://research.ibm.com/ontologies/hspo/lives_with_parents> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_mother> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_partner
 <http://research.ibm.com/ontologies/hspo/lives_with_partner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2005,18 +2161,23 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://research.ibm.com/ontologies/hspo/umlsCui> "C2184147" .
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with spouse" .
+<http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_husband> .
+<http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> .
+<http://research.ibm.com/ontologies/hspo/lives_with_spouse> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/lives_with_wife> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_spouse_only
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5396995" .
 <http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with spouse only" .
+<http://research.ibm.com/ontologies/hspo/lives_with_spouse_only> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_spouse> .
 # 
 # http://research.ibm.com/ontologies/hspo/lives_with_wife
 <http://research.ibm.com/ontologies/hspo/lives_with_wife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/lives_with_wife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Household> .
 <http://research.ibm.com/ontologies/hspo/lives_with_wife> <http://research.ibm.com/ontologies/hspo/umlsCui> "C2960190" .
 <http://research.ibm.com/ontologies/hspo/lives_with_wife> <http://www.w3.org/2000/01/rdf-schema#label> "Lives with wife" .
+<http://research.ibm.com/ontologies/hspo/lives_with_wife> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/lives_with_spouse> .
 # 
 # http://research.ibm.com/ontologies/hspo/living_temporarily_with_relatives
 <http://research.ibm.com/ontologies/hspo/living_temporarily_with_relatives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2067,13 +2228,22 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/married
 <http://research.ibm.com/ontologies/hspo/married> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/married> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
+<http://research.ibm.com/ontologies/hspo/married> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0337591" .
 <http://research.ibm.com/ontologies/hspo/married> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0555047" .
 <http://research.ibm.com/ontologies/hspo/married> <http://www.w3.org/2000/01/rdf-schema#label> "Married" .
+<http://research.ibm.com/ontologies/hspo/married> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/newly_wed> .
+<http://research.ibm.com/ontologies/hspo/married> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/remarried> .
 # 
 # http://research.ibm.com/ontologies/hspo/masculine_gender
 <http://research.ibm.com/ontologies/hspo/masculine_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/masculine_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0025266" .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0042757" .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0086582" .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1706180" .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1706429" .
 <http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3839079" .
+<http://research.ibm.com/ontologies/hspo/masculine_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3887374" .
 <http://research.ibm.com/ontologies/hspo/masculine_gender> <http://www.w3.org/2000/01/rdf-schema#label> "Masculine gender" .
 # 
 # http://research.ibm.com/ontologies/hspo/medication_provisioning
@@ -2157,11 +2327,13 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/newly_wed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/newly_wed> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425381" .
 <http://research.ibm.com/ontologies/hspo/newly_wed> <http://www.w3.org/2000/01/rdf-schema#label> "Newly wed" .
+<http://research.ibm.com/ontologies/hspo/newly_wed> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/married> .
 # 
 # http://research.ibm.com/ontologies/hspo/non_binary_gender
 <http://research.ibm.com/ontologies/hspo/non_binary_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/non_binary_gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
 <http://research.ibm.com/ontologies/hspo/non_binary_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3887376" .
+<http://research.ibm.com/ontologies/hspo/non_binary_gender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5552667" .
 <http://research.ibm.com/ontologies/hspo/non_binary_gender> <http://www.w3.org/2000/01/rdf-schema#label> "Non-binary gender" .
 # 
 # http://research.ibm.com/ontologies/hspo/nonreligious
@@ -2337,6 +2509,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/remarried> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/remarried> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0425380" .
 <http://research.ibm.com/ontologies/hspo/remarried> <http://www.w3.org/2000/01/rdf-schema#label> "Remarried" .
+<http://research.ibm.com/ontologies/hspo/remarried> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/married> .
 # 
 # http://research.ibm.com/ontologies/hspo/rlds
 <http://research.ibm.com/ontologies/hspo/rlds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2390,12 +2563,14 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/separated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/separated> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4721417" .
 <http://research.ibm.com/ontologies/hspo/separated> <http://www.w3.org/2000/01/rdf-schema#label> "Separated" .
+<http://research.ibm.com/ontologies/hspo/separated> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> .
 # 
 # http://research.ibm.com/ontologies/hspo/separated_from_cohabitee
 <http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0086972" .
 <http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> <http://www.w3.org/2000/01/rdf-schema#label> "Separated from cohabitee" .
+<http://research.ibm.com/ontologies/hspo/separated_from_cohabitee> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/separated> .
 # 
 # http://research.ibm.com/ontologies/hspo/seventh_day_adventist
 <http://research.ibm.com/ontologies/hspo/seventh_day_adventist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2457,12 +2632,14 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://research.ibm.com/ontologies/hspo/single_never_married> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/single_never_married> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0027952" .
 <http://research.ibm.com/ontologies/hspo/single_never_married> <http://www.w3.org/2000/01/rdf-schema#label> "Single, never married" .
+<http://research.ibm.com/ontologies/hspo/single_never_married> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/single_person> .
 # 
 # http://research.ibm.com/ontologies/hspo/single_person
 <http://research.ibm.com/ontologies/hspo/single_person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/single_person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/single_person> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0037179" .
 <http://research.ibm.com/ontologies/hspo/single_person> <http://www.w3.org/2000/01/rdf-schema#label> "Single person" .
+<http://research.ibm.com/ontologies/hspo/single_person> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/single_never_married> .
 # 
 # http://research.ibm.com/ontologies/hspo/sixty_to_sixtyfour
 <http://research.ibm.com/ontologies/hspo/sixty_to_sixtyfour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2584,25 +2761,28 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/transgender
 <http://research.ibm.com/ontologies/hspo/transgender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/transgender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
+<http://research.ibm.com/ontologies/hspo/transgender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0558141" .
 <http://research.ibm.com/ontologies/hspo/transgender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1319926" .
-<http://research.ibm.com/ontologies/hspo/transgender> <http://www.w3.org/2000/01/rdf-schema#label> "Surgically transgendered transsexual" .
+<http://research.ibm.com/ontologies/hspo/transgender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3266856" .
+<http://research.ibm.com/ontologies/hspo/transgender> <http://research.ibm.com/ontologies/hspo/umlsCui> "C3494399" .
+<http://research.ibm.com/ontologies/hspo/transgender> <http://www.w3.org/2000/01/rdf-schema#label> "Transgender" .
 # 
 # http://research.ibm.com/ontologies/hspo/transgender_female_to_male
 <http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
+<http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1319928" .
 <http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1319930" .
+<http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1705488" .
+<http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4700335" .
 <http://research.ibm.com/ontologies/hspo/transgender_female_to_male> <http://www.w3.org/2000/01/rdf-schema#label> "Surgically transgendered transsexual, female-to-male" .
-# 
-# http://research.ibm.com/ontologies/hspo/transgender_identity
-<http://research.ibm.com/ontologies/hspo/transgender_identity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://research.ibm.com/ontologies/hspo/transgender_identity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
-<http://research.ibm.com/ontologies/hspo/transgender_identity> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0558141" .
-<http://research.ibm.com/ontologies/hspo/transgender_identity> <http://www.w3.org/2000/01/rdf-schema#label> "Transgender identity" .
 # 
 # http://research.ibm.com/ontologies/hspo/transgender_male_to_female
 <http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Gender> .
+<http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1319927" .
 <http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1319929" .
+<http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1705489" .
+<http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://research.ibm.com/ontologies/hspo/umlsCui> "C4700336" .
 <http://research.ibm.com/ontologies/hspo/transgender_male_to_female> <http://www.w3.org/2000/01/rdf-schema#label> "Surgically transgendered transsexual, male-to-female" .
 # 
 # http://research.ibm.com/ontologies/hspo/trial_separation
@@ -2676,36 +2856,34 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://research.ibm.com/ontologies/hspo/wesleyan
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Religion> .
+<http://research.ibm.com/ontologies/hspo/wesleyan> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0585096" .
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1546395" .
+<http://research.ibm.com/ontologies/hspo/wesleyan> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1546396" .
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://research.ibm.com/ontologies/hspo/umlsCui> "C5552621" .
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://www.w3.org/2000/01/rdf-schema#label> "Christian: Wesleyan" .
 <http://research.ibm.com/ontologies/hspo/wesleyan> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/christian> .
 # 
-# http://research.ibm.com/ontologies/hspo/wesleyan_methodist
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/Religion> .
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0585096" .
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1546396" .
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://www.w3.org/2000/01/rdf-schema#label> "Christian: Wesleyan Methodist" .
-<http://research.ibm.com/ontologies/hspo/wesleyan_methodist> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/christian> .
-# 
 # http://research.ibm.com/ontologies/hspo/widow
 <http://research.ibm.com/ontologies/hspo/widow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/widow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
-<http://research.ibm.com/ontologies/hspo/widow> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0206275" .
+<http://research.ibm.com/ontologies/hspo/widow> <http://research.ibm.com/ontologies/hspo/umlsCui> "C1510465" .
 <http://research.ibm.com/ontologies/hspo/widow> <http://www.w3.org/2000/01/rdf-schema#label> "Widow" .
+<http://research.ibm.com/ontologies/hspo/widow> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/widowed> .
 # 
 # http://research.ibm.com/ontologies/hspo/widowed
 <http://research.ibm.com/ontologies/hspo/widowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/widowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/widowed> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0206275" .
 <http://research.ibm.com/ontologies/hspo/widowed> <http://www.w3.org/2000/01/rdf-schema#label> "Widowed" .
+<http://research.ibm.com/ontologies/hspo/widowed> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/widow> .
+<http://research.ibm.com/ontologies/hspo/widowed> <http://www.w3.org/2004/02/skos/core#narrower> <http://research.ibm.com/ontologies/hspo/widower> .
 # 
 # http://research.ibm.com/ontologies/hspo/widower
 <http://research.ibm.com/ontologies/hspo/widower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://research.ibm.com/ontologies/hspo/widower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://research.ibm.com/ontologies/hspo/MaritalStatus> .
 <http://research.ibm.com/ontologies/hspo/widower> <http://research.ibm.com/ontologies/hspo/umlsCui> "C0043174" .
 <http://research.ibm.com/ontologies/hspo/widower> <http://www.w3.org/2000/01/rdf-schema#label> "Widower" .
+<http://research.ibm.com/ontologies/hspo/widower> <http://www.w3.org/2004/02/skos/core#broader> <http://research.ibm.com/ontologies/hspo/widowed> .
 # 
 # http://research.ibm.com/ontologies/hspo/wife_left_home
 <http://research.ibm.com/ontologies/hspo/wife_left_home> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

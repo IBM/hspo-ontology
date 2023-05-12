@@ -104,14 +104,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-10-07"
+    "@value" : "2023-02-15"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
     "@value" : "Health and Social Person-centric Ontology (HSPO)"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.17"
+    "@value" : "0.0.19"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/Age",
@@ -323,7 +323,227 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/Food",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : ""
+    "@value" : "C0015619"
+  }, {
+    "@value" : "C0022901"
+  }, {
+    "@value" : "C0038187"
+  }, {
+    "@value" : "C0476605"
+  }, {
+    "@value" : "C0476609"
+  }, {
+    "@value" : "C0480157"
+  }, {
+    "@value" : "C0480158"
+  }, {
+    "@value" : "C0480159"
+  }, {
+    "@value" : "C0480160"
+  }, {
+    "@value" : "C0480161"
+  }, {
+    "@value" : "C0480162"
+  }, {
+    "@value" : "C0480163"
+  }, {
+    "@value" : "C0480164"
+  }, {
+    "@value" : "C0480165"
+  }, {
+    "@value" : "C0497502"
+  }, {
+    "@value" : "C3178753"
+  }, {
+    "@value" : "C3494174"
+  }, {
+    "@value" : "C3538979"
+  }, {
+    "@value" : "C4076273"
+  }, {
+    "@value" : "C4533517"
+  }, {
+    "@value" : "C4533519"
+  }, {
+    "@value" : "C4533521"
+  }, {
+    "@value" : "C4533522"
+  }, {
+    "@value" : "C4533775"
+  }, {
+    "@value" : "C4535753"
+  }, {
+    "@value" : "C4696326"
+  }, {
+    "@value" : "C4696327"
+  }, {
+    "@value" : "C4738063"
+  }, {
+    "@value" : "C5381016"
+  }, {
+    "@value" : "C5381033"
+  }, {
+    "@value" : "C5381034"
+  }, {
+    "@value" : "C5381070"
+  }, {
+    "@value" : "C5381077"
+  }, {
+    "@value" : "C5381080"
+  }, {
+    "@value" : "C5381081"
+  }, {
+    "@value" : "C5382002"
+  }, {
+    "@value" : "C5382003"
+  }, {
+    "@value" : "C5382004"
+  }, {
+    "@value" : "C5382005"
+  }, {
+    "@value" : "C5382357"
+  }, {
+    "@value" : "C5382358"
+  }, {
+    "@value" : "C5382359"
+  }, {
+    "@value" : "C5382360"
+  }, {
+    "@value" : "C5382361"
+  }, {
+    "@value" : "C5382362"
+  }, {
+    "@value" : "C5382363"
+  }, {
+    "@value" : "C5382364"
+  }, {
+    "@value" : "C5382365"
+  }, {
+    "@value" : "C5382366"
+  }, {
+    "@value" : "C5382367"
+  }, {
+    "@value" : "C5382368"
+  }, {
+    "@value" : "C5382369"
+  }, {
+    "@value" : "C5382370"
+  }, {
+    "@value" : "C5382371"
+  }, {
+    "@value" : "C5382372"
+  }, {
+    "@value" : "C5382373"
+  }, {
+    "@value" : "C5382374"
+  }, {
+    "@value" : "C5382375"
+  }, {
+    "@value" : "C5382376"
+  }, {
+    "@value" : "C5382434"
+  }, {
+    "@value" : "C5382437"
+  }, {
+    "@value" : "C5382438"
+  }, {
+    "@value" : "C5382439"
+  }, {
+    "@value" : "C5382454"
+  }, {
+    "@value" : "C5382455"
+  }, {
+    "@value" : "C5392249"
+  }, {
+    "@value" : "C5425041"
+  }, {
+    "@value" : "C5425043"
+  }, {
+    "@value" : "C5426539"
+  }, {
+    "@value" : "C5426540"
+  }, {
+    "@value" : "C5426541"
+  }, {
+    "@value" : "C5426542"
+  }, {
+    "@value" : "C5426543"
+  }, {
+    "@value" : "C5426544"
+  }, {
+    "@value" : "C5426545"
+  }, {
+    "@value" : "C5426546"
+  }, {
+    "@value" : "C5426547"
+  }, {
+    "@value" : "C5426548"
+  }, {
+    "@value" : "C5426549"
+  }, {
+    "@value" : "C5439028"
+  }, {
+    "@value" : "C5439029"
+  }, {
+    "@value" : "C5439058"
+  }, {
+    "@value" : "C5439059"
+  }, {
+    "@value" : "C5439060"
+  }, {
+    "@value" : "C5441007"
+  }, {
+    "@value" : "C5441008"
+  }, {
+    "@value" : "C5441009"
+  }, {
+    "@value" : "C5441010"
+  }, {
+    "@value" : "C5441011"
+  }, {
+    "@value" : "C5441012"
+  }, {
+    "@value" : "C5441013"
+  }, {
+    "@value" : "C5441014"
+  }, {
+    "@value" : "C5441015"
+  }, {
+    "@value" : "C5441017"
+  }, {
+    "@value" : "C5441018"
+  }, {
+    "@value" : "C5441023"
+  }, {
+    "@value" : "C5441069"
+  }, {
+    "@value" : "C5441070"
+  }, {
+    "@value" : "C5441071"
+  }, {
+    "@value" : "C5441072"
+  }, {
+    "@value" : "C5539302"
+  }, {
+    "@value" : "C5544471"
+  }, {
+    "@value" : "C5545201"
+  }, {
+    "@value" : "C5549769"
+  }, {
+    "@value" : "C5549770"
+  }, {
+    "@value" : "C5549819"
+  }, {
+    "@value" : "C5549820"
+  }, {
+    "@value" : "C5549821"
+  }, {
+    "@value" : "C5549822"
+  }, {
+    "@value" : "C5549823"
+  }, {
+    "@value" : "C5699771"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The context in which an individual consumes or has access to food including nutritious or fresh foods and food poverty. "
@@ -338,7 +558,31 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/Gender",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0017249"
+  }, {
+    "@value" : "C0036891"
+  }, {
     "@value" : "C0079399"
+  }, {
+    "@value" : "C0563024"
+  }, {
+    "@value" : "C0804628"
+  }, {
+    "@value" : "C1287419"
+  }, {
+    "@value" : "C1548569"
+  }, {
+    "@value" : "C1710069"
+  }, {
+    "@value" : "C3841889"
+  }, {
+    "@value" : "C4018874"
+  }, {
+    "@value" : "C5551719"
+  }, {
+    "@value" : "C5552241"
+  }, {
+    "@value" : "C5552242"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1396,6 +1640,8 @@
   }, {
     "@value" : "C0557081"
   }, {
+    "@value" : "C0596885"
+  }, {
     "@value" : "C1276230"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1599,6 +1845,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
     "@value" : "C0027567"
+  }, {
+    "@value" : "C0085756"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/RaceAndEthnicity"
@@ -2091,8 +2339,6 @@
     "@id" : "http://research.ibm.com/ontologies/hspo/united_methodist"
   }, {
     "@id" : "http://research.ibm.com/ontologies/hspo/wesleyan"
-  }, {
-    "@id" : "http://research.ibm.com/ontologies/hspo/wesleyan_methodist"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/christian_missionary_alliance",
@@ -2508,7 +2754,17 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/feminine_gender",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0043210"
+  }, {
+    "@value" : "C0086287"
+  }, {
+    "@value" : "C0233894"
+  }, {
+    "@value" : "C1705497"
+  }, {
     "@value" : "C3839293"
+  }, {
+    "@value" : "C3887375"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
@@ -2640,18 +2896,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/christian"
-  } ]
-}, {
-  "@id" : "http://research.ibm.com/ontologies/hspo/gender_finding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : "C1287419"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Gender finding"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/gender_unknown",
@@ -3166,6 +3410,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Homosexual marriage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage_female"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage_male"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage_female",
@@ -3178,6 +3427,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Homosexual marriage, female"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage_male",
@@ -3190,6 +3442,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Homosexual marriage, male"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/homosexual_marriage"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/husband_left_home",
@@ -3441,18 +3696,6 @@
     "@id" : "http://research.ibm.com/ontologies/hspo/christian"
   } ]
 }, {
-  "@id" : "http://research.ibm.com/ontologies/hspo/legally_married",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : "C0337591"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://research.ibm.com/ontologies/hspo/MaritalStatus"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Legally married"
-  } ]
-}, {
   "@id" : "http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
@@ -3485,13 +3728,46 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0260794"
+  }, {
+    "@value" : "C0425198"
+  }, {
+    "@value" : "C0425199"
+  }, {
+    "@value" : "C0425200"
+  }, {
     "@value" : "C0439044"
+  }, {
+    "@value" : "C0679994"
+  }, {
+    "@value" : "C1386493"
+  }, {
+    "@value" : "C1387120"
+  }, {
+    "@value" : "C1387121"
+  }, {
+    "@value" : "C1387122"
+  }, {
+    "@value" : "C2111017"
+  }, {
+    "@value" : "C2184146"
+  }, {
+    "@value" : "C2910992"
+  }, {
+    "@value" : "C3540481"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Household"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives alone"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_help_available"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_help_available",
@@ -3504,6 +3780,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives alone, help available"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper",
@@ -3515,7 +3794,10 @@
     "@id" : "http://research.ibm.com/ontologies/hspo/Household"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Lives alone needs housekeeper"
+    "@value" : "Lives alone, needs housekeeper"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available",
@@ -3528,6 +3810,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives alone, no help available"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_alone"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_companion",
@@ -3540,6 +3825,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives as companion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_paid_companion"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_paid_companion",
@@ -3552,6 +3842,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives as paid companion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_companion"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_unpaid_companion",
@@ -3564,6 +3857,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives as unpaid companion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_as_companion"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_a_commune",
@@ -3588,6 +3884,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives in a community"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_a_school_community"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_boarding_school"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_a_school_community",
@@ -3600,6 +3901,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives in a school community"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_a_community"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_boarding_school",
@@ -3612,6 +3916,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives in boarding school"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_in_a_community"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_children",
@@ -3672,6 +3979,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with father"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_parents"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_friends",
@@ -3696,6 +4006,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with grandfather"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandparents"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandmother",
@@ -3708,6 +4021,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with grandmother"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandparents"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandparents",
@@ -3720,6 +4036,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with grandparents"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandfather"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_grandmother"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_husband",
@@ -3732,6 +4053,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with husband"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_spouse"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_lodger",
@@ -3756,6 +4080,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with mother"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_parents"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_parents",
@@ -3768,6 +4095,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with parents"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_father"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_mother"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_partner",
@@ -3816,6 +4148,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with spouse"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_husband"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_spouse_only"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_wife"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_spouse_only",
@@ -3828,6 +4167,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with spouse only"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_spouse"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_wife",
@@ -3840,6 +4182,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Lives with wife"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/lives_with_spouse"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/living_temporarily_with_relatives",
@@ -3940,6 +4285,8 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/married",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0337591"
+  }, {
     "@value" : "C0555047"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -3947,12 +4294,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Married"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/newly_wed"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/remarried"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/masculine_gender",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0025266"
+  }, {
+    "@value" : "C0042757"
+  }, {
+    "@value" : "C0086582"
+  }, {
+    "@value" : "C1706180"
+  }, {
+    "@value" : "C1706429"
+  }, {
     "@value" : "C3839079"
+  }, {
+    "@value" : "C3887374"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
@@ -4128,12 +4492,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Newly wed"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/married"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/non_binary_gender",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
     "@value" : "C3887376"
+  }, {
+    "@value" : "C5552667"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
@@ -4585,6 +4954,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Remarried"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/married"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/rlds",
@@ -4697,6 +5069,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Separated"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/separated_from_cohabitee"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/separated_from_cohabitee",
@@ -4709,6 +5084,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Separated from cohabitee"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/separated"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/seventh_day_adventist",
@@ -4834,6 +5212,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Single, never married"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/single_person"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/single_person",
@@ -4846,6 +5227,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Single person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/single_never_married"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/sixty_to_sixtyfour",
@@ -5108,19 +5492,31 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/transgender",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0558141"
+  }, {
     "@value" : "C1319926"
+  }, {
+    "@value" : "C3266856"
+  }, {
+    "@value" : "C3494399"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Surgically transgendered transsexual"
+    "@value" : "Transgender"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/transgender_female_to_male",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C1319928"
+  }, {
     "@value" : "C1319930"
+  }, {
+    "@value" : "C1705488"
+  }, {
+    "@value" : "C4700335"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
@@ -5129,22 +5525,16 @@
     "@value" : "Surgically transgendered transsexual, female-to-male"
   } ]
 }, {
-  "@id" : "http://research.ibm.com/ontologies/hspo/transgender_identity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : "C0558141"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Transgender identity"
-  } ]
-}, {
   "@id" : "http://research.ibm.com/ontologies/hspo/transgender_male_to_female",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C1319927"
+  }, {
     "@value" : "C1319929"
+  }, {
+    "@value" : "C1705489"
+  }, {
+    "@value" : "C4700336"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/Gender"
@@ -5323,7 +5713,11 @@
   "@id" : "http://research.ibm.com/ontologies/hspo/wesleyan",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
+    "@value" : "C0585096"
+  }, {
     "@value" : "C1546395"
+  }, {
+    "@value" : "C1546396"
   }, {
     "@value" : "C5552621"
   } ],
@@ -5337,33 +5731,19 @@
     "@id" : "http://research.ibm.com/ontologies/hspo/christian"
   } ]
 }, {
-  "@id" : "http://research.ibm.com/ontologies/hspo/wesleyan_methodist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : "C0585096"
-  }, {
-    "@value" : "C1546396"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://research.ibm.com/ontologies/hspo/Religion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Christian: Wesleyan Methodist"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://research.ibm.com/ontologies/hspo/christian"
-  } ]
-}, {
   "@id" : "http://research.ibm.com/ontologies/hspo/widow",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://research.ibm.com/ontologies/hspo/umlsCui" : [ {
-    "@value" : "C0206275"
+    "@value" : "C1510465"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://research.ibm.com/ontologies/hspo/MaritalStatus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Widow"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/widowed"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/widowed",
@@ -5376,6 +5756,11 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Widowed"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/widow"
+  }, {
+    "@id" : "http://research.ibm.com/ontologies/hspo/widower"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/widower",
@@ -5388,6 +5773,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Widower"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://research.ibm.com/ontologies/hspo/widowed"
   } ]
 }, {
   "@id" : "http://research.ibm.com/ontologies/hspo/wife_left_home",

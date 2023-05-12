@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://research.ibm.com/ontologies/hspo/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://research.ibm.com/ontologies/hspo/","name":"Health and Social Person-centric Ontology (HSPO)", "headline":"The Health and Social Person-centric Ontology (HSPO) describes a schema for specifying evidences about a person in a consistent way.          The model allows but not limited to specify evidence, interventions and outcomes in health and social care domains.", "datePublished":"2022-10-07", "version":"0.0.17", "author":[{"@type":"Person","name":"IBM Research Europe"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://research.ibm.com/ontologies/hspo/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://research.ibm.com/ontologies/hspo/","name":"Health and Social Person-centric Ontology (HSPO)", "headline":"The Health and Social Person-centric Ontology (HSPO) describes a schema for specifying evidences about a person in a consistent way.          The model allows but not limited to specify evidence, interventions and outcomes in health and social care domains.", "datePublished":"2023-02-15", "version":"0.0.19", "author":[{"@type":"Person","name":"IBM Research Europe"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,63 +40,64 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
 $(function(){
     loadHash();
 }); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index.html"><b>en</b></a> </div>
 <h1>Health and Social Person-centric Ontology (HSPO)</h1>
-<h2>Release 2022-10-07</h2>
+<h2>Release 2023-02-15</h2>
 
 
 <dl>
 <dt>Latest version:</dt>
 <dd><a href="http://research.ibm.com/ontologies/hspo/">http://research.ibm.com/ontologies/hspo/</a></dd>
 <dt>Revision:</dt>
-<dd>0.0.17</dd>
+<dd>0.0.19</dd>
 <dt>Authors:</dt>
 <dd>IBM Research Europe</dd>
 
 <dt>Publisher:</dt>
 <dd>IBM</dd>
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="Apache 2.0" />
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><img src="https://img.shields.io/badge/License-Apache_2.0-green.svg" alt="Apache 2.0">
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>IBM Research Europe. Health and Social Person-centric Ontology (HSPO). Revision: 0.0.17.</dd>
+<dd>IBM Research Europe. Health and Social Person-centric Ontology (HSPO). Revision: 0.0.19.</dd>
 </dl>
 
 <hr/>
 </div>
 <div class="status">
 <div>
-<span>Ontology Specification</span>
+<span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 The Health and Social Person-centric Ontology (HSPO) describes a schema for specifying evidences about a person in a consistent way.
           The model allows but not limited to specify evidence, interventions and outcomes in health and social care domains.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+Please see the HSPO documentation and user guide for further information here:
+<a href="https://ibm.github.io/hspo-ontology/">https://ibm.github.io/hspo-ontology</a>.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>hspo</b></td><td>&lt;http://research.ibm.com/ontologies/hspo/&gt;</td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://research.ibm.com/ontologies/hspo/&gt;</td></tr>
 <tr><td></td><td></td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
@@ -114,7 +115,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">Health and Social Person-centric Ontology (HSPO): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -487,6 +488,107 @@ This ontology has the following classes and properties.</span>
       <a href="#trust_score"
          title="http://research.ibm.com/ontologies/hspo/trust_score">Trust score</a>
    </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/abstract" title="http://purl.org/dc/elements/1.1/abstract">
+         <span>abstract</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#broader" title="http://www.w3.org/2004/02/skos/core#broader">
+         <span>broader</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2002/07/owl#cardinality" title="http://www.w3.org/2002/07/owl#cardinality">
+         <span>cardinality</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/created" title="http://purl.org/dc/elements/1.1/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2000/01/rdf-schema#displayName" title="http://www.w3.org/2000/01/rdf-schema#displayName">
+         <span>display name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+         title="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasMapping</a>
+   </li>
+   <li>
+      <a href="#icd10Code" title="http://research.ibm.com/ontologies/hspo/icd10Code">
+         <span>icd10 code</span>
+      </a>
+   </li>
+   <li>
+      <a href="#icd9Code" title="http://research.ibm.com/ontologies/hspo/icd9Code">
+         <span>icd9 code</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/modified" title="http://purl.org/dc/elements/1.1/modified">
+         <span>modified</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+         <span>modified</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#narrower" title="http://www.w3.org/2004/02/skos/core#narrower">
+         <span>narrower</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/publisher" title="http://purl.org/dc/elements/1.1/publisher">
+         <span>publisher</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#resource"
+         title="http://www.w3.org/1999/02/22-rdf-syntax-ns#resource">
+         <span>resource</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/source" title="http://purl.org/dc/elements/1.1/source">
+         <span>source</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+         <span>title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#umlsCui" title="http://research.ibm.com/ontologies/hspo/umlsCui">
+         <span>umls cui</span>
+      </a>
+   </li>
 </ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#ten_to_fourteen"
@@ -824,10 +926,6 @@ This ontology has the following classes and properties.</span>
          title="http://research.ibm.com/ontologies/hspo/wesleyan">Christian: Wesleyan</a>
    </li>
    <li>
-      <a href="#wesleyan_methodist"
-         title="http://research.ibm.com/ontologies/hspo/wesleyan_methodist">Christian: Wesleyan Methodist</a>
-   </li>
-   <li>
       <a href="#cohabitee_left_home"
          title="http://research.ibm.com/ontologies/hspo/cohabitee_left_home">Cohabitee left home</a>
    </li>
@@ -873,10 +971,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#feminine_gender"
          title="http://research.ibm.com/ontologies/hspo/feminine_gender">Feminine gender</a>
-   </li>
-   <li>
-      <a href="#gender_finding"
-         title="http://research.ibm.com/ontologies/hspo/gender_finding">Gender finding</a>
    </li>
    <li>
       <a href="#gender_unknown"
@@ -971,10 +1065,6 @@ This ontology has the following classes and properties.</span>
          title="http://research.ibm.com/ontologies/hspo/reform_judaism">Judaism: Reform Judaism</a>
    </li>
    <li>
-      <a href="#legally_married"
-         title="http://research.ibm.com/ontologies/hspo/legally_married">Legally married</a>
-   </li>
-   <li>
       <a href="#legally_separated_with_interlocutory_decree"
          title="http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree">Legally separated with interlocutory decree</a>
    </li>
@@ -983,12 +1073,12 @@ This ontology has the following classes and properties.</span>
          title="http://research.ibm.com/ontologies/hspo/lives_alone">Lives alone</a>
    </li>
    <li>
-      <a href="#lives_alone_needs_housekeeper"
-         title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone needs housekeeper</a>
-   </li>
-   <li>
       <a href="#lives_alone_help_available"
          title="http://research.ibm.com/ontologies/hspo/lives_alone_help_available">Lives alone, help available</a>
+   </li>
+   <li>
+      <a href="#lives_alone_needs_housekeeper"
+         title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone, needs housekeeper</a>
    </li>
    <li>
       <a href="#lives_alone_no_help_available"
@@ -1239,10 +1329,6 @@ This ontology has the following classes and properties.</span>
          title="http://research.ibm.com/ontologies/hspo/spouse_left_home">Spouse left home</a>
    </li>
    <li>
-      <a href="#transgender"
-         title="http://research.ibm.com/ontologies/hspo/transgender">Surgically transgendered transsexual</a>
-   </li>
-   <li>
       <a href="#transgender_female_to_male"
          title="http://research.ibm.com/ontologies/hspo/transgender_female_to_male">Surgically transgendered transsexual, female-to-male</a>
    </li>
@@ -1257,8 +1343,8 @@ This ontology has the following classes and properties.</span>
       <a href="#toddler" title="http://research.ibm.com/ontologies/hspo/toddler">Toddler</a>
    </li>
    <li>
-      <a href="#transgender_identity"
-         title="http://research.ibm.com/ontologies/hspo/transgender_identity">Transgender identity</a>
+      <a href="#transgender"
+         title="http://research.ibm.com/ontologies/hspo/transgender">Transgender</a>
    </li>
    <li>
       <a href="#trial_separation"
@@ -1285,9 +1371,9 @@ This ontology has the following classes and properties.</span>
       <a href="#wife_left_home"
          title="http://research.ibm.com/ontologies/hspo/wife_left_home">Wife left home</a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">Health and Social Person-centric Ontology (HSPO): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -1295,7 +1381,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Health and Social Person-centric Ontology (HSPO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -1952,8 +2038,6 @@ This section provides details for each class and property defined by Health and 
          <dd>
             <a href="#feminine_gender"
                title="http://research.ibm.com/ontologies/hspo/feminine_gender">Feminine gender</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#gender_finding"
-               title="http://research.ibm.com/ontologies/hspo/gender_finding">Gender finding</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#gender_unknown"
                title="http://research.ibm.com/ontologies/hspo/gender_unknown">Gender unknown</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#gender_unspecified"
@@ -1962,14 +2046,12 @@ This section provides details for each class and property defined by Health and 
                title="http://research.ibm.com/ontologies/hspo/masculine_gender">Masculine gender</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#non_binary_gender"
                title="http://research.ibm.com/ontologies/hspo/non_binary_gender">Non-binary gender</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#transgender"
-               title="http://research.ibm.com/ontologies/hspo/transgender">Surgically transgendered transsexual</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#transgender_female_to_male"
                title="http://research.ibm.com/ontologies/hspo/transgender_female_to_male">Surgically transgendered transsexual, female-to-male</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#transgender_male_to_female"
                title="http://research.ibm.com/ontologies/hspo/transgender_male_to_female">Surgically transgendered transsexual, male-to-female</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#transgender_identity"
-               title="http://research.ibm.com/ontologies/hspo/transgender_identity">Transgender identity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#transgender"
+               title="http://research.ibm.com/ontologies/hspo/transgender">Transgender</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2044,10 +2126,10 @@ This section provides details for each class and property defined by Health and 
                title="http://research.ibm.com/ontologies/hspo/elderly_relative_lives_with_family">Elderly relative lives with family</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_alone"
                title="http://research.ibm.com/ontologies/hspo/lives_alone">Lives alone</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_alone_needs_housekeeper"
-               title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone needs housekeeper</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_alone_help_available"
                title="http://research.ibm.com/ontologies/hspo/lives_alone_help_available">Lives alone, help available</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_alone_needs_housekeeper"
+               title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone, needs housekeeper</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_alone_no_help_available"
                title="http://research.ibm.com/ontologies/hspo/lives_alone_no_help_available">Lives alone, no help available</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#lives_as_companion"
@@ -2680,8 +2762,6 @@ This section provides details for each class and property defined by Health and 
                title="http://research.ibm.com/ontologies/hspo/homosexual_marriage_male">Homosexual marriage, male</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#husband_left_home"
                title="http://research.ibm.com/ontologies/hspo/husband_left_home">Husband left home</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#legally_married"
-               title="http://research.ibm.com/ontologies/hspo/legally_married">Legally married</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#legally_separated_with_interlocutory_decree"
                title="http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree">Legally separated with interlocutory decree</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#marital_state_unknown"
@@ -2971,8 +3051,6 @@ This section provides details for each class and property defined by Health and 
                title="http://research.ibm.com/ontologies/hspo/united_methodist">Christian: United Methodist</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#wesleyan"
                title="http://research.ibm.com/ontologies/hspo/wesleyan">Christian: Wesleyan</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#wesleyan_methodist"
-               title="http://research.ibm.com/ontologies/hspo/wesleyan_methodist">Christian: Wesleyan Methodist</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#confucianism"
                title="http://research.ibm.com/ontologies/hspo/confucianism">Confucianism</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ethnic_religion"
@@ -3489,15 +3567,15 @@ This section provides details for each class and property defined by Health and 
             <dd>
                <a href="#Behaviour"
                   title="http://research.ibm.com/ontologies/hspo/Behaviour">Behaviour</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Disease" title="http://research.ibm.com/ontologies/hspo/Disease">Disease</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Intervention"
                   title="http://research.ibm.com/ontologies/hspo/Intervention">Intervention</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SocialContext"
                   title="http://research.ibm.com/ontologies/hspo/SocialContext">Social Context</a>
                <sup class="type-c" title="class">c</sup>
@@ -4001,38 +4079,38 @@ This section provides details for each class and property defined by Health and 
             <dt>has range</dt>
             <dd>
                <a href="#Age" title="http://research.ibm.com/ontologies/hspo/Age">Age</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Behaviour"
                   title="http://research.ibm.com/ontologies/hspo/Behaviour">Behaviour</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Disease" title="http://research.ibm.com/ontologies/hspo/Disease">Disease</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Gender" title="http://research.ibm.com/ontologies/hspo/Gender">Gender</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Intervention"
                   title="http://research.ibm.com/ontologies/hspo/Intervention">Intervention</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Location"
                   title="http://research.ibm.com/ontologies/hspo/Location">Location</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#MaritalStatus"
                   title="http://research.ibm.com/ontologies/hspo/MaritalStatus">Marital Status</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#RaceAndEthnicity"
                   title="http://research.ibm.com/ontologies/hspo/RaceAndEthnicity">Race and Ethnicity</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Religion"
                   title="http://research.ibm.com/ontologies/hspo/Religion">Religion</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SocialContext"
                   title="http://research.ibm.com/ontologies/hspo/SocialContext">Social Context</a>
                <sup class="type-c" title="class">c</sup>
@@ -4472,6 +4550,310 @@ This section provides details for each class and property defined by Health and 
          </dl>
       </div>
    </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/abstract" title="http://purl.org/dc/elements/1.1/abstract">
+            <span>abstract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#broader" title="http://www.w3.org/2004/02/skos/core#broader">
+            <span>broader</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2002/07/owl#cardinality" title="http://www.w3.org/2002/07/owl#cardinality">
+            <span>cardinality</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/created" title="http://purl.org/dc/elements/1.1/created">
+            <span>created</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+            <span>created</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description">
+            <span>description</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2000/01/rdf-schema#displayName" title="http://www.w3.org/2000/01/rdf-schema#displayName">
+            <span>display name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+            title="http://www.geneontology.org/formats/oboInOwl#hasDbXref">hasMapping</a>
+      </li>
+      <li>
+         <a href="#icd10Code" title="http://research.ibm.com/ontologies/hspo/icd10Code">
+            <span>icd10 code</span>
+         </a>
+      </li>
+      <li>
+         <a href="#icd9Code" title="http://research.ibm.com/ontologies/hspo/icd9Code">
+            <span>icd9 code</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/modified" title="http://purl.org/dc/elements/1.1/modified">
+            <span>modified</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+            <span>modified</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#narrower" title="http://www.w3.org/2004/02/skos/core#narrower">
+            <span>narrower</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/publisher" title="http://purl.org/dc/elements/1.1/publisher">
+            <span>publisher</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#resource"
+            title="http://www.w3.org/1999/02/22-rdf-syntax-ns#resource">
+            <span>resource</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/source" title="http://purl.org/dc/elements/1.1/source">
+            <span>source</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+            <span>title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#umlsCui" title="http://research.ibm.com/ontologies/hspo/umlsCui">
+            <span>umls cui</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/abstract">
+      <h3>abstract<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/abstract</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#broader">
+      <h3>broader<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#broader</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2002/07/owl#cardinality">
+      <h3>cardinality<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2002/07/owl#cardinality</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/created">
+      <h3>created<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/created</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/created">
+      <h3>created<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+      <h3>creator<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+      <h3>description<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#displayName">
+      <h3>display name<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#displayName</p>
+   </div>
+   <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+      <h3>hasMapping<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasDbXref</p>
+   </div>
+   <div class="entity" id="icd10Code">
+      <h3>icd10 code<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/icd10Code</p>
+      <div class="comment">
+         <span class="markdown">The ICD-10 code</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="icd9Code">
+      <h3>icd9 code<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/icd9Code</p>
+      <div class="comment">
+         <span class="markdown">The ICD-9 code</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/modified">
+      <h3>modified<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/modified</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/modified">
+      <h3>modified<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#narrower">
+      <h3>narrower<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#narrower</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/publisher">
+      <h3>publisher<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/publisher</p>
+   </div>
+   <div class="entity" id="http://www.w3.org/1999/02/22-rdf-syntax-ns#resource">
+      <h3>resource<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/1999/02/22-rdf-syntax-ns#resource</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/source">
+      <h3>source<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/source</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+   </div>
+   <div class="entity" id="umlsCui">
+      <h3>umls cui<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/umlsCui</p>
+      <div class="comment">
+         <span class="markdown">The UMLS entity identifier (CUI)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
@@ -4811,10 +5193,6 @@ This section provides details for each class and property defined by Health and 
             title="http://research.ibm.com/ontologies/hspo/wesleyan">Christian: Wesleyan</a>
       </li>
       <li>
-         <a href="#wesleyan_methodist"
-            title="http://research.ibm.com/ontologies/hspo/wesleyan_methodist">Christian: Wesleyan Methodist</a>
-      </li>
-      <li>
          <a href="#cohabitee_left_home"
             title="http://research.ibm.com/ontologies/hspo/cohabitee_left_home">Cohabitee left home</a>
       </li>
@@ -4860,10 +5238,6 @@ This section provides details for each class and property defined by Health and 
       <li>
          <a href="#feminine_gender"
             title="http://research.ibm.com/ontologies/hspo/feminine_gender">Feminine gender</a>
-      </li>
-      <li>
-         <a href="#gender_finding"
-            title="http://research.ibm.com/ontologies/hspo/gender_finding">Gender finding</a>
       </li>
       <li>
          <a href="#gender_unknown"
@@ -4958,10 +5332,6 @@ This section provides details for each class and property defined by Health and 
             title="http://research.ibm.com/ontologies/hspo/reform_judaism">Judaism: Reform Judaism</a>
       </li>
       <li>
-         <a href="#legally_married"
-            title="http://research.ibm.com/ontologies/hspo/legally_married">Legally married</a>
-      </li>
-      <li>
          <a href="#legally_separated_with_interlocutory_decree"
             title="http://research.ibm.com/ontologies/hspo/legally_separated_with_interlocutory_decree">Legally separated with interlocutory decree</a>
       </li>
@@ -4970,12 +5340,12 @@ This section provides details for each class and property defined by Health and 
             title="http://research.ibm.com/ontologies/hspo/lives_alone">Lives alone</a>
       </li>
       <li>
-         <a href="#lives_alone_needs_housekeeper"
-            title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone needs housekeeper</a>
-      </li>
-      <li>
          <a href="#lives_alone_help_available"
             title="http://research.ibm.com/ontologies/hspo/lives_alone_help_available">Lives alone, help available</a>
+      </li>
+      <li>
+         <a href="#lives_alone_needs_housekeeper"
+            title="http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper">Lives alone, needs housekeeper</a>
       </li>
       <li>
          <a href="#lives_alone_no_help_available"
@@ -5226,10 +5596,6 @@ This section provides details for each class and property defined by Health and 
             title="http://research.ibm.com/ontologies/hspo/spouse_left_home">Spouse left home</a>
       </li>
       <li>
-         <a href="#transgender"
-            title="http://research.ibm.com/ontologies/hspo/transgender">Surgically transgendered transsexual</a>
-      </li>
-      <li>
          <a href="#transgender_female_to_male"
             title="http://research.ibm.com/ontologies/hspo/transgender_female_to_male">Surgically transgendered transsexual, female-to-male</a>
       </li>
@@ -5244,8 +5610,8 @@ This section provides details for each class and property defined by Health and 
          <a href="#toddler" title="http://research.ibm.com/ontologies/hspo/toddler">Toddler</a>
       </li>
       <li>
-         <a href="#transgender_identity"
-            title="http://research.ibm.com/ontologies/hspo/transgender_identity">Transgender identity</a>
+         <a href="#transgender"
+            title="http://research.ibm.com/ontologies/hspo/transgender">Transgender</a>
       </li>
       <li>
          <a href="#trial_separation"
@@ -6640,22 +7006,6 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="wesleyan_methodist">
-      <h3>Christian: Wesleyan Methodist<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/wesleyan_methodist</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Religion"
-               title="http://research.ibm.com/ontologies/hspo/Religion">Religion</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="cohabitee_left_home">
       <h3>Cohabitee left home<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -6839,21 +7189,6 @@ This section provides details for each class and property defined by Health and 
       </h3>
       <p>
          <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/feminine_gender</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Gender" title="http://research.ibm.com/ontologies/hspo/Gender">Gender</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="gender_finding">
-      <h3>Gender finding<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/gender_finding</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -7253,22 +7588,6 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="legally_married">
-      <h3>Legally married<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/legally_married</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#MaritalStatus"
-               title="http://research.ibm.com/ontologies/hspo/MaritalStatus">Marital Status</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="legally_separated_with_interlocutory_decree">
       <h3>Legally separated with interlocutory decree<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -7301,13 +7620,13 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="lives_alone_needs_housekeeper">
-      <h3>Lives alone needs housekeeper<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="lives_alone_help_available">
+      <h3>Lives alone, help available<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper</p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/lives_alone_help_available</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -7317,13 +7636,13 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="lives_alone_help_available">
-      <h3>Lives alone, help available<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="lives_alone_needs_housekeeper">
+      <h3>Lives alone, needs housekeeper<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/lives_alone_help_available</p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/lives_alone_needs_housekeeper</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -8348,21 +8667,6 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="transgender">
-      <h3>Surgically transgendered transsexual<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/transgender</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#Gender" title="http://research.ibm.com/ontologies/hspo/Gender">Gender</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="transgender_female_to_male">
       <h3>Surgically transgendered transsexual, female-to-male<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -8431,13 +8735,13 @@ This section provides details for each class and property defined by Health and 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="transgender_identity">
-      <h3>Transgender identity<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="transgender">
+      <h3>Transgender<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/transgender_identity</p>
+         <strong>IRI:</strong> http://research.ibm.com/ontologies/hspo/transgender</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -8570,7 +8874,7 @@ This section provides details for each class and property defined by Health and 
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
