@@ -18,9 +18,9 @@
                                             dc:creator "IBM Research Europe" ;
                                             dc:publisher "IBM" ;
                                             <http://purl.org/dc/terms/created> "2022-06-02"^^xsd:date ;
-                                            <http://purl.org/dc/terms/modified> "2023-02-15"^^xsd:date ;
+                                            <http://purl.org/dc/terms/modified> "2023-06-08"^^xsd:date ;
                                             <http://purl.org/dc/terms/title> "Health and Social Person-centric Ontology (HSPO)"@en ;
-                                            owl:versionInfo "0.0.19" .
+                                            owl:versionInfo "0.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -127,28 +127,12 @@ owl:cardinality rdf:type owl:AnnotationProperty .
         rdfs:label "hasAge"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/hasAlignmentScore
-:hasAlignmentScore rdf:type owl:ObjectProperty ;
-                   rdfs:domain :ConfidenceScore ;
-                   rdfs:range :AlignmentScore ;
-                   rdfs:comment "The alignment proximity score"@en ;
-                   rdfs:label "hasAlignmentScore"@en .
-
-
 ###  http://research.ibm.com/ontologies/hspo/hasBehaviour
 :hasBehaviour rdf:type owl:ObjectProperty ;
               rdfs:domain :Person ;
               rdfs:range :Behaviour ;
               rdfs:comment "A behaviour for a Person. E.g. diet, smoking, exercise, etc."@en ;
               rdfs:label "hasBehaviour"@en .
-
-
-###  http://research.ibm.com/ontologies/hspo/hasConfidenceScore
-:hasConfidenceScore rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Evidence ;
-                    rdfs:range :ConfidenceScore ;
-                    rdfs:comment "Relates the evidence to a confidence score"@en ;
-                    rdfs:label "hasConfidenceScore"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/hasDisease
@@ -181,19 +165,19 @@ owl:cardinality rdf:type owl:AnnotationProperty .
              rdfs:label "hasEvidence"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/hasEvidenceGraph
-:hasEvidenceGraph rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf prov:wasGeneratedBy ;
+###  http://research.ibm.com/ontologies/hspo/hasEvidenceProvenance
+:hasEvidenceProvenance rdf:type owl:ObjectProperty  ,
+                  owl:FunctionalProperty ;
                   rdfs:domain :Evidence ;
-                  rdfs:range :EvidenceGraph ;
-                  rdfs:comment "Relates the evidence to its Evidence Graph"@en ;
-                  rdfs:label "hasEvidenceGraph"@en .
+                  rdfs:range :EvidenceProvenance ;
+                  rdfs:comment "Relates the evidence to its provenance"@en ;
+                  rdfs:label "hasEvidenceProvenance"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/hasEvidenceSource
 :hasEvidenceSource rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf prov:wasDerivedFrom ;
-                   rdfs:domain :Evidence ;
+                   rdfs:domain :EvidenceProvenance ;
                    rdfs:range :EvidenceSource ;
                    rdfs:comment "The source of the evidence"@en ;
                    rdfs:label "hasEvidenceSource"@en .
@@ -285,15 +269,6 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                   rdfs:comment "The religon a person follows"@en ;
                   rdfs:label "followsReligion"@en .
 
-
-###  http://research.ibm.com/ontologies/hspo/hasProbabilityScore
-:hasProbabilityScore rdf:type owl:ObjectProperty ;
-                     rdfs:domain :ConfidenceScore ;
-                     rdfs:range :OriginalProbabilityScore ;
-                     rdfs:comment "The original probability score of the evidence"@en ;
-                     rdfs:label "hasProbabilityScore"@en .
-
-
 ###  http://research.ibm.com/ontologies/hspo/hasRaceOrEthnicity
 :hasRaceOrEthnicity rdf:type owl:ObjectProperty ;
                     rdfs:domain :Person ;
@@ -319,17 +294,9 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                 rdfs:label "hasStageOfLife"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/hasTrustScore
-:hasTrustScore rdf:type owl:ObjectProperty ;
-               rdfs:domain :ConfidenceScore ;
-               rdfs:range :DatasourceTrustScore ;
-               rdfs:comment "The datasource trust score"@en ;
-               rdfs:label "hasTrustScore"@en .
-
-
-###  http://research.ibm.com/ontologies/hspo/isPartOfEvidenceGraph
-:isPartOfEvidenceGraph rdf:type owl:ObjectProperty ;
-                       rdfs:domain :EvidenceGraph ;
+###  http://research.ibm.com/ontologies/hspo/isPartOfEvidence
+:isPartOfEvidence rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Evidence ;
                        rdfs:range [ rdf:type owl:Class ;
                                     owl:unionOf ( :Age
                                                   :Disease
@@ -343,8 +310,46 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                                   :SocialContext
                                                 )
                                   ] ;
-                       rdfs:comment "Part of relation used as an evidence to establish Person relation"@en ;
-                       rdfs:label "isPartOfEvidenceGraph"@en .
+                       rdfs:comment "Component of n-ary evidence where its role in the evidence is undefined "@en ;
+                       rdfs:label "isPartOfEvidence"@en .
+
+###  http://research.ibm.com/ontologies/hspo/isSubject
+:isSubject rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Evidence ;
+                       rdfs:range [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Age
+                                                  :Disease
+                                                  :Gender
+                                                  :Intervention
+                                                  :Location
+                                                  :MaritalStatus
+                                                  :Behaviour
+                                                  :Religion  
+                                                  :RaceAndEthnicity
+                                                  :SocialContext
+                                                )
+                                  ] ;
+                       rdfs:comment "Component of n-ary evidence where its role in the evidence is a subject"@en ;
+                       rdfs:label "isSubject"@en .
+
+###  http://research.ibm.com/ontologies/hspo/isObject
+:isObject rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Evidence ;
+                       rdfs:range [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Age
+                                                  :Disease
+                                                  :Gender
+                                                  :Intervention
+                                                  :Location
+                                                  :MaritalStatus
+                                                  :Behaviour
+                                                  :Religion  
+                                                  :RaceAndEthnicity
+                                                  :SocialContext
+                                                )
+                                  ] ;
+                       rdfs:comment "Component of n-ary evidence where its role in the evidence is an object"@en ;
+                       rdfs:label "isObject"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/lives
@@ -376,13 +381,22 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
             rdfs:label "Age in years"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/alignment_score_value
-:alignment_score_value rdf:type owl:DatatypeProperty ,
+###  http://research.ibm.com/ontologies/hspo/alignment_score
+:alignment_score rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
-                     rdfs:domain :AlignmentScore ;
+                     rdfs:domain :Evidence ;
                      rdfs:range xsd:double ;
-                     rdfs:comment "Alignment score between the Evidence and the Person Graphs"@en ;
-                     rdfs:label "Alignment score value"@en .
+                     rdfs:comment "Alignment score between the Evidence and the Person Graph"@en ;
+                     rdfs:label "Alignment score"@en .
+
+
+###  http://research.ibm.com/ontologies/hspo/confidence_score
+:confidence_score rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Evidence ;
+                     rdfs:range xsd:double ;
+                     rdfs:comment "Confidence score of the Evidence. It may include probablity of each source as well as datasource trust scores"@en ;
+                     rdfs:label "Confidence score"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/intervention_name
@@ -452,39 +466,62 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
                      rdfs:label "Positivity indicator"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/probability_score_metric
-:probability_score_metric rdf:type owl:DatatypeProperty ,
+###  http://research.ibm.com/ontologies/hspo/relation_label
+:relation_label rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :Evidence ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Relation name(type) of the Evidence. For example, 'increases' or 'imapcts'"@en ;
+                     rdfs:label "Relation label"@en .
+
+###  http://research.ibm.com/ontologies/hspo/source_score_metric
+:source_score_metric rdf:type owl:DatatypeProperty ,
                                  owl:FunctionalProperty ;
-                        rdfs:domain :OriginalProbabilityScore ;
+                        rdfs:domain :EvidenceSource ;
                         rdfs:range xsd:string ;
-                        rdfs:comment "Probability score metric of the Evidence Graph for a Person"@en ;
-                        rdfs:label "Probability score metric"@en .
+                        rdfs:comment "Datasource score metric of the Evidence"@en ;
+                        rdfs:label "Source score metric"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/probability_score_value
-:probability_score_value rdf:type owl:DatatypeProperty ,
+###  http://research.ibm.com/ontologies/hspo/source_score_value
+:source_score_value rdf:type owl:DatatypeProperty ,
                                 owl:FunctionalProperty ;
-                       rdfs:domain :OriginalProbabilityScore ;
+                       rdfs:domain :EvidenceSource ;
                        rdfs:range xsd:double ;
-                       rdfs:comment "Probability score value of the Evidence Graph for a Person"@en ;
-                       rdfs:label "Probability score value"@en .
+                       rdfs:comment "Source score value of the Evidence"@en ;
+                       rdfs:label "Source score value"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/source_ID
-:source_ID rdf:type owl:DatatypeProperty ,
+###  http://research.ibm.com/ontologies/hspo/source_doc_id
+:source_doc_id rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :EvidenceSource ;
           rdfs:range xsd:string ;
-          rdfs:comment "The ID (e.g. URI) of the Evidence Graph source"@en ;
-          rdfs:label "Datasource ID"@en .
+          rdfs:comment "The ID (e.g. URI) of the document the Evidence is originated from"@en ;
+          rdfs:label "Source document ID"@en .
 
+###  http://research.ibm.com/ontologies/hspo/source_name
+:source_name rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :EvidenceSource ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The ID (e.g. URI) or the name of the source/corpus the Evidence is originated from"@en ;
+          rdfs:label "Source name"@en .
+
+###  http://research.ibm.com/ontologies/hspo/source_text
+:source_text rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :EvidenceSource ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The original text (e.g. sentence) the Evidence is originated from"@en ;
+          rdfs:label "Source text"@en .
 
 ###  http://research.ibm.com/ontologies/hspo/trust_score
 :trust_score rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
-            rdfs:domain :DatasourceTrustScore ;
+            rdfs:domain :EvidenceSource ;
             rdfs:range xsd:double ;
-            rdfs:comment "Datasource Trust Score for the Evidence Graph"@en ;
+            rdfs:comment "Datasource trust score for the Evidence"@en ;
             rdfs:label "Trust score"@en .
 
 
@@ -506,29 +543,12 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
           rdfs:label "Age group"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/AlignmentScore
-:AlignmentScore rdf:type owl:Class ;
-                rdfs:comment "Alignment proximity score between the nodes of Evidence and Person Graphs"@en ;
-                rdfs:label "Alignment Score"@en .
-
 
 ###  http://research.ibm.com/ontologies/hspo/Behaviour
 :Behaviour rdf:type owl:Class ;
            :umlsCui "" ;
            rdfs:comment "Human behaviour, e.g. diet, smoking, exercising, sleep, etc." ;
            rdfs:label "Behaviour"@en .
-
-
-###  http://research.ibm.com/ontologies/hspo/ConfidenceScore
-:ConfidenceScore rdf:type owl:Class ;
-                 rdfs:comment "Confidence score includes alignment accuracy, probablity of an event and datasource trust score" ;
-                 rdfs:label "Confidence Score"@en .
-
-
-###  http://research.ibm.com/ontologies/hspo/DatasourceTrustScore
-:DatasourceTrustScore rdf:type owl:Class ;
-                      rdfs:comment "Datasource trust score" ;
-                      rdfs:label "Datasource Trust Score"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/Disease
@@ -571,11 +591,10 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
           rdfs:label "Evidence"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/EvidenceGraph
-:EvidenceGraph rdf:type owl:Class ;
-               rdfs:subClassOf prov:Activity ;
-               rdfs:comment "The subgraph extracted from the source of evidences, for example using SPARQL CONSTRUCT query." ;
-               rdfs:label "Evidence Graph"@en .
+###  http://research.ibm.com/ontologies/hspo/EvidenceProvenance
+:EvidenceProvenance rdf:type owl:Class ;
+               rdfs:comment "The evidence provenance. Contains all evidence sources" ;
+               rdfs:label "Evidence provenance"@en .
 
 
 ###  http://research.ibm.com/ontologies/hspo/EvidenceSource
@@ -727,7 +746,7 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
                  "C1710069" ,
                  "C1548569" ,
                  "C0804628" ;
-        rdfs:comment "The gender of a person"@en ;
+        rdfs:comment "The gender of a person. A person's concept of self as being male and masculine or female and feminine, or ambivalent, based in part on physical characteristics, parental responses, and psychological and social pressures. It is the internal experience of gender role.(MESH)"@en ;
         rdfs:label "Gender"@en .
 
 
@@ -1257,12 +1276,6 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
                rdfs:label "Religion"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/OriginalProbabilityScore
-:OriginalProbabilityScore rdf:type owl:Class ;
-                          rdfs:comment "Probability score of the evidence" ;
-                          rdfs:label "Original Probability Score"@en .
-
-
 ###  http://research.ibm.com/ontologies/hspo/Person
 :Person rdf:type owl:Class ;
         :umlsCui "" ;
@@ -1282,7 +1295,7 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
 :Judicial rdf:type owl:Class ;
                      rdfs:subClassOf :SocialContext ;
                      :umlsCui "" ;
-                     rdfs:comment "The judicial context of an individual including imprisionment, involvement in legal actions or jury duty." ;
+                     rdfs:comment "The judicial context of an individual including imprisonment, involvement in legal actions or jury duty." ;
                      rdfs:label "Judicial" .
 
 
@@ -1653,7 +1666,7 @@ prov:Entity rdf:type owl:Class .
 :indian rdf:type owl:NamedIndividual ,
                  :RaceAndEthnicity ;
         :umlsCui "C1524069" ;
-        rdfs:comment "Indian (racial group)" ;
+        rdfs:comment "Indian (Asian Indian) (racial group)" ;
         rdfs:label "Indian"^^xsd:string .
 
 
