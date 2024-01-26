@@ -21,6 +21,7 @@ The ontology can be used to generate person-centered or cohort-centered knowledg
 - [Ontology Specification](https://ibm.github.io/hspo-ontology/ontology-specification/)
 - [How to Contribute](CONTRIBUTING.md)
 - [Github repository](https://github.com/IBM/hspo-ontology)
+- [Publications](#publications)
 
 ## Getting Started
 
@@ -29,6 +30,12 @@ The HSPO ontology can be used to create a knowledge graph (KG) of an individual 
 <img width="1140" src="docs/img/hspo-sam-main-example.png">
 
 Figure 1. Example of an individual patient knowledge graph derived from the HSPO ontology.
+
+## Publications
+
+- Theodoropoulos C, Mulligan N, Stappenbeck T, and Bettencourt-Silva J. 2023. [<b>Representation Learning for Person or Entity-Centric Knowledge Graphs: An Application in Healthcare.</b>](https://dl.acm.org/doi/10.1145/3587259.3627545) In Proceedings of the 12th Knowledge Capture Conference 2023 (K-CAP '23). Association for Computing Machinery, New York, NY, USA, 225–233. doi.org/10.1145/3587259.3627545
+
+- Purpura A, Bettencourt-Silva J, Mulligan N, Yadete T, Njoku K, Liu J, Stappenbeck T. 2024. [<b>Automatic Mapping of Terminology Items with Transformers.</b>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785948/) In AMIA Annual Symposium Proceedings. AMIA Symposium vol. 2023 599-607. PMID: 38222370.
 
 ## Help and Support
 
