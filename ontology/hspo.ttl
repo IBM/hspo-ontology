@@ -526,8 +526,8 @@ prov:wasGeneratedBy rdf:type owl:ObjectProperty .
              rdfs:label "Source entities"@en .
 
 
-###  http://research.ibm.com/ontologies/hspo/source_entity_cuis
-:source_entity_cuis rdf:type owl:DatatypeProperty ,
+###  http://research.ibm.com/ontologies/hspo/source_entities_cuis
+:source_entities_cuis rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :EvidenceSource ;
              rdfs:range xsd:string ;
