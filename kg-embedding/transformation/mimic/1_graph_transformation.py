@@ -184,7 +184,7 @@ class GraphModUndirected:
                     age_group = self.triplet_dict[k]['objects'][
                         self.triplet_dict[k]['relations'].index('belongsToAgeGroup')]
                     bag_of_triplets.append((('patient', 'patient', 'patient'), 'hasDemographics',
-                                            (age_group.replace('_', ' '), 'age_group', 'demographic_infop')))
+                                            (age_group.replace('_', ' '), 'age_group', 'demographic_info')))
             if self.triplet_dict[k]['type'] == 'disease':
                 if self.context_flag['diseases']:
                     disease_name = self.triplet_dict[k]['objects'][
