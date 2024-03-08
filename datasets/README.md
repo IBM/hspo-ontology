@@ -1,3 +1,3 @@
 # Datasets
 List of available datasets:
-- [SDOH relations dataset (AMIA 2024 Informatics Summit)](/datasets/amia-ic-2024)
+- [SDOH-Clinical Relations Dataset (AMIA 2024 Informatics Summit)](/datasets/amia-ic-2024)
